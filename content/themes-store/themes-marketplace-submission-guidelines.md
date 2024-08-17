@@ -18,7 +18,7 @@ If you are a theme developer and would like to submit your theme to the Themes S
     - Your theme's screenshot has to be a `PNG` with size of `300x200` (it can be resized after upload).
     - Your theme must contain a valid `readme` describing the theme and how to use it.
     - If your theme has any preferences values, they must be set in the `preferences` text area as a `JSON` object.
-      - See how preferences work [here](themes-marketshare/themes-marketplace-preferences.md).
+      - See how preferences work [here](themes-store/themes-marketplace-preferences.md).
 
 3. **Theme Submission**:
     - To submit your theme, please create an issue [here](https://github.com/zen-browser/theme-store/issues/new?assignees=&labels=new-theme&projects=&template=create-theme.yml&title=%5Bcreate-theme%5D%3A+)
