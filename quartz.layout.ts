@@ -9,6 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/zen-browser/",
+      Homepage: "https://www.zen-browser.app/",
       "Discord Community": "https://discord.gg/nnShMQzR4b",
     },
   }),
@@ -21,7 +22,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-  ],
+  ],  
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),

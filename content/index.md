@@ -3,4 +3,8 @@ title: Welcome to Zen Browser's Documentation
 ---
 
 
-* [Themes Marketplace](themes-marketshare/themes-marketplace.md)
+* [Themes Store](themes-store/themes-marketplace.md)
+* [Building Zen Browser](building-zen-browser/building-zen-browser.md)
+  * [Linux](building-zen-browser/linux.md)
+  * [Windows](building-zen-browser/windows.md)
+  * [macOS](building-zen-browser/macos.md)

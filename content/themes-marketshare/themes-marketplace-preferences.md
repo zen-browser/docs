@@ -1,3 +1,0 @@
----
-title: Themes Marketplace Preferences
----
