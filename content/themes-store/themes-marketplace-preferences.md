@@ -38,4 +38,5 @@ In the theme's CSS file, you can use the preference to change the background col
 
 This settings will appear on the preferences page of the theme in the Zen Browser settings. Users can enable or disable the preference to change the background color of the browser.
 
+> [!info]
 > Note: Other values such as strings or numbers may be supported in the future. For now, only booleans are supported.
