@@ -1,5 +1,5 @@
 ---
-title: Building Zen Browser 📦
+title: Building Zen Browser
 ---
 
 > [!failure]
