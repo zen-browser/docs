@@ -1,6 +1,8 @@
 ---
-title: Frequently Asked Questions ❓
+title: **Zen Browser FAQ**❓
 ---
+Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
+
 ## **How do I know Zen is safe?**
 
 Zen Browser is designed with a focus on security and privacy. Additionally, the browser's codebase is derived from Firefox, a well-known and trusted open-source project. Users can verify the safety of the browser by reviewing the source code available on [GitHub](https://github.com/zen-browser/desktop) and by noting that it has been tested and certified as free of viruses and malware by various antivirus programs. Regular updates and community engagement also contribute to its security.
