@@ -1,5 +1,5 @@
 ---
-title: Information about Themes Store
+title: Information about Themes Store ℹ️
 ---
 
 The Themes Store is a place where you can find and install themes for Zen Browser.

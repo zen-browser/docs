@@ -1,5 +1,5 @@
 ---
-title: Themes Store Preferences
+title: Themes Store Preferences ⚙️ 
 ---
 
 When submitting a theme to the Zen Browser Themes Store, you can use custom preferences to define the theme's appearance and behavior. These preferences are stored in a JSON file named `preferences.json` and are located in the root directory of the theme.

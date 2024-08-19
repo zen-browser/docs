@@ -1,5 +1,5 @@
 ---
-title: Themes Store Submission Guidelines
+title: Themes Store Submission Guidelines 📋
 ---
 
 If you are a theme developer and would like to submit your theme, please follow these guidelines:

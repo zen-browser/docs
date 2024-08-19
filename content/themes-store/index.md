@@ -1,3 +1,3 @@
 ---
-title: Themes Store
+title: Themes Store 🎨
 ---
