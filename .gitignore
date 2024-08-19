@@ -1,3 +1,5 @@
 /content/.obsidian
 /node_modules
 .idea
+public/
+quartz/.quartz-cache
