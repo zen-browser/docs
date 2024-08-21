@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guides/install-macos.md",
+                "file": "guides/manage-profiles.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guides/install-macos.md",
+                "file": "guides/manage-profiles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "guides/install-macos.md",
+                "file": "guides/manage-profiles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guides/install-macos.md"
+                "file": "guides/manage-profiles.md"
               }
             }
           }
@@ -148,11 +148,12 @@
   },
   "active": "bb904e684df3e5de",
   "lastOpenFiles": [
+    "guides/install-macos.md",
+    "guides/manage-profiles.md",
     "assets/macos-installation-guide/gatekeeper.png",
     "assets/macos-installation-guide/open-dmg.png",
     "index.md",
     "guides/index.md",
-    "guides/install-macos.md",
     "assets/macos-installation-guide/broken-menu.png",
     "assets/macos-installation-guide/Screenshot from 2024-08-20 22-41-07.png",
     "assets/macos-installation-guide/broken menu.png",
