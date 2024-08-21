@@ -1,5 +1,5 @@
 ---
-title: Installing Zen Browser on macOS
+title: Installing Zen Browser on MacOS
 description: This guide provides step-by-step instructions for installing Zen Browser on macOS, including how to bypass macOS Gatekeeper due to the lack of an official Developer License. It also  explains how users can support the Zen Browser team by donating towards obtaining a Developer License.
 ---
 > [!question]-  Why Bypassing Gatekeeper is Necessary
@@ -13,7 +13,7 @@ description: This guide provides step-by-step instructions for installing Zen Br
 - Download the latest Zen Browser DMG.
 - Once downloaded, open the DMG file. You might need to zoom out a bit to see everything.
 
-![Open DMG File](https://private-user-images.githubusercontent.com/103985728/348454221-d3a3a845-245e-4154-b6b2-941f4d021bee.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQyMTQ4MDEsIm5iZiI6MTcyNDIxNDUwMSwicGF0aCI6Ii8xMDM5ODU3MjgvMzQ4NDU0MjIxLWQzYTNhODQ1LTI0NWUtNDE1NC1iNmIyLTk0MWY0ZDAyMWJlZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgyMVQwNDI4MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MGE2ZDJlZTY1ZDlmZjkxMTUwOTVjZjM5ZTFkZTEwYTRiZThkOTk5MWRjZDBkODIyNzllMGZiYTcyNjI1NTEzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.uvjigkIMz7jWA7MVBu777aZ3wODclZxRUt3XEWs5J8g)
+![[open-dmg.png]]
 
 ## Step 2: Install Zen Browser
 
@@ -23,7 +23,7 @@ description: This guide provides step-by-step instructions for installing Zen Br
 
 Upon trying to open Zen Browser, you may encounter a message indicating the file is damaged. This happens because the app does not have a valid developer signature and is using an Ad-hoc sign.
 
-![Bypass Gatekeeper](https://private-user-images.githubusercontent.com/103985728/348454366-298f06af-772b-460d-9e71-65f6c99e8341.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQyMTQ4MDEsIm5iZiI6MTcyNDIxNDUwMSwicGF0aCI6Ii8xMDM5ODU3MjgvMzQ4NDU0MzY2LTI5OGYwNmFmLTc3MmItNDYwZC05ZTcxLTY1ZjZjOTllODM0MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgyMVQwNDI4MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMjMyMjY1YmY0YzM4YjgxOGU3MDA2OTAzMWQ3MWYxMDY1NDliYTJlODAwNDkzZTU4YTE5YjNkN2NmYzNiNzVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.TEy9CZlZJA3jta4Ueuqbu_83M7NdaVtbbqwmlVx3Dhg)
+![[gatekeeper.png]]
 
 ### To bypass this warning:
 
