@@ -16,6 +16,10 @@ If you'd like to support the development of Zen Browser, you can do so through t
 
 Your support helps the team maintain and enhance Zen Browser for everyone!
 
+## **"Zen Browser is damaged and can't be opened" on MacOS**
+If you encounter the message "Zen Browser is damaged and can't be opened" on macOS, it is likely because Zen Browser is not signed with an official Apple Developer License. This triggers macOS's Gatekeeper security feature, which prevents unsigned or unverified apps from running.
+*If you encounter this error please follow our [[install-macos | Installing Zen Browser on MacOS]] guide*
+
 ## **How to switch tabs by scrolling?**
 To switch tabs by scrolling in Zen Browser, you need to enable this feature by changing a setting in the browser's configuration. Here's how you can do it:
 

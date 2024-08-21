@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guides/manage-profiles.md",
-                "mode": "source",
+                "file": "faq.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guides/manage-profiles.md",
+                "file": "faq.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "guides/manage-profiles.md",
+                "file": "faq.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guides/manage-profiles.md"
+                "file": "faq.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "bb904e684df3e5de",
   "lastOpenFiles": [
-    "guides/install-macos.md",
     "guides/manage-profiles.md",
+    "guides/install-macos.md",
+    "faq.md",
     "assets/macos-installation-guide/gatekeeper.png",
     "assets/macos-installation-guide/open-dmg.png",
     "index.md",
