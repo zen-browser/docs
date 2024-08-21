@@ -9,9 +9,11 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const iconPath = joinSegments(baseDir, "static/icon.png")
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <img src={iconPath} alt="Zen Browser Logo" width="70px" />
-      <br/>
-      <a href={baseDir}>{title}</a>
+      <a href={baseDir}>
+        <img src={iconPath} alt="Zen Browser Logo" width="70px" />
+        <br />
+        {title}
+      </a>
     </h2>
   )
 }
