@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "222010181b465465",
+        "id": "e257f464a11eaa85",
         "type": "tabs",
         "children": [
           {
-            "id": "bb904e684df3e5de",
+            "id": "c48eb70606bbaae4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,7 +146,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bb904e684df3e5de",
+  "active": "c48eb70606bbaae4",
   "lastOpenFiles": [
     "guides/manage-profiles.md",
     "guides/install-macos.md",

@@ -5,7 +5,7 @@ Welcome to the Zen Browser FAQ section! Here, you'll find answers to common ques
 
 ## **How do I know Zen is safe?**
 
-Zen Browser is designed with a focus on security and privacy. Additionally, the browser's codebase is derived from Firefox, a well-known and trusted open-source project. Users can verify the safety of the browser by reviewing the source code available on [GitHub](https://github.com/zen-browser/desktop) and by noting that it has been tested and certified as free of viruses and malware by various antivirus programs. Regular updates and community engagement also contribute to its security.
+Zen Browser is designed with a focus on security and privacy. Additionally, the browser's codebase is derived from Firefox, a well-known and trusted open-source project. Users can verify the safety of the browser by reviewing the source code available on [GitHub](https://github.com/zen-browser/desktop) . Regular updates and community engagement also contribute to its security.
 
 ## **How can I support Zen?**
 
