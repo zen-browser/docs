@@ -12,11 +12,15 @@ This [[guides/index|guide]] provides an overview of the differences between the 
 > [!warning]
 > If your computer's processor doesn't belong to any of the following processor families, the optimized version won't work on your device. Please install the generic version instead.
 
+### AMD
+
 * AMD Family 15h (Excavator)
 * AMD Family 17h (Zen, Zen+, Zen 2)
 * AMD Family 19h (Zen 3)
 * AMD Family 19h (Zen 4 / Zen 4c)
 * AMD Family 1Ah (Zen 5 / Zen 5c)
+
+### Intel
 
 * Intel 4th Gen Core (Haswell)
 * Intel 5th Gen Core (Broadwell)
