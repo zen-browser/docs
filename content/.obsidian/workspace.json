@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "faq.md",
+                "file": "guides/index.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "42952bec6b18e374",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "guides/live-editing.md",
                 "mode": "preview",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "faq.md",
+                "file": "guides/live-editing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "faq.md",
+                "file": "guides/live-editing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "faq.md"
+                "file": "guides/live-editing.md"
               }
             }
           }
@@ -146,15 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c48eb70606bbaae4",
+  "active": "fe7bf5045f52d84c",
   "lastOpenFiles": [
+    "assets/live-editing",
+    "assets/live-editing/inspect.png",
+    "assets/image (3).png",
+    "guides/index.md",
+    "guides/live-editing.md",
+    "faq.md",
     "guides/manage-profiles.md",
     "guides/install-macos.md",
-    "faq.md",
     "assets/macos-installation-guide/gatekeeper.png",
     "assets/macos-installation-guide/open-dmg.png",
     "index.md",
-    "guides/index.md",
     "assets/macos-installation-guide/broken-menu.png",
     "assets/macos-installation-guide/Screenshot from 2024-08-20 22-41-07.png",
     "assets/macos-installation-guide/broken menu.png",
