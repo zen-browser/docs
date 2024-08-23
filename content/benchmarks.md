@@ -7,8 +7,8 @@ These benchmarks were performed on a device with the following specifications:
 * Intel® Core i5-13600K Processor
 
 > [!warning]
-> These results may vary depending on the hardware used and only focus on specific performance aspects of a browser. 
-> Therefore, they should not be considered definitive indicators of overall browser speed.
+> These benchmarks only focus on specific performance aspects of a browser, and your personal results may vary drastically depending on your hardware.
+> Therefore, this page should not be considered a definitive indicator of overall browser speed.
 
 > [!notes] Where are the latest versions?
 > This page is maintained by [NOCanoa](https://github.com/NOCanoa). These benchmarks are only updated when he is available.
