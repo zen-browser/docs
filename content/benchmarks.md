@@ -8,7 +8,7 @@ These benchmarks were performed on a device with the following specifications:
 
 > [!warning]
 > These benchmarks only focus on specific performance aspects of a browser, and your personal results may vary drastically depending on your hardware.
-> Therefore, this page should not be considered a definitive indicator of overall browser speed.
+> This page is not a definitive indicator of overall browser speed.
 
 > [!notes] Where are the latest versions?
 > This page is maintained by [NOCanoa](https://github.com/NOCanoa). These benchmarks are only updated when he is available.
