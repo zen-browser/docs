@@ -2,7 +2,7 @@
 title: Managing Firefox Profiles
 ---
 
-This guide will give you a comprehensive understanding of Firefox profiles, helping you manage them effectively even in the most challenging situations. By following this guide, you'll learn how to preserve key elements of your browsing experience, including bookmarks, history, passwords, and more.
+This [[guides/index|guide]]  will give you a comprehensive understanding of Firefox profiles, helping you manage them effectively even in the most challenging situations. By following this guide, you'll learn how to preserve key elements of your browsing experience, including bookmarks, history, passwords, and more.
 
 ## Goal
 

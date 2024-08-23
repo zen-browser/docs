@@ -2,13 +2,13 @@
 title: Live Editing Zen Theme
 ---
 
-This guide will help you customize the appearance of Zen Browser by live editing the `userChrome.css` file. Follow the steps below to start customizing your browser's theme.
+This [[guides/index|guide]] will help you customize the appearance of Zen Browser by live editing the `userChrome.css` file. Follow the steps below to start customizing your browser's theme.
 
 ## Step 1: Access the Profile Folder
 
 1. Open Zen Browser.
-2. Type `about:profiles` in the address bar and press Enter.
-3. Look for the **Profile you want to save your theme** .
+2. Type `about:support` in the address bar and press Enter.
+3. Look for the **Application Basics** section.
 4. Click on **Open Profile Folder**. This will open the folder where Zen Browser stores your user data.
 
 ## Step 2: Create the `chrome` Folder
@@ -35,6 +35,7 @@ This guide will help you customize the appearance of Zen Browser by live editing
 > [!Notes] 
 >Any changes you make to the `userChrome.css` file will be applied immediately to Zen Browser.
 >Use this file to customize various UI elements, such as colors, fonts, and layout.
+>You can use this guide to help you [[themes-marketplace| create your Zen theme and publish it.]]
 
 ---
 

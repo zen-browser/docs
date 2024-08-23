@@ -1,7 +1,8 @@
 ---
 title: Installing Zen Browser on MacOS
-description: This guide provides step-by-step instructions for installing Zen Browser on macOS, including how to bypass macOS Gatekeeper due to the lack of an official Developer License. It also  explains how users can support the Zen Browser team by donating towards obtaining a Developer License.
 ---
+This [[guides/index|guide]] provides step-by-step instructions for installing Zen Browser on macOS, including how to bypass macOS Gatekeeper due to the lack of an official Developer License. It also explains how users can support the Zen Browser team by donating towards obtaining a Developer License.
+
 > [!question]-  Why Bypassing Gatekeeper is Necessary
 > Zen Browser currently requires users to bypass macOS Gatekeeper because the app does not have a Developer License from Apple. This license, which costs 100 euros annually, is necessary for official app signing and distribution. Unfortunately, due to limited resources, it is not within the Zen Browser team's ability to purchase this license at the moment.
 > If you'd like to help Zen Browser obtain a Developer License and improve the installation experience, you can make a donation. Contributions will directly support the team in reaching this goal.

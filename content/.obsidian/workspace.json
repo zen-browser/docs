@@ -159,16 +159,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe7bf5045f52d84c",
+  "active": "42952bec6b18e374",
   "lastOpenFiles": [
+    "guides/manage-profiles.md",
+    "guides/install-macos.md",
+    "guides/live-editing.md",
+    "themes-store/themes-marketplace-submission-guidelines.md",
+    "themes-store/themes-marketplace.md",
     "assets/live-editing",
     "assets/live-editing/inspect.png",
     "assets/image (3).png",
     "guides/index.md",
-    "guides/live-editing.md",
     "faq.md",
-    "guides/manage-profiles.md",
-    "guides/install-macos.md",
     "assets/macos-installation-guide/gatekeeper.png",
     "assets/macos-installation-guide/open-dmg.png",
     "index.md",
