@@ -10,7 +10,7 @@ We've took the time to make building Zen Browser as easy as possible, independen
 1. Clone the repository
 
 ```bash
-git clone https://github.com/zen-browser/desktop.git
+git clone https://github.com/zen-browser/desktop.git --recurse-submodules
 cd desktop
 ```
 

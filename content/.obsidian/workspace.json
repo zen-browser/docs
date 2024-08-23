@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guides/live-editing.md",
+                "file": "building-zen-browser/building-zen-browser.md",
                 "mode": "preview",
                 "source": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guides/live-editing.md",
+                "file": "building-zen-browser/building-zen-browser.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "guides/live-editing.md",
+                "file": "building-zen-browser/building-zen-browser.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guides/live-editing.md"
+                "file": "building-zen-browser/building-zen-browser.md"
               }
             }
           }
@@ -161,9 +161,9 @@
   },
   "active": "42952bec6b18e374",
   "lastOpenFiles": [
+    "guides/live-editing.md",
     "guides/manage-profiles.md",
     "guides/install-macos.md",
-    "guides/live-editing.md",
     "themes-store/themes-marketplace-submission-guidelines.md",
     "themes-store/themes-marketplace.md",
     "assets/live-editing",
