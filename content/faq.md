@@ -3,7 +3,7 @@ title: Frequently Asked Questions ❓
 ---
 Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
 
->[!faq]-  ## **Why Can't Zen Browser Play DRM-Protected Content?**
+>[!faq]-   **Why Can't Zen Browser Play DRM-Protected Content?**
 >#### What is DRM?
 >DRM (Digital Rights Management) is a technology used to control how digital content, such as videos and music, can be accessed and used. DRM is commonly used by streaming services to protect copyrighted content. When you try to play DRM-protected content, the website checks if the necessary DRM software is available on your browser. Most browsers use **Widevine**, a DRM technology developed by Google, to facilitate this.
 >#### Why Zen Browser Doesn't Support DRM
