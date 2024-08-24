@@ -94,7 +94,7 @@ Your pull request will be reviewed by the maintainers, and you may be asked to m
 ## Additional Resources
 
 - [Zen Browser Homepage Repository](https://github.com/zen-browser/www)
-- [[desktop |  Contribution Guidelines]]
+- [[CONTRIBUTING|  Contribution Guidelines]]
 - [[CODE_OF_CONDUCT | Code of Conduct]]
 
 

@@ -105,7 +105,7 @@ Your pull request will be reviewed by the maintainers, and you may be asked to m
 
 - [Zen Browser Documentation Repository](https://github.com/zen-browser/docs)
 - [Quartz v4 Documentation](https://quartz.jzhao.xyz/)
-- [[desktop |  Contribution Guidelines]]
+- [[CONTRIBUTING|  Contribution Guidelines]]
 - [[CODE_OF_CONDUCT | Code of Conduct]]
 
 ---

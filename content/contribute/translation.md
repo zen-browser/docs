@@ -58,7 +58,7 @@ Crowdin allows you to track the progress of the translation project and stay upd
 
 - [Zen Browser Translation Project on Crowdin](https://crowdin.com/project/zen-browser)
 - [Crowdin Documentation](https://support.crowdin.com/)
-- [[desktop |  Contribution Guidelines]]
+- [[CONTRIBUTING|  Contribution Guidelines]]
 - [[CODE_OF_CONDUCT | Code of Conduct]]
 
 ---

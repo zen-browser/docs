@@ -68,7 +68,7 @@ Before contributing, please keep the following guidelines in mind:
 ## Additional Resources
 
 - [Zen Browser GitHub Repository](https://github.com/zen-browser/desktop): The main repository where you can find the source code and submit pull requests.
-- [[desktop |  Contribution Guidelines]]
+- [[CONTRIBUTING|  Contribution Guidelines]]
 - [[CODE_OF_CONDUCT | Code of Conduct]] 
   
 ---
