@@ -1,6 +1,6 @@
 ---
 title: Code of Conduct
-draft: true
+draft: false
 ---
 ## Our Pledge
 

@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Documentation Contributions
-draft: true
+draft: false
 ---
 
 
