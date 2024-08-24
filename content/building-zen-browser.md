@@ -1,5 +1,5 @@
 ---
-title: Building Zen Browser
+title: Building Zen Browser 📦
 ---
 
 We've took the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge. 

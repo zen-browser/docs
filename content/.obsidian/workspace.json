@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "building-zen-browser.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "building-zen-browser.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "building-zen-browser.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "building-zen-browser.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "5cbcc37181f7dca9",
   "lastOpenFiles": [
+    "index.md",
     "building-zen-browser.md",
     "building-zen-browser/index.md",
-    "index.md",
     "contribute/index.md",
     "contribute/CONTRIBUTING.md",
     "guides/index.md",
