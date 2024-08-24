@@ -1,5 +1,6 @@
 ---
 title: Getting Started with Zen's Homepage Development
+draft: false
 ---
 
 

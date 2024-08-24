@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "contribute/index.md",
-                "mode": "preview",
+                "file": "contribute/www.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "contribute/index.md",
+                "file": "contribute/www.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "contribute/index.md",
+                "file": "contribute/www.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "contribute/index.md"
+                "file": "contribute/www.md"
               }
             }
           }
@@ -161,12 +161,12 @@
   },
   "active": "42952bec6b18e374",
   "lastOpenFiles": [
-    "contribute/CODE_OF_CONDUCT.md",
-    "contribute/CONTRIBUTING.md",
-    "contribute/desktop.md",
-    "contribute/docs.md",
-    "contribute/index.md",
     "contribute/translation.md",
+    "contribute/index.md",
+    "contribute/docs.md",
+    "contribute/desktop.md",
+    "contribute/CONTRIBUTING.md",
+    "contribute/CODE_OF_CONDUCT.md",
     "contribute/www.md",
     "building-zen-browser/index.md",
     "building-zen-browser/building-zen-browser.md",
