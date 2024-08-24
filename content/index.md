@@ -10,4 +10,4 @@ Welcome to **Zen Browser's Documentation!** Here, you'll find everything you nee
 * #### [[themes-store/index|Theme Store 🎨]]
 * #### [[faq | Frequently Asked Questions ❓]]
 * #### [[benchmarks | Performance Benchmarks 📊]]
-* #### [[contribute/index | Zen Browser Contribution Guides 🌟]]
+* #### [[contribute/index | Contribution Guides 🌟]]

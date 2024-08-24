@@ -10,13 +10,13 @@ This guide will walk you through the steps required to set up and contribute to 
 
 Before you begin, make sure you have the following installed on your machine:
 
-- **Git**: Version control system to clone the repository and manage your code.
-- **Node.js**: JavaScript runtime for running the development server and building the project.
-- **npm**: Node package manager, which comes with Node.js.
+- [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
+- [**Node.js**](https://nodejs.org/): JavaScript runtime for running the development server and building the project.
+- [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
 
 ## Step 1: Fork the Repository
 
-1. Navigate to the [Zen Browser Homepage Repository](https://github.com/zen-browser/www).
+1. Navigate to the [Zen Browser Website Repository](https://github.com/zen-browser/www).
 2. Click on the "Fork" button at the top right of the repository page. This creates a personal copy of the repository under your GitHub account.
 
 ## Step 2: Clone the Repository

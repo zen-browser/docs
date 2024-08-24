@@ -9,9 +9,9 @@ Contributing to the Zen Browser Desktop project is a great way to get involved w
 
 Before you begin, ensure you have the following tools installed:
 
-- **Git**: Version control system to clone the repository and manage your code.
-- **Node.js**: Required for building the browser.
-- **npm**: Node package manager, which comes with Node.js.
+- [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
+- [**Node.js**](https://nodejs.org/): Required for building the browser.
+- [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
 
 ![[building-zen-browser]]
 

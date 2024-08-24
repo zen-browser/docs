@@ -1,4 +1,4 @@
 ---
-title: Zen Browser Contribution Guides 🌟
+title: Contribution Guides 🌟
 draft: false
 ---
