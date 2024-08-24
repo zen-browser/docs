@@ -1,4 +1,4 @@
-# [docs.zen-browser.app](https://docs.zen-browser.app)
+# [Docs Site](https://docs.zen-browser.app)
 
 Welcome to **Zen Browser’s Documentation!** 
 
