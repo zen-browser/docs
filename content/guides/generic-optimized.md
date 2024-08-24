@@ -47,4 +47,4 @@ This [[guides/index|guide]] provides an overview of the differences between the 
 
 ## Differences between the optimized and generic builds
 
-This is a work in progress
+The optimized version of Zen leverages [Advanced Vector Extensions 2](https://wikipedia.org/wiki/Advanced_Vector_Extensions#Advanced_Vector_Extensions_2) (AVX2), a CPU instruction set that enhances performance for certain computational tasks. This instruction set is only available on modern processors.
