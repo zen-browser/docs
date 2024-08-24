@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e257f464a11eaa85",
+        "id": "9dd51e6a4d768a81",
         "type": "tabs",
         "children": [
           {
-            "id": "c48eb70606bbaae4",
+            "id": "5cbcc37181f7dca9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guides/index.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "42952bec6b18e374",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "contribute/CODE_OF_CONDUCT.md",
-                "mode": "preview",
+                "file": "index.md",
+                "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "contribute/CODE_OF_CONDUCT.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "contribute/CODE_OF_CONDUCT.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "contribute/CODE_OF_CONDUCT.md"
+                "file": "index.md"
               }
             }
           }
@@ -159,21 +146,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "42952bec6b18e374",
+  "active": "5cbcc37181f7dca9",
   "lastOpenFiles": [
+    "contribute/index.md",
     "contribute/CONTRIBUTING.md",
+    "index.md",
+    "guides/index.md",
+    "contribute/translation.md",
+    "contribute/CODE_OF_CONDUCT.md",
     "contribute/desktop.md",
     "contribute/docs.md",
-    "contribute/index.md",
-    "contribute/translation.md",
     "contribute/www.md",
-    "contribute/CODE_OF_CONDUCT.md",
     "building-zen-browser/index.md",
     "building-zen-browser/building-zen-browser.md",
     "themes-store/themes-marketplace-submission-guidelines.md",
     "themes-store/themes-marketplace.md",
     "themes-store/themes-marketplace-preferences.md",
-    "index.md",
     "guides/generic-optimized.md",
     "guides/Untitled.md",
     "contribute",
@@ -184,7 +172,6 @@
     "assets/live-editing",
     "assets/live-editing/inspect.png",
     "assets/image (3).png",
-    "guides/index.md",
     "faq.md",
     "assets/macos-installation-guide/gatekeeper.png",
     "assets/macos-installation-guide/open-dmg.png",

@@ -6,6 +6,10 @@ draft: false
 
 Thank you for your interest in contributing to the translations for Zen Browser! Ensuring that Zen Browser is accessible to users around the world is a key priority, and your contributions help make this possible. This guide will walk you through the process of getting started with translating Zen Browser using Crowdin.
 
+>[!note]
+>If you want to translate a language that is not currently available in the Crowdin project, please reach out to the developers on Discord. We’ll be happy to add it for you!
+
+
 ## Prerequisites
 
 Before you begin, you will need to have the following:
