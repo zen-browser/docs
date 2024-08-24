@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "contribute/www.md",
-                "mode": "source",
+                "file": "faq.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "contribute/www.md",
+                "file": "faq.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "contribute/www.md",
+                "file": "faq.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "contribute/www.md"
+                "file": "faq.md"
               }
             }
           }
@@ -148,19 +148,19 @@
   },
   "active": "5cbcc37181f7dca9",
   "lastOpenFiles": [
+    "index.md",
+    "faq.md",
+    "building-zen-browser.md",
+    "contribute/www.md",
     "contribute/CONTRIBUTING.md",
     "contribute/desktop.md",
     "contribute/docs.md",
     "contribute/index.md",
     "contribute/translation.md",
-    "faq.md",
-    "index.md",
     "guides/portable.md",
-    "building-zen-browser.md",
     "building-zen-browser/index.md",
     "guides/index.md",
     "contribute/CODE_OF_CONDUCT.md",
-    "contribute/www.md",
     "themes-store/themes-marketplace-submission-guidelines.md",
     "themes-store/themes-marketplace.md",
     "themes-store/themes-marketplace-preferences.md",

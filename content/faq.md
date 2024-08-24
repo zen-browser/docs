@@ -3,6 +3,32 @@ title: Frequently Asked Questions ❓
 ---
 Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
 
+>[!faq]-  ## **Why Can't Zen Browser Play DRM-Protected Content?**
+>#### What is DRM?
+>DRM (Digital Rights Management) is a technology used to control how digital content, such as videos and music, can be accessed and used. DRM is commonly used by streaming services to protect copyrighted content. When you try to play DRM-protected content, the website checks if the necessary DRM software is available on your browser. Most browsers use **Widevine**, a DRM technology developed by Google, to facilitate this.
+>#### Why Zen Browser Doesn't Support DRM
+>Zen Browser currently does not support DRM because it does not have a Widevine license. Acquiring such a license requires payment of significant fees—typically at least $5,000 USD. As Zen Browser is an open-source project focused on privacy and security, the developers have decided not to pursue a Widevine license. This decision allows the project to maintain its open-source and non-commercial nature, but it means that DRM-protected content cannot be played in Zen Browser.
+>#### Which Services Are Affected?
+>Due to the lack of DRM support, you will not be able to stream content from the following services in Zen Browser:
+>- **HBO Max**
+>- **Netflix**
+>- **Tidal**
+>- **Spotify**
+>- **Disney+ Hotstar**
+>- **Amazon Prime Video**
+>- **Apple Music**
+>- **Google Play Movies & TV**
+>#### How to Play DRM-Protected Content
+>If you need to access DRM-protected content, the recommended solution is to use a browser that has a Widevine license, such as:
+>- **Mozilla Firefox**
+>- **Google Chrome**
+>- **Microsoft Edge**
+>  
+>These browsers are equipped to handle DRM-protected content, ensuring that you can stream videos and music from the services listed above.
+>#### Alternative Solutions
+>If you prefer to keep using Zen Browser for general browsing, consider using one of the above browsers specifically for streaming DRM-protected content. This way, you can benefit from Zen Browser's privacy features while still accessing the content you need.
+
+
 ## **How do I know Zen is safe?**
 
 Zen Browser is designed with a focus on security and privacy. Additionally, the browser's codebase is derived from Firefox, a well-known and trusted open-source project. Users can verify the safety of the browser by reviewing the source code available on [GitHub](https://github.com/zen-browser/desktop) . Regular updates and community engagement also contribute to its security.
