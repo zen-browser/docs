@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Translations
-draft: false
+draft: true
 ---
 
 

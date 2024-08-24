@@ -1,6 +1,6 @@
 ---
 title: Contributing to Zen Browser
-draft: false
+draft: true
 ---
 
 Thank you for considering contributing to Zen Browser! We appreciate your time and effort in improving this project. The following is a set of guidelines for contributing to Zen Browser. These guidelines are intended to make it easier for you to get involved.

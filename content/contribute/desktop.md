@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Desktop Browser Development
-draft: false
+draft: true
 ---
 
 Contributing to the Zen Browser Desktop project is a great way to get involved with open-source software development. This guide will walk you through the steps to clone the project, set up your development environment, make contributions, and submit pull requests.
