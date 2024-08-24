@@ -1,0 +1,61 @@
+---
+title: Getting Started with Translations
+---
+
+
+Thank you for your interest in contributing to the translations for Zen Browser! Ensuring that Zen Browser is accessible to users around the world is a key priority, and your contributions help make this possible. This guide will walk you through the process of getting started with translating Zen Browser using Crowdin.
+
+## Prerequisites
+
+Before you begin, you will need to have the following:
+
+- **A Crowdin Account**: You can sign up for free at [Crowdin](https://crowdin.com).
+- **Basic Knowledge of the Language**: A good understanding of the language you are translating to is essential.
+
+## Step 1: Join the Zen Browser Translation Project
+
+1. Visit the [Zen Browser Translation Project on Crowdin](https://crowdin.com/project/zen-browser).
+2. Click on the "Join" button to become a contributor to the project.
+3. Select the language you want to contribute to from the list of available languages.
+
+## Step 2: Start Translating
+
+Once you have joined the project and selected your language, you can start translating:
+
+1. Navigate to the language you selected.
+2. You will see a list of files that need translation. Click on any file to start translating.
+3. Translate the strings from English to your selected language. Ensure that the translations are accurate and clear.
+4. Save your translations as you work.
+
+## Step 3: Review and Suggest Improvements
+
+In addition to translating, you can also review translations made by others:
+
+1. Go to  your selected language.
+2. Review the translations and suggest improvements if necessary.
+3. Approve translations that are correct and meet the quality standards.
+
+## Step 4: Communicate with Other Translators
+
+Crowdin provides communication tools to collaborate with other translators:
+
+- **Comments**: Leave comments on specific strings if you have questions or suggestions.
+- **Discussions**: Participate in project-wide discussions to coordinate with other translators.
+
+## Step 5: Stay Updated
+
+Crowdin allows you to track the progress of the translation project and stay updated on new strings that need translation:
+
+- **Notifications**: Enable notifications in your Crowdin account to be alerted when new content is available for translation.
+- **Progress Tracking**: Use the progress bars to see how much of the translation is complete for your selected language.
+
+## Additional Resources
+
+- [Zen Browser Translation Project on Crowdin](https://crowdin.com/project/zen-browser)
+- [Crowdin Documentation](https://support.crowdin.com/)
+- [[desktop |  Contribution Guidelines]]
+- [[CODE_OF_CONDUCT | Code of Conduct]]
+
+---
+
+Thank you for helping to make Zen Browser accessible to a global audience! Your contributions are invaluable.
