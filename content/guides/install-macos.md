@@ -58,6 +58,10 @@ At the time of writing, there seems to be a bug with Zen Browser where the menu 
 
 You should now have a fully functional Zen Browser on your macOS. If you need to uninstall Zen, you can use Pearcleaner.
 
+>[!check]+ Good news! 🎊
+>We've reached two goals for app-signing in the past days! That means that macOS & Windows builds no longer will be rejected by the systems! 🥳
+>
+>![[kofi-goal.jpg]]
 ---
 Thanks to [SenpaiHunters](https://github.com/SenpaiHunters) for creating this guide
 

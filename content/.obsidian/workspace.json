@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9dd51e6a4d768a81",
+        "id": "90aeb0d3ad693660",
         "type": "tabs",
         "children": [
           {
-            "id": "5cbcc37181f7dca9",
+            "id": "9c2569c9f0138958",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guides/portable.md",
+                "file": "guides/install-macos.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guides/portable.md",
+                "file": "guides/install-macos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "guides/portable.md",
+                "file": "guides/install-macos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guides/portable.md"
+                "file": "guides/install-macos.md"
               }
             }
           }
@@ -146,12 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5cbcc37181f7dca9",
+  "active": "9c2569c9f0138958",
   "lastOpenFiles": [
+    "guides/install-macos.md",
+    "faq.md",
+    "assets/macos-installation-guide/kofi-goal.jpg",
+    "guides/portable.md",
     "guides/live-editing.md",
     "guides/manage-profiles.md",
     "guides/generic-optimized.md",
-    "faq.md",
     "index.md",
     "building-zen-browser.md",
     "contribute/www.md",
@@ -160,7 +163,6 @@
     "contribute/docs.md",
     "contribute/index.md",
     "contribute/translation.md",
-    "guides/portable.md",
     "building-zen-browser/index.md",
     "guides/index.md",
     "contribute/CODE_OF_CONDUCT.md",
@@ -169,7 +171,6 @@
     "themes-store/themes-marketplace-preferences.md",
     "contribute",
     "themes-store/Untitled",
-    "guides/install-macos.md",
     "assets/live-editing",
     "assets/live-editing/inspect.png",
     "assets/image (3).png",
