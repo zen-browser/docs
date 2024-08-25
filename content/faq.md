@@ -22,6 +22,7 @@ Feel free to support the funding of a Widevine license for Zen on [Ko-Fi](https:
 >- **Amazon Prime Video**
 >- **Apple Music**
 >- **Google Play Movies & TV**
+>- **And possible other services that use DRM not listed here**
 
 > [!info] Alternative solutions
 > * Use a browser that has a Widevine license, such as [**Mozilla Firefox**](https://www.mozilla.org/firefox/), when streaming DRM-protected content.
