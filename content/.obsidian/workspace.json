@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "90aeb0d3ad693660",
+        "id": "9dd51e6a4d768a81",
         "type": "tabs",
         "children": [
           {
-            "id": "9c2569c9f0138958",
+            "id": "5cbcc37181f7dca9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guides/install-macos.md",
+                "file": "guides/wayland.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guides/install-macos.md",
+                "file": "guides/wayland.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "guides/install-macos.md",
+                "file": "guides/wayland.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guides/install-macos.md"
+                "file": "guides/wayland.md"
               }
             }
           }
@@ -146,31 +146,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c2569c9f0138958",
+  "active": "5cbcc37181f7dca9",
   "lastOpenFiles": [
     "guides/install-macos.md",
-    "faq.md",
-    "assets/macos-installation-guide/kofi-goal.jpg",
+    "guides/wayland.md",
     "guides/portable.md",
+    "assets/macos-installation-guide/kofi-goal.jpg",
+    "contribute/docs.md",
+    "contribute/CONTRIBUTING.md",
+    "guides/index.md",
     "guides/live-editing.md",
-    "guides/manage-profiles.md",
-    "guides/generic-optimized.md",
     "index.md",
+    "faq.md",
+    "themes-store/index.md",
+    "themes-store/themes-marketplace.md",
+    "themes-store/themes-marketplace-preferences.md",
+    "themes-store/themes-marketplace-submission-guidelines.md",
+    "benchmarks.md",
     "building-zen-browser.md",
     "contribute/www.md",
-    "contribute/CONTRIBUTING.md",
     "contribute/desktop.md",
-    "contribute/docs.md",
     "contribute/index.md",
     "contribute/translation.md",
     "building-zen-browser/index.md",
-    "guides/index.md",
     "contribute/CODE_OF_CONDUCT.md",
-    "themes-store/themes-marketplace-submission-guidelines.md",
-    "themes-store/themes-marketplace.md",
-    "themes-store/themes-marketplace-preferences.md",
+    "guides/generic-optimized.md",
     "contribute",
     "themes-store/Untitled",
+    "guides/manage-profiles.md",
     "assets/live-editing",
     "assets/live-editing/inspect.png",
     "assets/image (3).png",
