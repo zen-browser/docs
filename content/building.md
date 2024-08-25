@@ -4,6 +4,9 @@ title: Building Zen Browser 📦
 
 We've took the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge. 
 
+> [!failure]
+> We cannot provide support if a build fails. Please understand this before proceeding with the following steps.
+
 ## Step 1: Clone the Project
 
 First, you need to clone the Zen Browser repository to your local machine. This will create a local copy of the project that you can work on.
@@ -64,7 +67,3 @@ npm start
 ```
 
 This command launches the browser, allowing you to see your changes in action.
-
-
-> [!failure]
-> We cannot provide support if a build fails. Please understand this before proceeding with the following steps.
