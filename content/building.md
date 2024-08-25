@@ -35,7 +35,17 @@ npm run init
 
 This command handles all the necessary bootstrapping tasks, such as setting up configuration files and downloading essential resources.
 
-## Step 4: Build the Browser
+## Step 4: Update Language Packs 
+
+Before building the browser, it’s recommended to update the American English language packs to ensure that all localization files are up-to-date:
+
+```bash
+sh ./scripts/update-en-US-packs.sh
+```
+
+This script updates the "en-US" localization files, which are necessary for proper language support in Zen Browser. Running this step ensures that your build includes the latest translations and language resources.
+
+## Step 5: Build the Browser
 
 Now that everything is set up, you can build the browser:
 
@@ -45,7 +55,7 @@ npm run build
 
 This command compiles the source code and creates the necessary files for running Zen Browser.
 
-## Step 5: Run the Browser
+## Step 6: Run the Browser
 
 After building the browser, you can start it using:
 

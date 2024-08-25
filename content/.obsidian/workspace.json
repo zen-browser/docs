@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "building.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "building.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "building.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "building.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5cbcc37181f7dca9",
+  "active": "fe7bf5045f52d84c",
   "lastOpenFiles": [
+    "index.md",
     "faq.md",
-    "building-zen-browser.md",
+    "building.md",
     "benchmarks.md",
     "contribute/index.md",
     "guides/index.md",
@@ -161,7 +162,6 @@
     "contribute/docs.md",
     "contribute/CONTRIBUTING.md",
     "guides/live-editing.md",
-    "index.md",
     "themes-store/themes-marketplace.md",
     "themes-store/themes-marketplace-preferences.md",
     "themes-store/themes-marketplace-submission-guidelines.md",

@@ -13,7 +13,7 @@ Before you begin, ensure you have the following tools installed:
 - [**Node.js**](https://nodejs.org/): Required for building the browser.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
 
-![[building-zen-browser]]
+![[building]]
 
 ## Step 6: Making a Contribution
 
