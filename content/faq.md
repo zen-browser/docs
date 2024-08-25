@@ -7,7 +7,7 @@ Welcome to the Zen Browser FAQ section! Here, you'll find answers to common ques
 > [!important] This only affects Microsoft Windows
 
 > [!question]- What is DRM?
-> [Digital Rights Management](https://wikipedia.org/wiki/Digital_rights_management) (DRM) is a technology used to control how digital content, such as videos and music, can be accessed and used. DRM is commonly used by streaming services to protect copyrighted content. When you try to play DRM-protected content, the website verifies if the necessary DRM software is available on your browser. Most browsers use [**Widevine**](www.widevine.com), a DRM technology developed by Google, to facilitate this.
+> [Digital Rights Management](https://wikipedia.org/wiki/Digital_rights_management) (DRM) is a technology used to control how digital content, such as videos and music, can be accessed and used. DRM is commonly used by streaming services to protect copyrighted content. When you try to play DRM-protected content, the website verifies if the necessary DRM software is available on your browser. Most browsers use [**Widevine**](https://www.widevine.com), a DRM technology developed by Google, to facilitate this.
 
 Zen Browser currently lacks DRM-support, because it does not have a Widevine license. Acquiring such a license requires the payment of large fees (at least $5,000). Acquiring this license is financially unresponsible for the developer of Zen. This means that DRM-protected media cannot be played in Zen Browser for the foreseeable future. If support grows and the developer receives sufficient funding, a Widevine license may be considered.
 
@@ -24,7 +24,7 @@ Feel free to support the funding of a Widevine license for Zen on [Ko-Fi](https:
 >- **Google Play Movies & TV**
 
 > [!info] Alternative solutions
-> * Use a browser that has a Widevine license, such as [**Mozilla Firefox**](www.mozilla.org/firefox/), when streaming DRM-protected content.
+> * Use a browser that has a Widevine license, such as [**Mozilla Firefox**](https://www.mozilla.org/firefox/), when streaming DRM-protected content.
 > * Use the native desktop app for the service you want to use
 
 ## How do I know Zen is safe?
