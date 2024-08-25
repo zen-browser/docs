@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guides/wayland.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guides/wayland.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "guides/wayland.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guides/wayland.md"
+                "file": "index.md"
               }
             }
           }
@@ -148,25 +148,25 @@
   },
   "active": "5cbcc37181f7dca9",
   "lastOpenFiles": [
-    "guides/install-macos.md",
+    "faq.md",
+    "building-zen-browser.md",
+    "benchmarks.md",
+    "contribute/index.md",
+    "guides/index.md",
+    "themes-store/index.md",
     "guides/wayland.md",
+    "guides/install-macos.md",
     "guides/portable.md",
     "assets/macos-installation-guide/kofi-goal.jpg",
     "contribute/docs.md",
     "contribute/CONTRIBUTING.md",
-    "guides/index.md",
     "guides/live-editing.md",
     "index.md",
-    "faq.md",
-    "themes-store/index.md",
     "themes-store/themes-marketplace.md",
     "themes-store/themes-marketplace-preferences.md",
     "themes-store/themes-marketplace-submission-guidelines.md",
-    "benchmarks.md",
-    "building-zen-browser.md",
     "contribute/www.md",
     "contribute/desktop.md",
-    "contribute/index.md",
     "contribute/translation.md",
     "building-zen-browser/index.md",
     "contribute/CODE_OF_CONDUCT.md",
