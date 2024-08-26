@@ -5,8 +5,26 @@ draft: false
 
 Thank you for considering contributing to Zen Browser! We appreciate your time and effort in improving this project. The following is a set of guidelines for contributing to Zen Browser. These guidelines are intended to make it easier for you to get involved.
 
+### Types of Contributions
 
-## How to Contribute
+We welcome a wide range of contributions, including but not limited to:
+
+- **Bug Fixes**: Resolve existing issues in the code.
+- **New Features**: Implement new features or enhance existing ones.
+- **Documentation**: Improve the clarity and depth of documentation.
+- **Code Refactoring**: Clean up the code to improve readability, performance, or maintainability.
+- **UI/UX Enhancements**: Improve the user interface or user experience of Zen Browser.
+
+### Getting Started
+
+To help you get started with contributing, we have created separate guides for each repository:
+
+- [[desktop | Getting Started with Desktop Browser Development]]
+- [[www | Getting Started with Zen's Homepage Development]]
+- [[docs | Getting Started with Documentation Contributions]]
+- [[translation | Getting Started with Translations]]
+  
+Please follow the appropriate guide based on the repository you want to contribute to.
 
 ### Reporting Bugs
 
@@ -25,27 +43,6 @@ If you find a bug, please open an issue and describe the problem in detail. Incl
 
 We welcome suggestions for new features or improvements to existing ones. To suggest a feature, please start a new Github discussion in the Ideas category. 
 *Use the correct Github Repository based on the list above*
-
-## Types of Contributions
-
-We welcome a wide range of contributions, including but not limited to:
-
-- **Bug Fixes**: Resolve existing issues in the code.
-- **New Features**: Implement new features or enhance existing ones.
-- **Documentation**: Improve the clarity and depth of documentation.
-- **Code Refactoring**: Clean up the code to improve readability, performance, or maintainability.
-- **UI/UX Enhancements**: Improve the user interface or user experience of Zen Browser.
-
-## Getting Started
-
-To help you get started with contributing, we have created separate guides for each repository:
-
-- [[desktop | Getting Started with Desktop Browser Development]]
-- [[www | Getting Started with Zen's Homepage Development]]
-- [[docs | Getting Started with Documentation Contributions]]
-- [[translation | Getting Started with Translations]]
-  
-Please follow the appropriate guide based on the repository you want to contribute to.
 
 ---
 
