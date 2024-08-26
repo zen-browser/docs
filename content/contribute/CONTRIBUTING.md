@@ -10,7 +10,7 @@ Thank you for considering contributing to Zen Browser! We appreciate your time a
 
 ### Reporting Bugs
 
-If you find a bug, please open an issue and describe the problem in detail. Include steps to reproduce the bug, the expected behavior, and any relevant information about your environment.
+If you find a bug, please open an issue and describe the problem in detail. Include steps to reproduce the bug, the expected behavior, and any relevant information about your environment. Please verify that the bug has not been reported already.
 
 >[!important]
 >Open the issue in it's corresponding GitHub repository:
@@ -21,7 +21,9 @@ If you find a bug, please open an issue and describe the problem in detail. Incl
 
 ### Suggesting Features
 
-We welcome suggestions for new features or improvements to existing ones. To suggest a feature, please open an issue and use the "Feature Request" template to describe your idea. 
+![[discuss.png]]
+
+We welcome suggestions for new features or improvements to existing ones. To suggest a feature, please start a new Github discussion in the Ideas category. 
 *Use the correct Github Repository based on the list above*
 
 ## Types of Contributions
@@ -44,6 +46,8 @@ To help you get started with contributing, we have created separate guides for e
 - [[translation | Getting Started with Translations]]
   
 Please follow the appropriate guide based on the repository you want to contribute to.
+
+---
 
 ## Code of Conduct
 
