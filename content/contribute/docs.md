@@ -10,7 +10,7 @@ This guide will help you get started with contributing to the documentation for 
 
 Before you begin, ensure you have the following tools installed:
 
-- **Git**: Version control system to clone the repository and manage your code.
+- [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
 - [**Node.js**](https://nodejs.org/): Required for building the Quartz v4 site.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
 - [**Obsidian**](https://obsidian.md/): A powerful Markdown editor recommended for editing and organizing documentation. *(Optional)*

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "building.md",
+                "file": "contribute/docs.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "building.md",
+                "file": "contribute/docs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "building.md",
+                "file": "contribute/docs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "building.md"
+                "file": "contribute/docs.md"
               }
             }
           }
@@ -148,28 +148,28 @@
   },
   "active": "fe7bf5045f52d84c",
   "lastOpenFiles": [
+    "contribute/desktop.md",
+    "contribute/CODE_OF_CONDUCT.md",
+    "contribute/CONTRIBUTING.md",
+    "contribute/docs.md",
+    "contribute/index.md",
+    "contribute/translation.md",
+    "contribute/www.md",
+    "guides/portable.md",
+    "guides/wayland.md",
+    "benchmarks.md",
+    "guides/install-macos.md",
+    "building.md",
     "index.md",
     "faq.md",
-    "building.md",
-    "benchmarks.md",
-    "contribute/index.md",
     "guides/index.md",
     "themes-store/index.md",
-    "guides/wayland.md",
-    "guides/install-macos.md",
-    "guides/portable.md",
     "assets/macos-installation-guide/kofi-goal.jpg",
-    "contribute/docs.md",
-    "contribute/CONTRIBUTING.md",
     "guides/live-editing.md",
     "themes-store/themes-marketplace.md",
     "themes-store/themes-marketplace-preferences.md",
     "themes-store/themes-marketplace-submission-guidelines.md",
-    "contribute/www.md",
-    "contribute/desktop.md",
-    "contribute/translation.md",
     "building-zen-browser/index.md",
-    "contribute/CODE_OF_CONDUCT.md",
     "guides/generic-optimized.md",
     "contribute",
     "themes-store/Untitled",
