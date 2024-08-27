@@ -15,7 +15,7 @@ export default defineConfig({
 				discord: 'https://discord.com/invite/nnShMQzR4b',
 			},
 			editLink: {
-				baseUrl: 'https://github.com/NOCanoa/DOcs-zen-text/edit/main/',
+				baseUrl: 'https://github.com/zen-browser/docs/edit/docs-astro/',
 			  },
 			customCss: [
 				// Relative path to your custom CSS file

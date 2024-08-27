@@ -8,13 +8,11 @@
 	--sl-color-gray-2: #bcc3cb;
 	--sl-color-gray-3: #7f8d9c;
 	--sl-color-gray-4: #4d5967;
-	--sl-color-gray-5: #0073ff;
+	--sl-color-gray-5: rgba(143, 159, 169, 0.15);
 	--sl-color-gray-6: #0000004d;
 	--sl-color-black: #131313;
-	--sl-color-bg:transparent;
-	opacity: 1;
-	background-image: radial-gradient(#000dff34 1px, #000000 2px);
-	background-size: 40px 40px;
+	--sl-color-bg:#161618;
+	
 
 	.sidebar-pane {
 		backdrop-filter: blur(10px); /* Apply blur effect */
@@ -40,15 +38,13 @@
 	--sl-color-gray-2: #2e3946;
 	--sl-color-gray-3: #4d5967;
 	--sl-color-gray-4: #7f8d9c;
-	--sl-color-gray-5: #bcc3cb;
+	--sl-color-gray-5: rgba(143, 159, 169, 0.15); /*hilights */
 	--sl-color-gray-6: #e8eef5;
 	--sl-color-gray-7: #f4f7fae7;
 	--sl-color-bg-sidebar: #f4f7fae7;
 	--sl-color-black: #ffffff;
-	--sl-color-bg:transparent;
+	--sl-color-bg:#faf8f8;
 	opacity: 1;
-	background-image: radial-gradient(#000dff20 1px, #ffffff 2px);
-	background-size: 40px 40px;
 
 	.sidebar-pane {
 		backdrop-filter: blur(10px); /* Apply blur effect */
@@ -64,3 +60,28 @@
 		box-shadow:  0px 0px 5rem 0px #0073ff;
 	}
 }
+
+/* colors: {
+        lightMode: {
+          light: "#faf8f8",
+          lightgray: "#e5e5e5",
+          gray: "#b8b8b8",
+          darkgray: "#4e4e4e",
+          dark: "#2b2b2b",
+          secondary: "#284b63",
+          tertiary: "#84a59d",
+          highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "#fff23688",
+        },
+        darkMode: {
+          light: "#161618",
+          lightgray: "#393639",
+          gray: "#646464",
+          darkgray: "#d4d4d4",
+          dark: "#ebebec",
+          secondary: "#7b97aa",
+          tertiary: "#84a59d",
+          highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "#b3aa0288",
+        },
+      }, */
