@@ -14,7 +14,7 @@ Zen Browser currently lacks DRM-support, because it does not have a Widevine lic
 
 Feel free to support the funding of a Widevine license for Zen on [Ko-Fi](https://ko-fi.com/zen_browser) or [Patreon](https://www.patreon.com/zen_browser)!
 
-:::note[Which Services Are Affected?]
+<!-- :::note[Which Services Are Affected?]
 Due to the lack of DRM support, you will not be able to stream content from the following services in Zen Browser:
 - **HBO Max**
 - **Netflix**
@@ -24,6 +24,22 @@ Due to the lack of DRM support, you will not be able to stream content from the 
 - **Apple Music**
 - **Google Play Movies & TV**
 - **And possible other services that use DRM not listed here**
+:::
+ -->
+:::note[Which Services Are Affected?]
+<details>
+Due to the lack of DRM support, you will not be able to stream content from the following services in Zen Browser:
+
+- **HBO Max**
+- **Netflix**
+- **Spotify**
+- **Disney+**
+- **Amazon Prime Video**
+- **Apple Music**
+- **Google Play Movies & TV**
+- **And possible other services that use DRM not listed here**
+
+</details>
 :::
 
 :::tip[Alternative solutions]
