@@ -3,14 +3,14 @@ title: Installing Zen Browser on MacOS
 ---
 This guide provides step-by-step instructions for installing Zen Browser on macOS, including how to bypass macOS Gatekeeper due to the lack of an official Developer License. It also explains how users can support the Zen Browser team by donating towards obtaining a Developer License.
 
-:::note[Question]
- Why Bypassing Gatekeeper is Necessary
-
-> Zen Browser currently requires users to bypass macOS Gatekeeper because the app does not have a Developer License from Apple. This license, which costs 100 euros annually, is necessary for official app signing and distribution. Unfortunately, due to limited resources, it is not within the Zen Browser team's ability to purchase this license at the moment.
-> If you'd like to help Zen Browser obtain a Developer License and improve the installation experience, you can make a donation. Contributions will directly support the team in reaching this goal.
+:::caution[Why Bypassing Gatekeeper is Necessary]
+<details>
+Zen Browser currently requires users to bypass macOS Gatekeeper because the app does not have a Developer License from Apple. This license, which costs 100 euros annually, is necessary for official app signing and distribution. Unfortunately, due to limited resources, it is not within the Zen Browser team's ability to purchase this license at the moment.
+If you'd like to help Zen Browser obtain a Developer License and improve the installation experience, you can make a donation. Contributions will directly support the team in reaching this goal.
 
 - **Patreon**: [https://www.patreon.com/zen_browser](https://www.patreon.com/zen_browser)
 - **Ko-fi**: [https://ko-fi.com/zen_browser](https://ko-fi.com/zen_browser)
+</details>
 :::
 ## Step 1: Download the Latest Version
 
@@ -28,7 +28,6 @@ This guide provides step-by-step instructions for installing Zen Browser on macO
 Upon trying to open Zen Browser, you may encounter a message indicating the file is damaged. This happens because the app does not have a valid developer signature and is using an Ad-hoc sign.
 
 ![gatekeeper](../../../assets/macos-inst-guide/gatekeeper.png)
-![[gatekeeper.png]]
 
 ### To bypass this warning:
 
