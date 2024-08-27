@@ -3,10 +3,11 @@ title:  Making Zen Browser Portable on Windows
 ---
 
 
-This [[guides/index|guide]] will hlep you creating a portable version of Zen Browser, it is straightforward. You just need to create a shortcut with the `-P` option for Zen Browser, and then you can open it normally, set it as the default browser, and pin it to the Taskbar.
+This guide will hlep you creating a portable version of Zen Browser, it is straightforward. You just need to create a shortcut with the `-P` option for Zen Browser, and then you can open it normally, set it as the default browser, and pin it to the Taskbar.
 
->[!tip]
-> By making Zen Browser portable, you can carry your personalized browser environment with you on a USB drive or between different Windows systems.
+:::tip
+By making Zen Browser portable, you can carry your personalized browser environment with you on a USB drive or between different Windows systems.
+:::
 
 ## Step 1: Download Zen Browser
 
@@ -41,10 +42,11 @@ title:  Making Zen Browser Portable on Windows
 ---
 
 
-This [[guides/index|guide]] will hlep you creating a portable version of Zen Browser, it is straightforward. You just need to create a shortcut with the `-P` option for Zen Browser, and then you can open it normally, set it as the default browser, and pin it to the Taskbar.
+This guide will hlep you creating a portable version of Zen Browser, it is straightforward. You just need to create a shortcut with the `-P` option for Zen Browser, and then you can open it normally, set it as the default browser, and pin it to the Taskbar.
 
->[!tip]
-> By making Zen Browser portable, you can carry your personalized browser environment with you on a USB drive or between different Windows systems.
+:::tip
+By making Zen Browser portable, you can carry your personalized browser environment with you on a USB drive or between different Windows systems.
+:::
 
 ## Step 1: Download Zen Browser
 

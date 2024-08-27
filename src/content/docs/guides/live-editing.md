@@ -2,7 +2,7 @@
 title: Live Editing Zen Theme
 ---
 
-This [[guides/index|guide]] will help you customize the appearance of Zen Browser by live editing the `userChrome.css` file. Follow the steps below to start customizing your browser's theme.
+This guide will help you customize the appearance of Zen Browser by live editing the `userChrome.css` file. Follow the steps below to start customizing your browser's theme.
 
 ## Step 1: Access the Profile Folder
 
@@ -26,17 +26,18 @@ This [[guides/index|guide]] will help you customize the appearance of Zen Browse
 
 1. The `userChrome.css` file should now be visible in the Style Editor.
 2. You can start editing the file directly within the Style Editor.
-	 - **Note:** You can use the **Inspect** button  ![[inspect.png]] to hover over and select elements on the page. This allows you to learn about the `id`, `class`, or other attributes of elements, which you can then target in your `userChrome.css` file.
+	 - **Note:** You can use the **Inspect** button  ![open-dmg](../../../assets/live-editing/inspect.png)
+	  to hover over and select elements on the page. This allows you to learn about the `id`, `class`, or other attributes of elements, which you can then target in your `userChrome.css` file.
 1. To apply your changes, save the file by clicking **Save** or by pressing `Ctrl + S`.
 
 :::tip
->  If a style does not apply as expected, try adding the `!important` keyword at the end of the CSS rule. This forces the browser to apply the style regardless of any other existing styles.
+If a style does not apply as expected, try adding the `!important` keyword at the end of the CSS rule. This forces the browser to apply the style regardless of any other existing styles.
 :::
 
 :::note
->Any changes you make to the `userChrome.css` file will be applied immediately to Zen Browser.
->Use this file to customize various UI elements, such as colors, fonts, and layout.
->You can use this guide to help you [[themes-marketplace| create your Zen theme and publish it.]]
+Any changes you make to the `userChrome.css` file will be applied immediately to Zen Browser.
+Use this file to customize various UI elements, such as colors, fonts, and layout.
+You can use this guide to help you [create your Zen theme and publish it.](/theme-store/themes-marketplace-submission-guidelines/)
 :::
 ---
 

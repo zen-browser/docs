@@ -2,16 +2,16 @@
 title: Choosing between the generic and optimized build
 ---
 
-This [[guides/index|guide]] provides an overview of the differences between the generic and optimized builds of Zen, so you can make an informed decision on which version to use.
+This guide provides an overview of the differences between the generic and optimized builds of Zen, so you can make an informed decision on which version to use.
 
-:::tip[info]
-> This guide only applies to the Linux and Windows versions of Zen.
+:::note[info]
+This guide only applies to the Linux and Windows versions of Zen.
 :::
 
 ## Supported CPUs for optimized builds
 
-:::tip[warning]
-> If your computer's processor doesn't belong to any of the following processor families, the optimized version won't work on your device. Please install the generic version instead.
+:::caution[warning]
+If your computer's processor doesn't belong to any of the following processor families, the optimized version won't work on your device. Please install the generic version instead.
 :::
 
 ### AMD
@@ -44,9 +44,9 @@ This [[guides/index|guide]] provides an overview of the differences between the 
 * Intel 5th Gen 10nm++ (Emerald Rapids)
 * Intel 11th Gen (Rocket Lake)
 
-:::tip[Hint] 
-Which family does my CPU belong to?
-> A useful website to learn more about your computer's processor is [WikiChip](https://en.wikichip.org/wiki/WikiChip)
+:::tip[Which family does my CPU belong to?] 
+
+A useful website to learn more about your computer's processor is [WikiChip](https://en.wikichip.org/wiki/WikiChip)
 :::
 
 ## Differences between the optimized and generic builds

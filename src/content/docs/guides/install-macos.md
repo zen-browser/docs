@@ -1,10 +1,11 @@
 ---
 title: Installing Zen Browser on MacOS
 ---
-This [[guides/index|guide]] provides step-by-step instructions for installing Zen Browser on macOS, including how to bypass macOS Gatekeeper due to the lack of an official Developer License. It also explains how users can support the Zen Browser team by donating towards obtaining a Developer License.
+This guide provides step-by-step instructions for installing Zen Browser on macOS, including how to bypass macOS Gatekeeper due to the lack of an official Developer License. It also explains how users can support the Zen Browser team by donating towards obtaining a Developer License.
 
 :::note[Question]
--  Why Bypassing Gatekeeper is Necessary
+ Why Bypassing Gatekeeper is Necessary
+
 > Zen Browser currently requires users to bypass macOS Gatekeeper because the app does not have a Developer License from Apple. This license, which costs 100 euros annually, is necessary for official app signing and distribution. Unfortunately, due to limited resources, it is not within the Zen Browser team's ability to purchase this license at the moment.
 > If you'd like to help Zen Browser obtain a Developer License and improve the installation experience, you can make a donation. Contributions will directly support the team in reaching this goal.
 
@@ -16,7 +17,7 @@ This [[guides/index|guide]] provides step-by-step instructions for installing Ze
 - Download the latest Zen Browser DMG.
 - Once downloaded, open the DMG file. You might need to zoom out a bit to see everything.
 
-![[open-dmg.png]]
+![open-dmg](../../../assets/macos-inst-guide/open-dmg.png)
 
 ## Step 2: Install Zen Browser
 
@@ -26,6 +27,7 @@ This [[guides/index|guide]] provides step-by-step instructions for installing Ze
 
 Upon trying to open Zen Browser, you may encounter a message indicating the file is damaged. This happens because the app does not have a valid developer signature and is using an Ad-hoc sign.
 
+![gatekeeper](../../../assets/macos-inst-guide/gatekeeper.png)
 ![[gatekeeper.png]]
 
 ### To bypass this warning:
@@ -43,7 +45,8 @@ Upon trying to open Zen Browser, you may encounter a message indicating the file
      ```
 
 3. After running the command, if successful, Terminal will return a blank line.
-  ![[blank space.png]]
+
+![blank-space](../../../assets/macos-inst-guide/blank%20space.png)
 
 ## Step 4: Open Zen Browser
 
@@ -55,16 +58,18 @@ Upon trying to open Zen Browser, you may encounter a message indicating the file
 
 At the time of writing, there seems to be a bug with Zen Browser where the menu might not display correctly on the initial start. To fix this, quit Zen Browser (`⌘Q`) and reopen it.
 
-![[broken-menu.png]]
-![[fixed menu.png]]
+![broken-menu](../../../assets/macos-inst-guide/broken-menu.png)
+
+![fixed menu](../../../assets/macos-inst-guide/fixed%20menu.png)
 
 You should now have a fully functional Zen Browser on your macOS. If you need to uninstall Zen, you can use Pearcleaner.
 
 :::tip[Good news! 🎊] 
->We've reached two goals for app-signing in the past days! That means that macOS & Windows builds no longer will be rejected by the systems! 🥳
->
->![[kofi-goal.jpg]]
+We've reached two goals for app-signing in the past days! That means that macOS & Windows builds no longer will be rejected by the systems! 🥳
+
+![kofi-goal](../../../assets/macos-inst-guide/kofi-goal.jpg)
 :::
+
 ---
 Thanks to [SenpaiHunters](https://github.com/SenpaiHunters) for creating this guide
 

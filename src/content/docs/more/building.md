@@ -4,8 +4,8 @@ title: Building Zen Browser 📦
 
 We've took the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge. 
 
-> [!failure]
-> We cannot provide support if a build fails. Please understand this before proceeding with the following steps.
+:::danger[We cannot provide support if a build fails. Please understand this before proceeding with the following steps.]
+:::
 
 ## Step 1: Clone the Project
 

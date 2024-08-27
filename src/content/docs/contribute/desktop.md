@@ -12,7 +12,7 @@ Before you begin, ensure you have the following tools installed:
 - [**Node.js**](https://nodejs.org/): Required for building the browser.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
 
-![[building]]
+![discusion](../../../assets/contibute/discuss.png)
 
 ## Step 6: Making a Contribution
 
@@ -30,7 +30,7 @@ You can contribute to Zen Browser in various ways, including:
 
 Before contributing, please keep the following guidelines in mind:
 
-- **Follow the [[CODE_OF_CONDUCT | Code of Conduct]]**: Be respectful and constructive in your interactions.
+- **Follow the [Code of Conduct](/contribute/code_of_conduct/)**: Be respectful and constructive in your interactions.
 - **Stick to the Coding Standards**: Ensure your code adheres to the project's coding conventions. This includes proper indentation, comments, and naming conventions.
 - **Write Clear Commit Messages**: Your commit messages should be descriptive and concise.
 - **Test Your Changes**: Ensure that your code changes do not break existing functionality. Write tests if applicable.
@@ -67,8 +67,8 @@ Before contributing, please keep the following guidelines in mind:
 ## Additional Resources
 
 - [Zen Browser GitHub Repository](https://github.com/zen-browser/desktop): The main repository where you can find the source code and submit pull requests.
-- [[CONTRIBUTING|  Contribution Guidelines]]
-- [[CODE_OF_CONDUCT | Code of Conduct]] 
+- [Contribution Guidelines](/contribute/contributing/)
+- [Code of Conduct](/contribute/code_of_conduct/)
   
 ---
 

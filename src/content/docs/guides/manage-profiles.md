@@ -2,7 +2,7 @@
 title: Managing Firefox Profiles
 ---
 
-This [[guides/index|guide]]  will give you a comprehensive understanding of Firefox profiles, helping you manage them effectively even in the most challenging situations. By following this guide, you'll learn how to preserve key elements of your browsing experience, including bookmarks, history, passwords, and more.
+This guide  will give you a comprehensive understanding of Firefox profiles, helping you manage them effectively even in the most challenging situations. By following this guide, you'll learn how to preserve key elements of your browsing experience, including bookmarks, history, passwords, and more.
 
 ## Goal
 
@@ -24,8 +24,9 @@ This guide will help you:
 1. Go to `about:support` in Firefox.
 2. Under the "Application Basics" section, click on "Open Folder" next to "Profile Folder."
 
-> [!IMPORTANT] **Turn Off Firefox**
-> This step is crucial to avoid corruption, as Firefox continuously reads and writes data while running.
+:::danger[**Turn Off Firefox**]
+This step is crucial to avoid corruption, as Firefox continuously reads and writes data while running.
+:::
 
 ### 2. Copy Essential Files
 
@@ -39,10 +40,10 @@ After turning off Firefox, copy the following files from your profile folder:
 - **sessionCheckpoints.json + sessionstore.jsonlz4**: Saves your currently open tabs.
 - **prefs.js**: Contains your `about:config` settings.
 
-> [!NOTE] **Optional Files**
-> 
-> - **storage folder**: If you want to keep add-on customizations (this may not work 100% of the time).
-> - **chrome folder**: If you want to retain your interface customizations.
+:::note[Optional Files]
+- **storage folder**: If you want to keep add-on customizations (this may not work 100% of the time).
+- **chrome folder**: If you want to retain your interface customizations.
+:::
 
 ### 3. Create and Set Up a New Profile
 
@@ -54,9 +55,9 @@ After turning off Firefox, copy the following files from your profile folder:
 6. **Turn off Firefox**.
 7. Paste the files you copied earlier into the new profile folder.
 
-> [!WARNING] **Incompatibility Error**
-> 
-> If Firefox opens with an incompatibility error after pasting the files, go to the new profile folder and move the `compatibility.ini` file somewhere else.
+:::danger[**Incompatibility Error**]
+If Firefox opens with an incompatibility error after pasting the files, go to the new profile folder and move the `compatibility.ini` file somewhere else.
+:::
 
 ### 4. Final Step: Set as Default Profile
 

@@ -3,10 +3,11 @@ title: Handling Zen Browser Crashes on Linux with Wayland
 ---
 
 
-This [[guides/index|guide]]  addresses a known issue where Zen Browser may crash randomly or repeatedly on Linux systems using Wayland. While this issue primarily affects Linux users, particularly on Wayland, it's important to note that the problem is upstream and is expected to be fixed in Firefox 130. This guide also provides steps to work around the issue for users who installed Zen via different package managers or Flatpak.
+This guide  addresses a known issue where Zen Browser may crash randomly or repeatedly on Linux systems using Wayland. While this issue primarily affects Linux users, particularly on Wayland, it's important to note that the problem is upstream and is expected to be fixed in Firefox 130. This guide also provides steps to work around the issue for users who installed Zen via different package managers or Flatpak.
 
-> [!note]  
-> This issue is expected to be resolved in Firefox 130. Once Zen Browser updates to this version, the problem should be fixed, and the workaround described below will no longer be necessary.
+:::note 
+This issue is expected to be resolved in Firefox 130. Once Zen Browser updates to this version, the problem should be fixed, and the workaround described below will no longer be necessary.
+:::
 
 ## Steps to Mitigate Crashes
 

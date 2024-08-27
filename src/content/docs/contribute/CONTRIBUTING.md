@@ -18,10 +18,10 @@ We welcome a wide range of contributions, including but not limited to:
 
 To help you get started with contributing, we have created separate guides for each repository:
 
-- [[desktop | Getting Started with Desktop Browser Development]]
-- [[www | Getting Started with Zen's Homepage Development]]
-- [[docs | Getting Started with Documentation Contributions]]
-- [[translation | Getting Started with Translations]]
+- [desktop](/contribute/desktop/)
+- [www](/contribute/www/)
+- [docs](#)
+- [translation](/contribute/translation/)
   
 Please follow the appropriate guide based on the repository you want to contribute to.
 
@@ -29,16 +29,16 @@ Please follow the appropriate guide based on the repository you want to contribu
 
 If you find a bug, please open an issue and describe the problem in detail. Include steps to reproduce the bug, the expected behavior, and any relevant information about your environment. Please verify that the bug has not been reported already.
 
->[!important]
->Open the issue in it's corresponding GitHub repository:
->- [Desktop Browser App](https://github.com/zen-browser/desktop/issues)
->- [Zen's Custom Themes](https://github.com/zen-browser/theme-store)
->- [Zen's Homepage Website](https://github.com/zen-browser/www)
->- [This documentation Website](https://github.com/zen-browser/docs)
+:::caution[Open the issue in it's corresponding GitHub repository:]
 
+- [Desktop Browser App](https://github.com/zen-browser/desktop/issues)
+- [Zen's Custom Themes](https://github.com/zen-browser/theme-store)
+- [Zen's Homepage Website](https://github.com/zen-browser/www)
+- [This documentation Website](https://github.com/zen-browser/docs)
+:::
 ### Suggesting Features
 
-![[discuss.png]]
+![discusion](../../../assets/contibute/discuss.png)
 
 We welcome suggestions for new features or improvements to existing ones. To suggest a feature, please start a new Github discussion in the Ideas category. 
 *Use the correct Github Repository based on the list above*
