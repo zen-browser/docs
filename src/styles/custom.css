@@ -7,10 +7,10 @@
 	--sl-color-gray-1: #e8eef5;
 	--sl-color-gray-2: #bcc3cb;
 	--sl-color-gray-3: #7f8d9c;
-	--sl-color-gray-4: #4d5967;
+	--sl-color-gray-4: #1c86ff;
 	--sl-color-gray-5: rgba(143, 159, 169, 0.15);
-	--sl-color-gray-6: #0000004d;
-	--sl-color-black: #131313;
+	--sl-color-gray-6: #16161800;
+	--sl-color-black: #161618;
 	--sl-color-bg:#161618;
 	
 
@@ -19,7 +19,6 @@
   -webkit-backdrop-filter: blur(10px); /* For Safari */
 	}
 	header {
-		box-shadow: 0 0 1rem 0 #0073ff;
 		backdrop-filter: blur(10px); /* Apply blur effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
 	}
