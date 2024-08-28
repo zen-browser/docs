@@ -23,7 +23,7 @@ This [[guides/index|guide]] will help you customize the appearance of Zen Browse
 3. In the filter/search bar, type `userChrome` to locate the `userChrome.css` file you created earlier.
 
 >[!info] Enable Browser Developer Tools 
->Afer Firefox version `131` the Browser Developer Tools is **disabled** by default for security.
+>After Zen Browser version `1.0.0-a.31` the Browser Developer Tools is **disabled** by default for security.
 >1. Open the `about:config` page. This page contains advanced settings for the browser.
 >2. Search for `devtools.debugger.remote-enabled`
 >3. Toggle the setting to `true` by double-clicking on it
