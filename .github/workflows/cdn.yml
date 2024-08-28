@@ -1,6 +1,8 @@
 name: DDeploy to BunnyCDN?
 
-on: workflow_dispatch
+on:
+  - push
+  - workflow_dispatch
 
 jobs:
   cd:
