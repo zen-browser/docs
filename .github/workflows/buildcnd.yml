@@ -48,7 +48,7 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
 
   cd:
-   needs: [build]
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
