@@ -44,7 +44,7 @@ jobs:
       - name: Deploy to BunnyCDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.3
         with:
-          source: "home/runner/work/docs/docs/dist"
+          source: "../../../dist"
           destination: "www/aaa"
           storageEndpoint: "storage.bunnycdn.com"
           storageZoneName: "${{ secrets.STORAGE_NAME }}"
