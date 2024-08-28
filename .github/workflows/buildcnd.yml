@@ -46,12 +46,9 @@ jobs:
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
         working-directory: ${{ env.BUILD_PATH }}
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ${{ env.BUILD_PATH }}/dist
 
   cd:
+   needs: [build]
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -60,6 +57,7 @@ jobs:
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.3
         with:
           source: "${{ env.BUILD_PATH }}/dist"
+          destination: "www"
           storageEndpoint: "storage.bunnycdn.com"
           storageZoneName: "${{ secrets.STORAGE_NAME }}"
           storagePassword: "${{ secrets.STORAGE_PASSWORD }}"
