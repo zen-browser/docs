@@ -77,7 +77,7 @@ If you encounter this error please follow our [Installing Zen Browser on MacOS](
 3. Change the view mode by pressing the 🔗 button in the top address bar
 
 <video controls>
-  <source src="/public/split-tabs.mp4" type="video/mp4">
+  <source src="/split-tabs.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video> 
 
