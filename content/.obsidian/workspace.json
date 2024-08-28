@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guides/live-editing.md",
+                "file": "faq.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guides/live-editing.md",
+                "file": "faq.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "guides/live-editing.md",
+                "file": "faq.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guides/live-editing.md"
+                "file": "faq.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "5cbcc37181f7dca9",
   "lastOpenFiles": [
-    "faq.md",
     "guides/live-editing.md",
+    "assets/split-tabs.mp4",
+    "faq.md",
     "contribute/docs.md",
     "contribute/desktop.md",
     "contribute/CODE_OF_CONDUCT.md",

@@ -2,3 +2,4 @@
 .idea
 public/
 quartz/.quartz-cache
+.DS_Store
