@@ -50,5 +50,5 @@ jobs:
           storageZoneName: "${{ secrets.STORAGE_NAME }}"
           storagePassword: "${{ secrets.STORAGE_PASSWORD }}"
           upload: "true"
-          remove: "true"
+          remove: "false"
           purgePullZone: "false"
