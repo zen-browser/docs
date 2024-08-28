@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightViewModes from 'starlight-view-modes'
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
 				src: './src/assets/my-logo.svg',
 				replacesTitle: true,
 			  },
+			  plugins: [starlightViewModes()],
 			social: {
 				github: 'https://github.com/zen-browser',
 				discord: 'https://discord.com/invite/nnShMQzR4b',
