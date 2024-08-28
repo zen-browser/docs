@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "contribute/docs.md",
+                "file": "guides/live-editing.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "contribute/docs.md",
+                "file": "guides/live-editing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "contribute/docs.md",
+                "file": "guides/live-editing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "contribute/docs.md"
+                "file": "guides/live-editing.md"
               }
             }
           }
@@ -146,12 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe7bf5045f52d84c",
+  "active": "5cbcc37181f7dca9",
   "lastOpenFiles": [
+    "faq.md",
+    "guides/live-editing.md",
+    "contribute/docs.md",
     "contribute/desktop.md",
     "contribute/CODE_OF_CONDUCT.md",
     "contribute/CONTRIBUTING.md",
-    "contribute/docs.md",
     "contribute/index.md",
     "contribute/translation.md",
     "contribute/www.md",
@@ -161,11 +163,9 @@
     "guides/install-macos.md",
     "building.md",
     "index.md",
-    "faq.md",
     "guides/index.md",
     "themes-store/index.md",
     "assets/macos-installation-guide/kofi-goal.jpg",
-    "guides/live-editing.md",
     "themes-store/themes-marketplace.md",
     "themes-store/themes-marketplace-preferences.md",
     "themes-store/themes-marketplace-submission-guidelines.md",
