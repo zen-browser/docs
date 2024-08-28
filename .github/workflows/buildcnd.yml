@@ -42,7 +42,6 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Deploy to BunnyCDN
-        uses: actions/checkout@v4
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.3
         with:
           source: "${{ env.BUILD_PATH }}/dist"
