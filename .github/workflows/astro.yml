@@ -6,7 +6,7 @@ name: Deploy Astro site to Pages
 
 on:
   # Runs on pushes targeting the default branch
-  # push:
+  push:
     branches: ["none"]
 
   # Allows you to run this workflow manually from the Actions tab
