@@ -1,5 +1,8 @@
 ---
 title: Frequently Asked Questions ❓
+sidebar:
+  order: 1
+lastUpdated: 2024-08-28
 ---
 Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
 
@@ -72,6 +75,11 @@ If you encounter this error please follow our [Installing Zen Browser on MacOS](
 1. Select multiple tabs by left-clicking them while holding the `Ctrl` key
 2. Right click a tab, and select `Split x Tabs`
 3. Change the view mode by pressing the 🔗 button in the top address bar
+
+<video controls>
+  <source src="/public/split-tabs.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
 
 ## How to switch tabs by scrolling?
 You can to enable this feature by changing a setting in the browser's configuration. Here's how:

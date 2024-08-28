@@ -19,17 +19,30 @@ hero:
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import AboutAstro from '../../components/about-astro.astro';
 
-# What is in the docs
-##### Welcome to **Zen Browser's Documentation!** Here, you'll find everything you need to get the most out of your browsing experience.  Dive in to explore how Zen can make your browsing more secure, private, and efficient.
+#### Welcome to Zen Browser's Documentation! Here, you'll find everything you need to get the most out of your browsing experience.  Dive in to explore how Zen can make your browsing more secure, private, and efficient.
 
 ---
-more blabla here
+
+---
+<CardGrid stagger>
+	<Card title="Guides" icon="pencil">
+		<h4>All the guides to make Zen an amazing experience!</h4>
+	</Card>
+	<Card title="Theme Store" icon="sun">
+		<h4>Customize your browser whit a theme?<br></br>Lets go!</h4>
+	</Card>
+	<Card title="Contributions" icon="rocket">
+		<h4>U know a bit of programin and have free time, come and join<br></br><text style="color:yellow">Lets make it amazing</text></h4>
+	</Card>
+	<Card title="FAQ" icon="open-book" style="height:fit-content;">
+		<h3>Stuck on something check the [FAQs](/more/faq/).</h3>
+	</Card>
+</CardGrid>
 
 <AboutAstro title="Brought to you by">
-Zen is the best way to browse the web.
+Zen team. ❤️
 
-Beautifully designed, privacy-focused, and packed with features.
-We care about your experience, not your data.
+Zen is the best way to browse the web.
 
 [Learn about Zen](https://www.zen-browser.app/)
 

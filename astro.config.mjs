@@ -15,6 +15,7 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/zen-browser',
 				discord: 'https://discord.com/invite/nnShMQzR4b',
+				mastodon: 'https://fosstodon.org/@zenbrowser',
 			},
 			editLink: {
 				baseUrl: 'https://github.com/zen-browser/docs/edit/docs-astro/',
