@@ -45,7 +45,7 @@ jobs:
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.3
         with:
           source: "${{ env.BUILD_PATH }}/dist"
-          destination: "www"
+          destination: "www/aaa"
           storageEndpoint: "storage.bunnycdn.com"
           storageZoneName: "${{ secrets.STORAGE_NAME }}"
           storagePassword: "${{ secrets.STORAGE_PASSWORD }}"
