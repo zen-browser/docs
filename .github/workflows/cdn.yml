@@ -1,0 +1,20 @@
+name: DDeploy to BunnyCDN?
+
+on: [push, workflow_dispatch]
+
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+      - name: Deploy to BunnyCDN
+        uses: ayeressian/bunnycdn-storage-deploy@v2.2.3
+        with:
+          source: "1pub"
+          storageEndpoint: "storage.bunnycdn.com"
+          storageZoneName: "${{ secrets.STORAGE_NAME }}"
+          storagePassword: "${{ secrets.STORAGE_PASSWORD }}"
+          upload: "true"
+          remove: "true"
+          purgePullZone: "false"
