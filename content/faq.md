@@ -53,8 +53,6 @@ If you encounter this error please follow our [[install-macos | Installing Zen B
 1. Select multiple tabs by left-clicking them while holding the `Ctrl` key
 2. Right click a tab, and select `Split x Tabs`
 3. Change the view mode by pressing the 🔗 button in the top address bar
-   
-   ![[split-tabs.mp4]]
 
 ## How to switch tabs by scrolling?
 You can to enable this feature by changing a setting in the browser's configuration. Here's how:
