@@ -1,6 +1,6 @@
 name: DDeploy to BunnyCDN?
 
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   cd:
@@ -12,7 +12,6 @@ jobs:
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.3
         with:
           source: "dist"
-          destination: "www/aaa"
           storageEndpoint: "storage.bunnycdn.com"
           storageZoneName: "${{ secrets.STORAGE_NAME }}"
           storagePassword: "${{ secrets.STORAGE_PASSWORD }}"
