@@ -29,5 +29,4 @@ jobs:
         username: ${{ secrets.STORAGE_NAME }}
         password: ${{ secrets.STORAGE_PASSWORD }}
         local-dir: ./dist/
-        server-dir: ./
-        
+        server-dir: ../
