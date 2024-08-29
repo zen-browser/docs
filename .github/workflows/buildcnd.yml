@@ -73,9 +73,9 @@ jobs:
       run: npm run build
 
     - name: Deploy to FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp://storage.bunnycdn.com
+        server: storage.bunnycdn.com
         username: ${{ secrets.STORAGE_NAME }}
         password: ${{ secrets.STORAGE_PASSWORD }}
         local-dir: ./dist/
