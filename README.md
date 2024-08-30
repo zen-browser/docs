@@ -1,6 +1,13 @@
-# [Docs Site](https://docs.zen-browser.app)
+<p align="center">
+<picture>
+    <img src="https://cdn.jsdelivr.net/gh/zen-browser/www@master/public/logos/zen-alpha-blue.svg" width="128px">
+</picture>
+</p>
+<h1 align="center">
+Zen Browser Docs website
+</h1>
 
-Welcome to **Zen Browser’s Documentation!** 
+Welcome to **Zen Browser’s Documentation Repo!** 
 
 ## Contributing
 
