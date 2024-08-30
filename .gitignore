@@ -3,3 +3,5 @@
 public/
 quartz/.quartz-cache
 .DS_Store
+workspace.json
+.idea/discord.xml

@@ -1,0 +1,11 @@
+{
+  "callout-manager:manage-callouts": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ]
+}

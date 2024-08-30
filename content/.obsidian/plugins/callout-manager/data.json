@@ -1,0 +1,11 @@
+{
+  "callouts": {
+    "custom": [],
+    "settings": {}
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}
