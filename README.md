@@ -9,6 +9,8 @@ Zen Browser Docs website
 
 Welcome to **Zen Browser’s Documentation Repo!** 
 
+[Analytics](https://plausible.io/docs.zen-browser.app)
+
 ## Contributing
 
 This site is built with [Quartz 4.0](https://quartz.jzhao.xyz/). Site content is written in Markdown format located in `content`. 
