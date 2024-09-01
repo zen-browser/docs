@@ -21,5 +21,5 @@ For local preivew:
 ```bash
 npm i
 # for preview
-npm run docs
+npx quartz build --serve
 ```
