@@ -46,6 +46,14 @@ If you encounter the message "Zen Browser is damaged and can't be opened" on mac
 
 If you encounter this error please follow our [[install-macos | Installing Zen Browser on MacOS]] guide
 
+## How do I use the Split View feature?
+
+> [!hint] Use shortcuts to perform Split View actions faster!
+
+1. Select multiple tabs by left-clicking them while holding the `Ctrl` key
+2. Right click a tab, and select `Split x Tabs`
+3. Change the view mode by pressing the 🔗 button in the top address bar
+
 ## How to switch tabs by scrolling?
 You can to enable this feature by changing a setting in the browser's configuration. Here's how:
 
