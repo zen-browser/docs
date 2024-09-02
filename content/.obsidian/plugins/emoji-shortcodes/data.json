@@ -4,6 +4,12 @@
   "historyPriority": true,
   "historyLimit": 100,
   "history": [
+    ":package:",
+    ":apple:",
+    ":penguin:",
+    ":window:",
+    ":older_man:",
+    ":rocket:",
     ":closed_lock_with_key:"
   ]
 }
