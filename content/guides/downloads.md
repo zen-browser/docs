@@ -5,6 +5,9 @@ draft: false
 
 This [[guides/index|guide]] is designed to help you easily find and download the version of Zen Browser that best fits your operating system and hardware. Whether you're using Windows, Linux, or macOS, you'll find both optimized and generic builds, along with portable and installer options to suit your needs. If you're unsure which version is right for you, be sure to check out our guide on [[generic-optimized | choosing between the generic and optimized builds]]
 
+> [!faq]- Want to know the difference between Generic and Optimized?
+> ![[generic-optimized#Differences between the optimized and generic builds]]
+
 ## Windows 🪟
 
 - ### Optimized 🚀
@@ -16,9 +19,6 @@ This [[guides/index|guide]] is designed to help you easily find and download the
     
 	- [Installer 🚀](https://github.com/zen-browser/desktop/releases/latest/download/zen.installer-generic.exe)
 	- [Portable 📦](https://github.com/zen-browser/desktop/releases/latest/download/zen.win-generic.zip)
-
-> [!faq]- Want to know the difference between Generic and Optimized?
-> ![[generic-optimized#Differences between the optimized and generic builds]]
 
 ## Linux 🐧
 
