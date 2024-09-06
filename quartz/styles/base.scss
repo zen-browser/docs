@@ -225,6 +225,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: $pageWidth;
+    background-color: var(--light);
     @media all and (max-width: $fullPageWidth) {
       width: initial;
       margin-left: 0;
