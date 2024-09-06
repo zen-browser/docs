@@ -19,10 +19,8 @@ section {
   background-color: var(--light);
   font-family: var(--bodyFont);
   color: var(--darkgray);
-}
 
-@media (max-width: 1000px) {
-  body {
+  @media all and (max-width: $fullPageWidth) {
     background-image: none;
   }
 }
@@ -241,6 +239,7 @@ a {
 }
 
 .footnotes {
+  background-color: var(--light);
   margin-top: 2rem;
   border-top: 1px solid var(--lightgray);
 }
