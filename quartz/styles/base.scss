@@ -21,6 +21,12 @@ section {
   color: var(--darkgray);
 }
 
+@media (max-width: 1000px) {
+  body {
+    background-image: none;
+  }
+}
+
 .text-highlight {
   background-color: var(--textHighlight);
   padding: 0 0.1rem;
