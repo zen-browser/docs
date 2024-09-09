@@ -41,11 +41,6 @@ If you'd like to support the development of Zen Browser, you can do so through t
 
 Your support helps the team maintain and enhance Zen Browser for everyone!
 
-## "Zen Browser is damaged and can't be opened" on macOS
-If you encounter the message "Zen Browser is damaged and can't be opened" on macOS, it is because Zen Browser is not signed with an official Apple Developer License. This triggers the Gatekeeper security feature, which prevents unsigned or unverified apps from running.
-
-If you encounter this error please follow our [[install-macos | Installing Zen Browser on MacOS]] guide
-
 ## How do I use the Split View feature?
 
 > [!hint] Use shortcuts to perform Split View actions faster!
