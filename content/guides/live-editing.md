@@ -22,7 +22,7 @@ This [[guides/index|guide]] will help you customize the appearance of Zen Browse
 2. Navigate to the **Style Editor** tab.
 3. In the filter/search bar, type `userChrome` to locate the `userChrome.css` file you created earlier.
 
->[!info] Enable Browser Developer Tools 
+>[!info]- How do I enable the Browser Developer Tools?
 >After Zen Browser version `1.0.0-a.31` the Browser Developer Tools is **disabled** by default for security.
 >1. Open the `about:config` page. This page contains advanced settings for the browser.
 >2. Search for `devtools.debugger.remote-enabled`
@@ -36,13 +36,16 @@ This [[guides/index|guide]] will help you customize the appearance of Zen Browse
 	 - **Note:** You can use the **Inspect** button  ![[inspect.png]] to hover over and select elements on the page. This allows you to learn about the `id`, `class`, or other attributes of elements, which you can then target in your `userChrome.css` file.
 1. To apply your changes, save the file by clicking **Save** or by pressing `Ctrl + S`.
 
-> [!tip]
+> [!warning]
 >  If a style does not apply as expected, try adding the `!important` keyword at the end of the CSS rule. This forces the browser to apply the style regardless of any other existing styles.
 
-> [!Notes] 
->Any changes you make to the `userChrome.css` file will be applied immediately to Zen Browser.
->Use this file to customize various UI elements, such as colors, fonts, and layout.
->You can use this guide to help you [[themes-marketplace| create your Zen theme and publish it.]]
+> [!tip] 
+> If you wish to edit pop-ups or menus that automatically hide, be sure to enable the `Disable Popup Auto-Hide` option from the Browser Toolbox settings menu ( ⋯ button )
+
+Any changes you make to the `userChrome.css` file will be applied immediately to Zen Browser.
+Use this file to customize various UI elements, such as colors, fonts, and the layout.
+
+You can use this guide to help you [[themes-marketplace| create your Zen theme and publish it.]]
 
 ---
 
