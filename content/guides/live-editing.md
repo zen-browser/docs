@@ -42,8 +42,6 @@ This [[guides/index|guide]] will help you customize the appearance of Zen Browse
 > [!tip] 
 > If you wish to edit pop-ups or menus that automatically hide, be sure to enable the `Disable Popup Auto-Hide` option from the *Browser Toolbox* settings menu ( ⋯ button )
 >  ![[diable-popup-auto-hide.png]]
-> >[!warning]- Make sure to  DISABLE this option once finished!
-> >  Otherwise all popups will not hide on your Zen Browser even though you close the Browser Toolbox
 
 Any changes you make to the `userChrome.css` file will be applied immediately to Zen Browser.
 Use this file to customize various UI elements, such as colors, fonts, and the layout.
