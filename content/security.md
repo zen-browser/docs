@@ -2,6 +2,7 @@
 title: Security 🔐
 aliases:
   - Security 🔐
+description: At Zen Browser, your online safety and privacy are our top priorities. We've implemented a range of security features to ensure you're protected while browsing.
 ---
 > [!important] Password, Cookies, and Cache Management 
 > All passwords, cookies, and cache in Zen Browser are managed by Firefox. This means your saved passwords are automatically encrypted, providing an extra layer of security to keep your login credentials safe. Cookies and cache are also handled according to Firefox's strict privacy policies, ensuring your data is stored securely and only accessible to you.
