@@ -11,3 +11,4 @@ Welcome to **Zen Browser's Documentation!** Here, you'll find everything you nee
 * #### [[faq | Frequently Asked Questions ❓]]
 * #### [[benchmarks | Performance Benchmarks 📊]]
 * #### [[contribute/index | Contribution Guides 🌟]]
+* #### [[security|Security 🔐]]
