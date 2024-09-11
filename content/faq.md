@@ -3,6 +3,12 @@ title: Frequently Asked Questions ❓
 ---
 Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
 
+## How can I use horizontal tabs?
+Zen Browser will not support horizontal tabs in the near future. The decision to focus on **Vertical Tabs** is a core design choice, with the entire Zen Browser experience built around this concept. This approach is intended to maximize screen space and improve navigation, making vertical tabs an essential part of Zen's philosophy.
+
+## Will there be mobile version for Zen Browser?
+At the moment, our team does not have the time or resources to develop Android or iOS versions of Zen Browser. Additionally, we believe that Zen’s unique features, particularly its design around vertical tabs, do not translate well to the mobile form factor. As such, we do not currently have plans to develop a mobile version of Zen Browser.
+
 ## Why can't Zen Browser play DRM-protected content?
 > [!important] This only affects Microsoft Windows and MacOS
 
