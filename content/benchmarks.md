@@ -62,16 +62,17 @@ xychart-beta
 
 | Version | Score |
 |-----------|-----|
+| 1.0.0-a39-opt | 1538 |
 | 1.0.0-a37-opt | 1562 |
 | 1.0.0-a34-opt | 1464 |
 
 ```mermaid
 xychart-beta
     title "Performance over time (Higher is better)"
-    x-axis [.34,.37]
+    x-axis [.34,.37,.39]
     y-axis "Benchmark Points"
-    bar [1464,1562]
-    line [1464,1562]
+    bar [1464,1562,1538]
+    line [1464,1562,1538]
 ```
 
 ## [Basemark Web 3.0](https://web.basemark.com/)
