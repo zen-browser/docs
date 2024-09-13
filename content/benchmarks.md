@@ -19,6 +19,7 @@ These benchmarks were performed on a device with the following specifications:
 
 | Version | Score |
 |-----------|-----|
+| 1.0.0-a39-opt | 25.6 |
 | 1.0.0-a37-opt | 25.5 |
 | 1.0.0-a34-opt | 21.6 |
 | 1.0.0-a33-opt | 21.7 |
@@ -34,26 +35,27 @@ These benchmarks were performed on a device with the following specifications:
 ```mermaid
 xychart-beta
     title "Performance over time (Higher is better)"
-    x-axis [.10, .11, .12, .13, .32, .33, .34, .37]
+    x-axis [.10, .11, .12, .13, .32, .33, .34, .37, .39]
     y-axis "Benchmark Points"
-    bar [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5]
-    line [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5]
+    bar [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6]
+    line [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6]
 ```
 
 ### [JetStream 2.2](https://browserbench.org/JetStream/)
 
 | Version | Score |
 |-----------|-----|
+| 1.0.0-a39-opt | 238 |
 | 1.0.0-a37-opt | 239 |
 | 1.0.0-a34-opt | 228 |
 
 ```mermaid
 xychart-beta
     title "Performance over time (Higher is better)"
-    x-axis [.34,.37]
+    x-axis [.34,.37,.39]
     y-axis "Benchmark Points"
-    bar [228,239]
-    line [228,239]
+    bar [228,239,238]
+    line [228,239,238]
 ```
 
 ### [MotionMark](https://browserbench.org/MotionMark1.3.1/)
