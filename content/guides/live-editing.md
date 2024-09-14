@@ -11,6 +11,9 @@ This [[guides/index|guide]] will help you customize the appearance of Zen Browse
 3. Look for the **Application Basics** section.
 4. Click on **Open Profile Folder**. This will open the folder where Zen Browser stores your user data.
 
+> ![warning]
+> On the flatpak version of Zen, the profile folder will be located at `~/.var/app/io.github.zen_browser.zen/.zen`.
+
 ## Step 2: Create the `chrome` Folder
 
 1. In the Profile Folder, create a new folder and name it `chrome`.
@@ -41,7 +44,6 @@ This [[guides/index|guide]] will help you customize the appearance of Zen Browse
 
 > [!tip] 
 > If you wish to edit pop-ups or menus that automatically hide, be sure to enable the `Disable Popup Auto-Hide` option from the *Browser Toolbox* settings menu ( ⋯ button )
->  ![[diable-popup-auto-hide.png]]
 
 Any changes you make to the `userChrome.css` file will be applied immediately to Zen Browser.
 Use this file to customize various UI elements, such as colors, fonts, and the layout.
