@@ -6,22 +6,20 @@ title: Themes Store Preferences ⚙️
 
 The `preferences.json` file allows theme developers to define custom preferences that control the behavior and appearance of themes in the Zen Browser. Each preference is defined with a `property`, a `label`, a `type`, and optionally `options` (for dropdown preferences). The `preferences.json` file contains a list of these preference objects at its root.
 
-## Preferences.json structure
-
-### 1. **Property** Format
-
-The `property` field is a string that should follow Firefox's preference naming schema, similar to `about:config` entries. The  `property` value can be any valid string that aligns with this schema.
-
-For example:
-- `theme.mytheme.background_color`
-- `theme.mytheme.enable_dark_mode`
 
 
-### Example Preferences
+## Theme Preferences
 
-#### **1. Checkbox Preference**
+### Preference Types
 
-```json
+| **Property**                              | **Type**   | **Accepted Values**                  |
+|-------------------------------------------|------------|--------------------------------------|
+| `checkbox`                      | Boolean    | `true`, `false`                      |
+| `dropdown`                      | Array[Options]     | The `value` of an option must be a string (`"blue"`) or an integer (`1`)|
+
+
+### Checkbox preferences
+```json title="Checkbox Example"
 {
   "property": "theme.mytheme.enable_dark_mode",
   "label": "Enable dark mode",
@@ -29,21 +27,27 @@ For example:
 }
 ```
 
-#### **2. Dropdown Preference**
+#### Properties
 
-```json
+The `property` field is a string that should follow Firefox's preference naming schema, similar to `about:config` entries. The  `property` name can be any valid string that aligns with this schema.
+
+For example: `theme.mytheme.background_color`
+#### Labels
+The `label` field is the description that will be visible to users in the Zen Mods settings page. 
+This field accepts a string and allows white space.
+
+---
+
+### Dropdown preferences
+```json title="Dropdown Example"
 {
   "property": "theme.mytheme.background_color",
   "label": "Background color",
   "type": "dropdown",
   "options": [
     {
-      "label": "Light",
-      "value": "light"
-    },
-    {
-      "label": "Dark",
-      "value": "dark"
+      "label": "Green",
+      "value": "green"
     },
     {
       "label": "Blue",
@@ -53,41 +57,11 @@ For example:
 }
 ```
 
----
+Dropdown preferences also contain property and label fields. What separates dropdown menus from checkboxes is that they allow multiple options. 
 
-### Property Types and Accepted Values
+The `options` field is an array of option objects, only available for the `dropdown` type. This field must be an array containing one or more option objects.
 
-| **Property**                              | **Type**   | **Accepted Values**                  |
-|-------------------------------------------|------------|--------------------------------------|
-| `checkbox`                      | Boolean    | `true`, `false`                      |
-| `dropdown`                      | Array[Options]     | The `value` of an option must be a string (`"blue"`) or an integer (`1`)|
-
----
-
-### Detailed Explanation of Fields
-
-#### 1. **label**
-- **Description:** The `label` field is the description that will be visible in the Zen Browser configuration for the user to see.
-- **Accepted Values:** It accepts a string. White spaces can be used.
-  
-Example:
-```json title="Example" {2}
-{
-  "property": "theme.mytheme.enable_dark_mode",
-  "label": "Enable dark mode",
-  "type": "checkbox"
-}
-```
-
-#### 2. **options**
-- **Description:** The `options` field is an array of option objects, only available for the `dropdown` type.
-- **Accepted Values:** This field must be an array containing one or more option objects.
-
-```json title="Example" {5-14}
-{
-  "property": "theme.mytheme.background_color",
-  "label": "Background color",
-  "type": "dropdown",
+```json
   "options": [
     {
       "label": "Light",
@@ -98,44 +72,28 @@ Example:
       "value": "dark"
     }
   ]
-}
 ```
 
-#### 3. **option objects**
-- **Description:** Each option object in the `options` array defines a possible value for the dropdown menu. It contains two fields: `label` and `value`.
-- **Fields:**
-  - **label:** A string displayed in the dropdown menu (can include white spaces).
-  - **value:** The value that will be assigned as a CSS property. Only `string` or `int` values are valid. Strings cannot contain white spaces or special characters.
+Each option object defines a possible value for the dropdown menu. It contains two fields: `label` and `value`.
 
-```json title="Example" {6-9}
+* The `label` is the description that will be displayed in the dropdown menu. This field accepts a string and allows white space.
+* The `value` field contains the value that will be assigned as a CSS property. Only `string` or `int` values are valid. Strings may not contain white space or special characters.
+
+```json title="Example" 
 {
-  "property": "theme.mytheme.background_color",
-  "label": "Background color",
-  "type": "dropdown",
-  "options": [
-    {
-      "label": "Light",
-      "value": "light" // valid string
-    },
-    {
-      "label": "Dark",
-      "value": "dark" // valid string
-    },
-    {
-      "label": "Blue",
-      "value": 3 // valid integer
-    }
-  ]
+    "label": "Green",
+    "value": "green" // valid string
 }
 ```
 
-Invalid Example:
-```json
+```json title="Invalid Example" {3}
 {
   "label": "Invalid option",
   "value": [] // invalid, only string/int are allowed
 }
 ```
+
+---
 
 <details> 
   <summary><font weight="bold" size=4.75><b>See Full Example</b></font></summary>
@@ -155,12 +113,8 @@ Below is a full example of what a `preferences.json` file might look like with m
     "type": "dropdown",
     "options": [
       {
-        "label": "Light",
-        "value": "light"
-      },
-      {
-        "label": "Dark",
-        "value": "dark"
+        "label": "Green",
+        "value": "green"
       },
       {
         "label": "Blue",
@@ -189,7 +143,7 @@ In this example:
 
 Once you have defined your preferences in the `preferences.json` file, you can use them in your theme’s CSS to modify the appearance or behavior based on the user’s selections.
 
-### 1. Using Checkbox Preferences `-moz-bool-pref`
+### Checkbox Preferences
 
 Checkbox preferences can be detected in your CSS using the `-moz-bool-pref` media query, which evaluates the boolean value (`true` or `false`) of a checkbox preference.
 
@@ -214,14 +168,19 @@ You can use the following CSS to change the background color when the dark mode 
 }
 ```
 
-In this example:
-- The background color changes to black, and the text color changes to white if the `enable_dark_mode` checkbox is checked (set to `true`).
+You can also have negative conditions
+```css
+@media not (-moz-bool-pref: "theme.mytheme.enable_dark_mode")
+```
 
 
-### 2. Using Dropdown Preferences `body:has(#theme-<theme-name>[<attribute-name>="<value>"])`
+### Dropdown Preferences
 
 > [!attention]
-> In the theme's CSS file, the `property` defined in the `preferences.json`  using the `"dropdown"` type will be called exactly as defined, but with one key difference: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**. For example: - `theme.mytheme.background_color` in the `preferences.json` file becomes `theme-mytheme-background_color` in the CSS file. This transformation ensures that the property can be used as an attribute selector or inside a media query.
+> `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your themes CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**. 
+>
+> E.g. `theme.mytheme.background_color` becomes `theme-mytheme-background_color` in the CSS file. 
+> This transformation ensures that the property can be used as an attribute selector or inside a media query.
 
 For dropdown preferences, you can detect the selected value using the `:has(){:css}` CSS pseudo-class, which applies styles based on the selected attribute and value in the DOM.
 
@@ -234,12 +193,8 @@ For example, if you have a preference to select the background color from a drop
   "type": "dropdown",
   "options": [
     {
-      "label": "Light",
-      "value": "light"
-    },
-    {
-      "label": "Dark",
-      "value": "dark"
+      "label": "Green",
+      "value": "green"
     },
     {
       "label": "Blue",
@@ -252,21 +207,15 @@ For example, if you have a preference to select the background color from a drop
 You can use the following CSS to change the background color based on the selected value:
 
 ```css {2,8,14}
-/* Light background */
-body:has(#theme-mytheme[theme-mytheme-background_color="light"]) {
-  background-color: #fff;
+/* Green background */
+body:has(#theme-mytheme[theme-mytheme-background_color="green"]) {
+  background-color: #008000;
   color: #000;
-}
-
-/* Dark background */
-body:has(#theme-mytheme[theme-mytheme-background_color="dark"]) {
-  background-color: #000;
-  color: #fff;
 }
 
 /* Blue background */
 body:has(#theme-mytheme[theme-mytheme-background_color="blue"]) {
-  background-color: #001f3f;
+  background-color: #0000ff;
   color: #fff;
 }
 ```
@@ -295,12 +244,8 @@ Suppose your `preferences.json` file includes these two preferences:
     "type": "dropdown",
     "options": [
       {
-        "label": "Light",
-        "value": "light"
-      },
-      {
-        "label": "Dark",
-        "value": "dark"
+        "label": "Green",
+        "value": "green"
       },
       {
         "label": "Blue",
@@ -323,18 +268,13 @@ You can combine the CSS like this:
 }
 
 /* Dropdown for background color selection */
-body:has(#theme-mytheme[theme-mytheme-background_color="light"]) {
-  background-color: #fff;
+body:has(#theme-mytheme[theme-mytheme-background_color="green"]) {
+  background-color: #008000;
   color: #000;
 }
 
-body:has(#theme-mytheme[theme-mytheme-background_color="dark"]) {
-  background-color: #000;
-  color: #fff;
-}
-
 body:has(#theme-mytheme[theme-mytheme-background_color="blue"]) {
-  background-color: #001f3f;
+  background-color: #0000ff;
   color: #fff;
 }
 ```
@@ -344,9 +284,6 @@ This allows users to:
 - Select a background color from the dropdown, which dynamically changes the background and text colors based on the user's choice.
 
 </details>
-
-> [!info]
-> The `-moz-bool-pref` query is used for detecting boolean values (checkboxes), while the `:has(){:css}` pseudo-class with attribute selectors is used for detecting the selected values of dropdowns.
 
 ---
 
