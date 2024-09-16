@@ -351,28 +351,26 @@ This allows users to:
 ---
 
 
-# Operating system specific settings
+## Operating system specific settings
 
-Some preferences may require to be available only for some operating systems. For example, imagine you want an extension that hides the window's apllication buttons (minimize, maximize, close) on Windows and linux but not on macOS, because macos doesn't provide a way to clear them individually. You can use a prefix to specify the operating system the preference is available for.
+Some CSS modifications may not function properly on all operating systems. You can use a prefix to specify what operating system the preference should be available for.
 
-The prefix is the operating system name in lowercase, followed by a `:`.
+The prefix is the operating system name in lowercase, followed by a colon (`:`)
 
 > [!info]
-> If you want to use a negative condition, you can use the `!` character before the operating system name.
+> If you want to use a negative condition, you can use the `!` operator before the operating system name.
 
-Here's an example of a preference that is only available on Windows and Linux:
+For example
 
 ```json
 {
-  "!macos:uc.theme.hide-window-close.enabled": "Hide window close button",
+  "!macos:theme.mytheme.not-macos": "Apply for Linux and Windows",
   ...
 }
 ```
 
-or for another example:
-
 ```json
 {
-  "windows:uc.theme.change-this-only-for-windows.enabled": "Change this only for Windows",
+  "windows:theme.mytheme.windows-only": "Apply for Windows",
 }
 ```
