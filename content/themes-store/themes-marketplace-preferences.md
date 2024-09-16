@@ -137,7 +137,8 @@ Invalid Example:
 }
 ```
 
-### Full Example of `preferences.json`
+<details> 
+  <summary><font weight="bold" size=4.75><b>See Full Example</b></font></summary>
 
 Below is a full example of what a `preferences.json` file might look like with multiple preference objects in its root. Each object represents a preference defined for a theme:
 
@@ -179,6 +180,8 @@ In this example:
 - The `preferences.json` file contains a list of three preference objects.
 - Each object defines a `property`, `label`, and `type` (either `checkbox` or `dropdown`).
 - Dropdown preferences can include an `options` field, with each option having a `label` and a `value`.
+
+</details>
 
 ---
 
@@ -274,7 +277,8 @@ In this example:
 
 ---
 
-### Full Example
+<details> 
+  <summary><font weight="bold" size=4.75><b>See Full Example</b></font></summary>
 
 Suppose your `preferences.json` file includes these two preferences:
 
@@ -339,6 +343,7 @@ This allows users to:
 - Toggle dark mode on/off using the checkbox.
 - Select a background color from the dropdown, which dynamically changes the background and text colors based on the user's choice.
 
+</details>
 
 > [!info]
 > The `-moz-bool-pref` query is used for detecting boolean values (checkboxes), while the `:has()` pseudo-class with attribute selectors is used for detecting the selected values of dropdowns.
