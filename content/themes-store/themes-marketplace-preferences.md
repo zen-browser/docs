@@ -59,8 +59,8 @@ For example:
 
 | **Property**                              | **Type**   | **Accepted Values**                  |
 |-------------------------------------------|------------|--------------------------------------|
-| **Type:** `checkbox`                      | Boolean    | `true`, `false`                      |
-| **Type:** `dropdown`                      | Array[Options]     | Each option's `value` must be a string or an integer. Example values: `"light"`, `"dark"`, `"blue"`, `1`, `2` |
+| `checkbox`                      | Boolean    | `true`, `false`                      |
+| `dropdown`                      | Array[Options]     | The `value` of an option must be a string (`"blue"`) or an integer (`1`)|
 
 ---
 
@@ -185,7 +185,7 @@ In this example:
 
 ---
 
-## How to use preferences in the theme's CSS
+## Using preferences in the theme's CSS
 
 Once you have defined your preferences in the `preferences.json` file, you can use them in your theme’s CSS to modify the appearance or behavior based on the user’s selections.
 
@@ -223,7 +223,7 @@ In this example:
 > [!attention]
 > In the theme's CSS file, the `property` defined in the `preferences.json`  using the `"dropdown"` type will be called exactly as defined, but with one key difference: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**. For example: - `theme.mytheme.background_color` in the `preferences.json` file becomes `theme-mytheme-background_color` in the CSS file. This transformation ensures that the property can be used as an attribute selector or inside a media query.
 
-For dropdown preferences, you can detect the selected value using the `:has()` CSS pseudo-class, which applies styles based on the selected attribute and value in the DOM.
+For dropdown preferences, you can detect the selected value using the `:has(){:css}` CSS pseudo-class, which applies styles based on the selected attribute and value in the DOM.
 
 For example, if you have a preference to select the background color from a dropdown menu:
 
@@ -273,7 +273,7 @@ body:has(#theme-mytheme[theme-mytheme-background_color="blue"]) {
 
 In this example:
 - The background color and text color change based on the value selected in the `background_color` dropdown.
-- The selector `body:has(#theme-mytheme[background_color="value"])` checks the `background_color` attribute and applies the relevant styles based on the selected option.
+- The selector `body:has(#theme-mytheme[background_color="value"]){:css}` checks the `background_color` attribute and applies the relevant styles based on the selected option.
 
 ---
 
@@ -346,7 +346,7 @@ This allows users to:
 </details>
 
 > [!info]
-> The `-moz-bool-pref` query is used for detecting boolean values (checkboxes), while the `:has()` pseudo-class with attribute selectors is used for detecting the selected values of dropdowns.
+> The `-moz-bool-pref` query is used for detecting boolean values (checkboxes), while the `:has(){:css}` pseudo-class with attribute selectors is used for detecting the selected values of dropdowns.
 
 ---
 
