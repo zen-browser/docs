@@ -250,19 +250,19 @@ You can use the following CSS to change the background color based on the select
 
 ```css {2,8,14}
 /* Light background */
-body:has(#theme-mytheme[background_color="light"]) {
+body:has(#theme-mytheme[theme-mytheme-background_color="light"]) {
   background-color: #fff;
   color: #000;
 }
 
 /* Dark background */
-body:has(#theme-mytheme[background_color="dark"]) {
+body:has(#theme-mytheme[theme-mytheme-background_color="dark"]) {
   background-color: #000;
   color: #fff;
 }
 
 /* Blue background */
-body:has(#theme-mytheme[background_color="blue"]) {
+body:has(#theme-mytheme[theme-mytheme-background_color="blue"]) {
   background-color: #001f3f;
   color: #fff;
 }
@@ -319,17 +319,17 @@ You can combine the CSS like this:
 }
 
 /* Dropdown for background color selection */
-body:has(#theme-mytheme[background_color="light"]) {
+body:has(#theme-mytheme[theme-mytheme-background_color="light"]) {
   background-color: #fff;
   color: #000;
 }
 
-body:has(#theme-mytheme[background_color="dark"]) {
+body:has(#theme-mytheme[theme-mytheme-background_color="dark"]) {
   background-color: #000;
   color: #fff;
 }
 
-body:has(#theme-mytheme[background_color="blue"]) {
+body:has(#theme-mytheme[theme-mytheme-background_color="blue"]) {
   background-color: #001f3f;
   color: #fff;
 }
