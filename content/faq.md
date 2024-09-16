@@ -36,7 +36,7 @@ Feel free to support the funding of a Widevine license for Zen on [Ko-Fi](https:
 
 ## How do I know Zen is safe?
 
-Zen Browser is designed with a focus on security and privacy. Additionally, the browser's codebase is derived from Firefox, a well-known and trusted open-source project. Users can verify the safety of the browser by reviewing the source code available on [GitHub](https://github.com/zen-browser/desktop) . Regular updates and community engagement also contribute to its security.
+Zen Browser is designed with a focus on security and privacy. Additionally, the browser's codebase is derived from Firefox, a well-known and trusted open-source project. Users can verify the safety of the browser by reviewing the source code available on [GitHub](https://github.com/zen-browser/desktop). Regular updates and community engagement also contribute to its security.
 
 ## How can I support Zen?
 
@@ -51,12 +51,12 @@ Your support helps the team maintain and enhance Zen Browser for everyone!
 
 > [!hint] Use shortcuts to perform Split View actions faster!
 
-1. Select multiple tabs by left-clicking them while holding the `Ctrl` key
+1. Select multiple tabs by left-clicking them while holding the `Ctrl` key, or left-click 2 tabs while holding the `Shift` key to select all tabs in between
 2. Right click a tab, and select `Split x Tabs`
 3. Change the view mode by pressing the 🔗 button in the top address bar
 
 ## How to switch tabs by scrolling?
-You can to enable this feature by changing a setting in the browser's configuration. Here's how:
+You can enable this feature by changing a setting in the browser's configuration. Here's how:
 
 1. Open the `about:config` page. This page contains advanced settings for the browser.
 2. Search for `toolkit.tabbox.switchByScrolling`
