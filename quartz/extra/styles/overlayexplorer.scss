@@ -1,0 +1,164 @@
+// Nothing yet
+@use "../../styles/variables.scss" as *;
+
+.ol-folder-icon {
+  margin-right: 5px;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  backface-visibility: visible;
+  transform: rotate(-90deg);
+}
+
+.ol-folder-icon.open {
+  transform: rotate(0deg);
+}
+
+.ol-folder-outer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-in-out;
+}
+
+.ol-folder-outer.open {
+  grid-template-rows: 1fr;
+}
+
+.ol-folder-outer > ul {
+  overflow: hidden;
+}
+
+.ol-folder-entry {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.ol-folder-button {
+  color: var(--dark);
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  font-family: var(--headerFont);
+
+  margin-right: 5px;
+
+  & span {
+    font-size: 0.95rem;
+    display: inline-block;
+    color: var(--secondary);
+    font-weight: $semiBoldWeight;
+    margin: 0;
+    line-height: 1.5rem;
+    pointer-events: none;
+  }
+}
+
+svg {
+  pointer-events: all;
+
+  & > polyline {
+    pointer-events: none;
+  }
+}
+
+.overlay-explorer {
+  padding: 0 0.5rem;
+  border: none;
+
+  & > #overlay-explorer-button {
+    background-color: var(--lightgray);
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    height: 2rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: space-between;
+
+    & > p {
+      display: inline;
+      padding: 0 1rem;
+    }
+
+    & svg {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      margin: 0 0.5rem;
+    }
+  }
+
+  & >#overlay-explorer-container {
+    position: fixed;
+    contain: layout;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    display: none;
+    backdrop-filter: blur(4px);
+
+    &.active {
+      display: inline-block;
+    }
+
+    & > #overlay-explorer-space {
+      width: 65%;
+      margin-top: 12vh;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media all and (max-width: $fullPageWidth) {
+        max-width: 500px;
+        width: 90%;
+      }
+
+      & > * {
+        width: 100%;
+        border-radius: 7px;
+        background: var(--light);
+        box-shadow:
+          0 14px 50px rgba(27, 33, 48, 0.12),
+          0 10px 30px rgba(27, 33, 48, 0.16);
+        margin-bottom: 2em;
+      }
+
+      & > #overlay-explorer-content {
+        box-sizing: border-box;
+        padding: 0.5em 1em;
+        border: 1px solid var(--lightgray);
+      }
+
+      & ul {
+        list-style: none;
+        margin: 0.08rem 0;
+        padding: 0;
+        transition:
+          max-height 0.35s ease,
+          transform 0.35s ease,
+          opacity 0.2s ease;
+        & li > a {
+          color: var(--dark);
+          opacity: 0.75;
+          pointer-events: all;
+        }
+      }
+    }
+
+  }
+}
