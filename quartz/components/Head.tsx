@@ -31,9 +31,6 @@ export default (() => {
         )}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* Start of Umami */}
-        <script defer
-            src="/static/umami.js" data-host-url="https://umami-performance-test.up.railway.app" 
-            data-website-id="8320f21b-0c21-4ab8-8b13-b1acaa385ebb" data-domains="docs.zen-browser.app"></script>
         <script defer src="/static/umami.js" data-host-url="https://umami-postgresql-latest-xesa.onrender.com" data-website-id="edfcf382-5196-4ca7-b08b-dc3e2be47df1" data-domains="docs.zen-browser.app"></script>
         {/* End of Umami */}
         <meta property="og:title" content={title} />
