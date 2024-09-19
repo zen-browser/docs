@@ -2,6 +2,7 @@
 title: Choosing between the generic and optimized build
 aliases:
   - Choosing between the generic and optimized build
+lastmod: 2024-09-02
 ---
 
 This [[guides/index|guide]] provides an overview of the differences between the generic and optimized builds of Zen, so you can make an informed decision on which version to use.

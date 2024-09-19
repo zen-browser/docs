@@ -1,5 +1,6 @@
 ---
 title: Themes Store Submission Guidelines 📋
+lastmod: 2024-08-19
 ---
 
 If you are a theme developer and would like to submit your theme, please follow these guidelines:

@@ -1,5 +1,6 @@
 ---
-title: Themes Store Preferences ⚙️ 
+title: Themes Store Preferences ⚙️
+lastmod: 2024-09-16
 ---
 
 

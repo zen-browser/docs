@@ -1,5 +1,6 @@
 ---
 title: Live Editing Zen Theme
+lastmod: 2024-09-17
 ---
 
 This [[guides/index|guide]] will help you customize the appearance of Zen Browser by live editing the `userChrome.css` file. Follow the steps below to start customizing your browser's theme.

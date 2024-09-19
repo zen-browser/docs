@@ -1,6 +1,7 @@
 ---
 title: Code of Conduct
 draft: false
+lastmod: 2024-08-24
 ---
 ## Our Pledge
 

@@ -1,5 +1,6 @@
 ---
 title: Information about Themes Store ℹ️
+lastmod: 2024-09-19
 ---
 
 The Themes Store is a place where you can find and install themes for Zen Browser.

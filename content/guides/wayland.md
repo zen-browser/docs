@@ -1,5 +1,6 @@
 ---
 title: Handling Zen Browser Crashes on Linux with Wayland **Archived**
+lastmod: 2024-09-06
 ---
 
 >[!check] **Good News!** 

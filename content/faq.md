@@ -1,5 +1,6 @@
 ---
 title: Frequently Asked Questions ❓
+lastmod: 2024-09-16
 ---
 Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
 
