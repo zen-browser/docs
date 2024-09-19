@@ -3,6 +3,9 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "draft": "checkbox"
+    "draft": "checkbox",
+    "date": "date",
+    "modified": "date",
+    "created": "date"
   }
 }
