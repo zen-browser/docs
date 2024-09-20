@@ -3,23 +3,36 @@ title: Themes Store Preferences ⚙️
 lastmod: 2024-09-16
 ---
 
+The `preferences.json` file allows theme developers to define custom preferences that control the behavior and appearance of themes in the Zen Browser. Each preference is defined with a `property`, a `label`, a `type`, and optionally `options` (for dropdown preferences), `defaultValue`, `placeholder` (to configure preference placeholder) and `disabledOn` (to disable property on selected OS). The `preferences.json` file contains a list of these preference objects at its root.
+
+## Preferences fields
+
+### Field: `property` - Property name
+
+The `property` field is a string that should follow Firefox's preference naming schema, similar to `about:config` entries. The `property` name can be any valid string that aligns with this schema.
+
+For example: `theme.mytheme.background_color`
 
 
-The `preferences.json` file allows theme developers to define custom preferences that control the behavior and appearance of themes in the Zen Browser. Each preference is defined with a `property`, a `label`, a `type`, and optionally `options` (for dropdown preferences). The `preferences.json` file contains a list of these preference objects at its root.
+### Field: `label` - Label
 
+The `label` field is the description that will be visible to users in the Zen Mods settings page.
+This field accepts a string and allows white space.
 
+For example: `Changes the background color`
 
-## Theme Preferences
+### Field: `type` - Preference type
 
-### Preference Types
+| **Property** | **Type**       | **Accepted Values**                                                               |
+| ------------ | -------------- | --------------------------------------------------------------------------------- |
+| `checkbox`   | Boolean        | `true`, `false`                                                                   |
+| `dropdown`   | Array[Options] | The `value` of an option must be a string (`"blue"`) or an integer (`1`)          |
+| `string`     | String         | The `value` of an option must be a string (`"blue"`) (a valid CSS property value) |
 
-| **Property**                              | **Type**   | **Accepted Values**                  |
-|-------------------------------------------|------------|--------------------------------------|
-| `checkbox`                      | Boolean    | `true`, `false`                      |
-| `dropdown`                      | Array[Options]     | The `value` of an option must be a string (`"blue"`) or an integer (`1`)|
+#### Type: `checkbox`
 
+The `checkbox` type allows a togglable input to enable or disable a property.
 
-### Checkbox preferences
 ```json title="Checkbox Example"
 {
   "property": "theme.mytheme.enable_dark_mode",
@@ -28,18 +41,10 @@ The `preferences.json` file allows theme developers to define custom preferences
 }
 ```
 
-#### Properties
+#### Type: `dropdown`
 
-The `property` field is a string that should follow Firefox's preference naming schema, similar to `about:config` entries. The  `property` name can be any valid string that aligns with this schema.
+The `dropdown` type allows to select a single choice on multiple options.
 
-For example: `theme.mytheme.background_color`
-#### Labels
-The `label` field is the description that will be visible to users in the Zen Mods settings page. 
-This field accepts a string and allows white space.
-
----
-
-### Dropdown preferences
 ```json title="Dropdown Example"
 {
   "property": "theme.mytheme.background_color",
@@ -58,7 +63,21 @@ This field accepts a string and allows white space.
 }
 ```
 
-Dropdown preferences also contain property and label fields. What separates dropdown menus from checkboxes is that they allow multiple options. 
+####  Type: `string`
+
+The `string` type is a text input that allows to insert valid css values without being a selection.
+
+
+```json title="String Example"
+{
+  "property": "theme.mytheme.tab_padding",
+  "label": "Set tab padding",
+  "type": "string"
+}
+```
+
+
+### Field: `options` - Options (only for `type`: `dropdown`)
 
 The `options` field is an array of option objects, only available for the `dropdown` type. This field must be an array containing one or more option objects.
 
@@ -80,7 +99,7 @@ Each option object defines a possible value for the dropdown menu. It contains t
 * The `label` is the description that will be displayed in the dropdown menu. This field accepts a string and allows white space.
 * The `value` field contains the value that will be assigned as a CSS property. Only `string` or `int` values are valid. Strings may not contain white space or special characters.
 
-```json title="Example" 
+```json title="Example"
 {
     "label": "Green",
     "value": "green" // valid string
@@ -94,9 +113,52 @@ Each option object defines a possible value for the dropdown menu. It contains t
 }
 ```
 
+### Field: `defaultValue` - Default Value (optional)
+
+The `defaultValue` field is an optional field that allows the preference to have a pre-selected value.
+This field accepts a value based on the preference `type`:
+
+| **Type**   | **Default Value Type** | **Accepted Values**                                                               |
+| ---------- | ---------------------- | --------------------------------------------------------------------------------- |
+| `checkbox` | Boolean                | `true`, `false`                                                                   |
+| `dropdown` | Array[Options]         | Any `value` contained in the options array.                                       |
+| `string`   | String                 | The `value` of an option must be a string (`"blue"`) (a valid CSS property value) |
+
+### Field: `disabledOn` - Disabled On (optional)
+
+Some CSS modifications may not function properly on all operating systems. You can use the property `disabledOn` to specify on which operating systems the preference should be available.
+
+This field accepts an array of the following values: `macos`, `linux` or/and `windows`.
+
+For example:
+```json title="Disabled on MacOS" {2}
+{
+  "disabledOn": ["macos"] // disables the preference for MacOS
+}
+```
+
+```json title="Disabled on Windows and Linux" {2}
+{
+  "disabledOn": ["windows", "linux"] // disables the preference for Windows and Linux
+}
+```
+
+```json title="Disabled on all OS" {2}
+{
+  "disabledOn": ["windows", "linux", "macos"] // disables the preference entirely
+}
+```
+
+### Field: `placeholder` - Placeholder (optional) (only for `type`: `dropdown` and `string`)
+
+The `placeholder` field is an optional field that allows to change the placeholder value for the preference.
+This field accepts a string and allows white space.
+
+For example: `e.g: 10px`
+
 ---
 
-<details> 
+<details>
   <summary><font weight="bold" size=4.75><b>See Full Example</b></font></summary>
 
 Below is a full example of what a `preferences.json` file might look like with multiple preference objects in its root. Each object represents a preference defined for a theme:
@@ -106,12 +168,15 @@ Below is a full example of what a `preferences.json` file might look like with m
   {
     "property": "theme.mytheme.enable_dark_mode",
     "label": "Enable dark mode",
-    "type": "checkbox"
+    "type": "checkbox",
+    "defaultValue": true
   },
   {
     "property": "theme.mytheme.background_color",
     "label": "Background color",
     "type": "dropdown",
+    "placeholder": "Select a color",
+    "defaultValue": "green",
     "options": [
       {
         "label": "Green",
@@ -126,15 +191,17 @@ Below is a full example of what a `preferences.json` file might look like with m
   {
     "property": "theme.mytheme.show_bookmarks_bar",
     "label": "Show bookmarks bar",
-    "type": "checkbox"
+    "type": "string",
+    "disabledOn": ["macos"]
   }
 ]
 ```
 
 In this example:
 - The `preferences.json` file contains a list of three preference objects.
-- Each object defines a `property`, `label`, and `type` (either `checkbox` or `dropdown`).
-- Dropdown preferences can include an `options` field, with each option having a `label` and a `value`.
+- Each object defines a `property`, `label`, and `type`.
+- Optionally, each object defines either a `defaultValue`, `disabledOn` or `placeholder`.
+- Dropdown preferences have to include an `options` field, with each option having a `label` and a `value`.
 
 </details>
 
@@ -170,7 +237,7 @@ You can use the following CSS to change the background color when the dark mode 
 ```
 
 You can also have negative conditions
-```css
+```css {1}
 @media not (-moz-bool-pref: "theme.mytheme.enable_dark_mode")
 ```
 
@@ -178,9 +245,9 @@ You can also have negative conditions
 ### Dropdown Preferences
 
 > [!attention]
-> `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your themes CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**. 
+> `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your themes CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
 >
-> E.g. `theme.mytheme.background_color` becomes `theme-mytheme-background_color` in the CSS file. 
+> E.g. `theme.mytheme.background_color` becomes `theme-mytheme-background_color` in the CSS file.
 > This transformation ensures that the property can be used as an attribute selector or inside a media query.
 
 For dropdown preferences, you can detect the selected value using the `:has(){:css}` CSS pseudo-class, which applies styles based on the selected attribute and value in the DOM.
@@ -227,7 +294,7 @@ In this example:
 
 ---
 
-<details> 
+<details>
   <summary><font weight="bold" size=4.75><b>See Full Example</b></font></summary>
 
 Suppose your `preferences.json` file includes these two preferences:
@@ -286,29 +353,30 @@ This allows users to:
 
 </details>
 
----
+### String Preferences
 
+String preferences can be detected in your CSS using the `var(--property)` operator. The preference property is saved at `:root` level.
 
-## Operating system specific settings
+> [!attention]
+> `property` fields defined in `preferences.json` using the `"string"` type will have one key difference when used in your themes CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
+>
+> E.g. `theme.mytheme.background_color` becomes `theme-mytheme-background_color` in the CSS file.
+> This transformation ensures that the property can be used as an attribute selector or inside a media query.
 
-Some CSS modifications may not function properly on all operating systems. You can use a prefix to specify what operating system the preference should be available for.
-
-The prefix is the operating system name in lowercase, followed by a colon (`:`)
-
-> [!info]
-> If you want to use a negative condition, you can use the `!` operator before the operating system name.
-
-For example
+For example, if you have a preference to enable dark mode in your theme:
 
 ```json
 {
-  "!macos:theme.mytheme.not-macos": "Apply for Linux and Windows",
-  ...
+  "property": "theme.mytheme.background_color",
+  "label": "Background color",
+  "type": "string"
 }
 ```
 
-```json
-{
-  "windows:theme.mytheme.windows-only": "Apply for Windows",
+You can use the following CSS to change the background color when the dark mode preference is enabled:
+
+```css {2}
+.myClass {
+  background-color: var(--theme-mytheme-background_color)
 }
 ```
