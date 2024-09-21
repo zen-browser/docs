@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Desktop Browser Development
 draft: false
-lastmod: 2024-08-26
+lastmod: 2024-09-21
 ---
 
 Contributing to the Zen Browser Desktop project is a great way to get involved with open-source software development. This guide will walk you through the steps to clone the project, set up your development environment, make contributions, and submit pull requests.
@@ -16,7 +16,7 @@ Before you begin, ensure you have the following tools installed:
 
 ![[building]]
 
-## Step 6: Making a Contribution
+## Step 7: Making a Contribution
 
 ### Types of Contributions
 
@@ -39,7 +39,7 @@ Before contributing, please keep the following guidelines in mind:
 
 ### How to Make a Pull Request
 
-1. **Fork the Repository**: Create a fork of the Zen Browser repository on GitHub.
+1. **Fork the Repository**:  You can follow this GitHub official guide [Fork a repository - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
     
 2. **Create a New Branch**: It’s a good practice to create a new branch for each feature or bug fix.
    
