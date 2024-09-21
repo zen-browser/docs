@@ -20,11 +20,12 @@ These benchmarks were performed on a device with the following specifications:
 
 | Version | Score |
 |-----------|-----|
-| 1.0.0-a39-opt | 25.6 |
-| 1.0.0-a37-opt | 25.5 |
-| 1.0.0-a34-opt | 21.6 |
-| 1.0.0-a33-opt | 21.7 |
-| 1.0.0-a32-opt | 21.8 |
+| 1.0.1-a.2-opt | 25.4 |
+| 1.0.0-a.39-opt | 25.6 |
+| 1.0.0-a.37-opt | 25.5 |
+| 1.0.0-a.34-opt | 21.6 |
+| 1.0.0-a.33-opt | 21.7 |
+| 1.0.0-a.32-opt | 21.8 |
 | 1.0.0-a.13-opt | 21.1   |
 | 1.0.0-a.12-opt | 21.5   |
 | 1.0.0-a.11-opt | 20.8   |
@@ -46,6 +47,7 @@ xychart-beta
 
 | Version | Score |
 |-----------|-----|
+| 1.0.1-a.2-opt | 237 |
 | 1.0.0-a39-opt | 238 |
 | 1.0.0-a37-opt | 239 |
 | 1.0.0-a34-opt | 228 |
@@ -63,6 +65,7 @@ xychart-beta
 
 | Version | Score |
 |-----------|-----|
+| 1.0.1-a.2-opt | 1527 |
 | 1.0.0-a39-opt | 1538 |
 | 1.0.0-a37-opt | 1562 |
 | 1.0.0-a34-opt | 1464 |
