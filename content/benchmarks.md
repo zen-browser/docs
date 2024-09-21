@@ -79,6 +79,29 @@ xychart-beta
     line [1464,1562,1538,1527]
 ```
 
+
+<style>
+/* Add spacing between each details section */
+details {
+    margin-bottom: 20px; /* Adjust this value to increase or decrease spacing */
+}
+
+/* Style the summary to make it stand out */
+summary {
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer; /* Changes cursor to pointer when hovering over summary */
+}
+
+/* Add spacing between the summary and the content */
+details > summary + * {
+    margin-top: 10px; 
+}
+</style>
+
+<details>
+<summary>Archived Benchmarks (Basemark Web 3.0)</summary>
+
 ## [Basemark Web 3.0](https://web.basemark.com/)
 
 | Version   | Score  |CSS | HTML5 | Page Responsiveness |
@@ -110,3 +133,7 @@ xychart-beta
     bar [475.52, 470.49, 1747.98, 1964.43, 446.74, 470, 1660.89, 1678.49, 1874.49, 1658.87, 2141.63, 1732, 1957, 1920]
     line [475.52, 470.49, 1747.98, 1964.43, 446.74, 470, 1660.89, 1678.49, 1874.49, 1658.87, 2141.63, 1732, 1957, 1920]
 ```
+
+</details>
+
+
