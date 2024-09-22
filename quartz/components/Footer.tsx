@@ -16,7 +16,7 @@ export default ((opts?: Options) => {
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
-              <a href={link}>{text}</a>
+              <a data-umami-event={text} href={link}>{text}</a>
             </li>
           ))}
         </ul>
