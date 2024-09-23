@@ -14,64 +14,54 @@ Before you begin, ensure you have the following tools installed:
 - [**Node.js**](https://nodejs.org/): Required for building the browser.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
 
-![[building]]
+## Making a Contribution
 
-## Step 7: Making a Contribution
-
-### Types of Contributions
-
-You can contribute to Zen Browser in various ways, including:
-
-- **Bug Fixes**: Identify and fix bugs in the codebase.
-- **Feature Development**: Implement new features or enhance existing ones.
-- **Documentation**: Improve or expand the project's documentation.
-- **Code Optimization**: Refactor the code for better performance or readability.
-- **UI/UX Improvements**: Enhance the user interface or user experience.
-
-### Guidelines for Contributions
-
-Before contributing, please keep the following guidelines in mind:
-
-- **Follow the [[CODE_OF_CONDUCT | Code of Conduct]]**: Be respectful and constructive in your interactions.
-- **Stick to the Coding Standards**: Ensure your code adheres to the project's coding conventions. This includes proper indentation, comments, and naming conventions.
-- **Write Clear Commit Messages**: Your commit messages should be descriptive and concise.
-- **Test Your Changes**: Ensure that your code changes do not break existing functionality. Write tests if applicable.
-
-### How to Make a Pull Request
-
-1. **Fork the Repository**:  You can follow this GitHub official guide [Fork a repository - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
+#### 1. Fork the Repository
     
-2. **Create a New Branch**: It’s a good practice to create a new branch for each feature or bug fix.
+#### 2. Create a New Branch
+It’s a good practice to create a new branch for each feature or bug fix.
    
-    ```bash
-    git checkout -b feature/your-feature-name
-    ```
+```bash
+git checkout -b feature/your-feature-name
+```
     
-3. **Make Your Changes**: Edit the code in your local repository.
-    
-4. **Commit Your Changes**: Commit your changes with a descriptive message.
-   
-    ```bash
-    git commit -m "Add feature: your feature description"
-    ```
-    
-5. **Push Your Changes**: Push your branch to your forked repository.
-   
-    ```bash
-    git push origin feature/your-feature-name
-    ```
+#### 3. Make Your Changes
+Edit the code in your local repository.
+- Ensure that your changes do not break existing functionality. 
+- Write tests if applicable.
 
-6. **Submit a Pull Request**: Go to the original Zen Browser repository and submit a pull request from your forked repository.
+You can test your changes by
+- [[live-editing | Editing the interface CSS in real-time]]
+- [[building| Building the browser]]
+
+#### 4. Commit Your Changes
+Commit your changes with a descriptive message.
+   
+```bash
+git commit -m "Add feature: your feature description"
+```
     
-    - Provide a clear title and description of your changes.
-    - Reference any relevant issues in the pull request.
+#### 5. Push Your Changes
+Push your branch to your forked repository.
+   
+```bash
+git push origin feature/your-feature-name
+```
+
+#### 6. Submit a Pull Request
+Go to the original Zen Browser repository and submit a pull request from your forked repository.
+    
+- Provide a clear title and description of your changes.
+- Reference any relevant issues in the pull request.
 
 ## Additional Resources
 
-- [Zen Browser GitHub Repository](https://github.com/zen-browser/desktop): The main repository where you can find the source code and submit pull requests.
+- [Zen Browser Repository](https://github.com/zen-browser/desktop)
 - [[CONTRIBUTING|  Contribution Guidelines]]
-- [[CODE_OF_CONDUCT | Code of Conduct]] 
-  
+- [[CODE_OF_CONDUCT | Code of Conduct]]     
+- [Searchfox](https://searchfox.org/)  a source code indexing tool for Mozilla Firefox
+- [MDN Web Docs](https://developer.mozilla.org/)  a documentation repository and learning resource for web developers
+
 ---
 
 Thank you for contributing to Zen Browser! Your contributions are valuable and help make the project better for everyone.

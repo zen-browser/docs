@@ -16,12 +16,12 @@ Before you begin, ensure you have the following tools installed:
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
 - [**Obsidian**](https://obsidian.md/): A powerful Markdown editor recommended for editing and organizing documentation. *(Optional)*
 
-## Step 1: Fork the Repository
+## 1. Fork the Repository
 
 1. Navigate to the [Zen Browser Documentation Repository](https://github.com/zen-browser/docs).
 2. Click on the "Fork" button at the top right of the repository page to create a personal copy of the repository under your GitHub account.
 
-## Step 2: Clone the Repository
+## 2. Clone the Repository
 
 Once you have forked the repository, clone it to your local machine using the following command:
 
@@ -32,7 +32,7 @@ cd docs
 
 Replace `<your-username>` with your GitHub username.
 
-## Step 3: Install Dependencies
+## 3. Install Dependencies
 
 Navigate to the project directory and install the required dependencies:
 
@@ -42,7 +42,7 @@ npm install
 
 This command installs all the necessary packages listed in the `package.json` file.
 
-## Step 4: Open the Project in Obsidian
+## 4. Open the Project in Obsidian
 
 Open the cloned repository folder in Obsidian to begin editing:
 
@@ -50,13 +50,13 @@ Open the cloned repository folder in Obsidian to begin editing:
 2. Click on "Open folder as vault" and select the folder containing the cloned repository.
 3. You can now browse, edit, and add new Markdown files to the project.
 
-## Step 5: Make Your Changes
+## 5. Make Your Changes
 
 You can now start editing the documentation. The project structure is as follows:
 
-- **content/**: Contains the Markdown files for the documentation.
-- **assets/**: Contains images and other static assets used in the documentation.
-- **data/**: Contains any additional data files needed for the documentation.
+- **`content/`** - contains the Markdown files for the documentation.
+- **`assets/`** - contains images and other static assets used in the documentation.
+- **`data/`** - contains any additional data files needed for the documentation.
 
 ### Writing Guidelines
 
@@ -65,7 +65,7 @@ You can now start editing the documentation. The project structure is as follows
 - Include examples and code snippets where applicable.
 - Ensure all links and references are accurate.
 
-## Step 6: Preview the Documentation
+## 6. Preview the Documentation
 
 To preview the documentation site locally, run the following command:
 
@@ -75,7 +75,7 @@ npx quartz build --serve
 
 This command starts a local server and opens the documentation site in your default web browser. The site will automatically reload whenever you make changes to the Markdown files.
 
-## Step 7: Commit and Push Your Changes
+## 7. Commit and Push Your Changes
 
 Once you are satisfied with your changes, commit them to your local repository:
 
@@ -90,7 +90,7 @@ Push your changes to your forked repository:
 git push origin main
 ```
 
-## Step 8: Create a Pull Request
+## 8. Create a Pull Request
 
 After pushing your changes, go to the original Zen Browser Documentation Repository and submit a pull request:
 

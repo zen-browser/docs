@@ -3,7 +3,7 @@ title: Building Zen Browser 📦
 lastmod: 2024-09-25
 ---
 
-We've took the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge. 
+We've taken the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge. 
 
 > [!failure]
 > We cannot provide support if a build fails. Please understand this before proceeding with the following steps.
