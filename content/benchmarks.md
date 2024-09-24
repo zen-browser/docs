@@ -1,6 +1,6 @@
 ---
 title: Performance Benchmarks 📊
-lastmod: 2024-09-21
+lastmod: 2024-09-24
 ---
 
 These benchmarks were performed on a device with the following specifications:
