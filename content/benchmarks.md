@@ -39,7 +39,7 @@ These benchmarks were performed on a device with the following specifications:
 xychart-beta
     title "Performance over time (Higher is better)"
     x-axis [0.10, 0.11, 0.12, 0.13, 0.32, 0.33, 0.34, 0.37, 0.39, 1.2, 1.4]
-    y-axis "Benchmark Points"
+    y-axis "Benchmark Points" 0 --> 30
     bar [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6,25.4,25.6]
     line [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6,25.4,25.6]
 ```
@@ -58,7 +58,7 @@ xychart-beta
 xychart-beta
     title "Performance over time (Higher is better)"
     x-axis [0.34,0.37,0.39,1.2,1.4]
-    y-axis "Benchmark Points"
+    y-axis "Benchmark Points" 0 --> 260
     bar [228,239,238,237,240]
     line [228,239,238,237,240]
 ```
@@ -77,7 +77,7 @@ xychart-beta
 xychart-beta
     title "Performance over time (Higher is better)"
     x-axis [0.34,0.37,0.39,1.2,1.5]
-    y-axis "Benchmark Points"
+    y-axis "Benchmark Points" 0 --> 1600
     bar [1464,1562,1538,1527,1515]
     line [1464,1562,1538,1527,1515]
 ```
@@ -132,7 +132,7 @@ details > summary + * {
 xychart-beta
     title "Performance over time (Higher is better)"
     x-axis [.3, .4, .6, .7, .8, .9, .10, .11, .12, .13, .15, .32, .33, .34]
-    y-axis "Benchmark Points"
+    y-axis "Benchmark Points" 0 --> 2100
     bar [475.52, 470.49, 1747.98, 1964.43, 446.74, 470, 1660.89, 1678.49, 1874.49, 1658.87, 2141.63, 1732, 1957, 1920]
     line [475.52, 470.49, 1747.98, 1964.43, 446.74, 470, 1660.89, 1678.49, 1874.49, 1658.87, 2141.63, 1732, 1957, 1920]
 ```
