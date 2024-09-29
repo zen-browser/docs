@@ -14,7 +14,7 @@ This [[guides/index|guide]] provides an overview of the differences between the 
 
 The optimized version of Zen uses [Advanced Vector Extensions 2 (AVX2)](https://wikipedia.org/wiki/Advanced_Vector_Extensions#Advanced_Vector_Extensions_2), a CPU instruction set that enhances performance for certain tasks. This instruction set is available only on modern processors.
 
-## Supported CPUs for optimized builds
+## Supported CPUs for the optimized builds
 
 The optimized builds of Zen are compatible only with the following CPU families:
 
@@ -37,21 +37,15 @@ The optimized builds of Zen are compatible only with the following CPU families:
 
 If your CPU family isn't listed, use the generic build.
 
-## Check the family of your CPU
+## Check whether your device supports AVX2
 ### Linux
 1. Open a terminal
 2. Run the following command:
-    ```
-    lscpu | grep "Model name:"
+    ```bash
+    grep -q -i avx2 /proc/cpuinfo && echo true
     ```
     
-    The terminal outputs your CPU model. For example:
-
-    ```
-    Model name: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-    ```
-
-3. Check the model name in either the [Intel](https://ark.intel.com/content/www/us/en/ark.html) or [AMD](https://www.amd.com/en/products/specifications/processors.html) websites.
+    The terminal outputs whether your CPU is supported (`true`) or not.
 
 ### Windows
 1. Open the **Settings** app.
