@@ -9,7 +9,7 @@ Zen Browser Docs website
 
 Welcome to **Zen Browser’s Documentation Repo!** 
 
-[Analytics](https://plausible.io/docs.zen-browser.app) | [Uptime-Phare](https://uptime.zen-browser.app)
+[Uptime-Phare](https://uptime.zen-browser.app)
 
 ## Contributing
 

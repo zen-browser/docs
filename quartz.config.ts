@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     pageTitle: "Zen Browser Docs",
     enableSPA: true,
     enablePopovers: true,
-    analytics: { provider: "plausible" },
+    analytics: null,
     locale: "en-US",
     baseUrl: "docs.zen-browser.app",
     ignorePatterns: ["private", "templates", ".obsidian"],
