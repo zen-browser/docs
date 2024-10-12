@@ -11,6 +11,8 @@ This [[guides/index|guide]] is designed to help you easily find and download the
 > [!faq]- Want to know the difference between Generic and Optimized?
 > ![[generic-optimized#Differences between the optimized and generic builds]]
 
+# Stable
+
 ## Windows 🪟
 
 - ### Optimized 🚀
@@ -52,12 +54,9 @@ This [[guides/index|guide]] is designed to help you easily find and download the
 
 	- [DMG File 🗂️](https://github.com/zen-browser/desktop/releases/latest/download/zen.macos-x64.dmg)
 
-
-
-
-> [!caution]- This is an automated daily build for testing purposes. So expect bug on this version.
-
 # Twilight
+
+>[!caution] This is an automated daily build for testing purposes. So expect bug on this version.
 
 ## Windows 🪟
 
