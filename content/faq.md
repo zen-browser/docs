@@ -68,7 +68,7 @@ Once this setting is enabled, you can hover your mouse over the tab bar and use 
 
 ## Where do report problems and bugs?
 
-> :warning: New features are not bugs. Please see [Where do I recommend features?](#where-do-i-recommend-features) below
+>[!caution] New features are not bugs. Please see [Where do I recommend features?](#where-do-i-recommend-features) below
 
 If you want report an issue or a bug with the browser, you can do so on the browser's GitHub page. Before submitting your request, it's mandatory to check if the issue has already been reported. You can do this by searching through existing issues on the [GitHub issues page](https://github.com/zen-browser/desktop/issues).
 
