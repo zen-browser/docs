@@ -68,7 +68,7 @@ Once this setting is enabled, you can hover your mouse over the tab bar and use 
 
 ## Where do I recommend features?
 
-If you want to recommend features or report an issue, you can do so on the browser's GitHub page. Before submitting your request, it's mandatory to check if the issue or feature has already been reported. You can do this by searching through existing issues on the [GitHub issues page](https://github.com/zen-browser/desktop/issues).
+If you want to recommend features, you can do so on the browser's GitHub discussions page. Before submitting your request, it's mandatory to check if the feature has already been reported. You can do this by searching through existing discussions on the [GitHub discussions page](https://github.com/zen-browser/desktop/discussions).
 
 Keep in mind that the Zen Browser team is currently very small, so it might take some time for your request to be reviewed and addressed. The team is dedicated to improving the browser, but with limited resources, they prioritize the most critical and popular requests. Your patience and thoroughness in reporting can help make Zen Browser better for everyone.
 
