@@ -66,11 +66,19 @@ You can enable this feature by changing a setting in the browser's configuration
 
 Once this setting is enabled, you can hover your mouse over the tab bar and use your mouse wheel to scroll through the tabs, making it easier to navigate between them.
 
-## Where do I recommend features?
+## Where do report problems and bugs?
 
-If you want to recommend features or report an issue, you can do so on the browser's GitHub page. Before submitting your request, it's mandatory to check if the issue or feature has already been reported. You can do this by searching through existing issues on the [GitHub issues page](https://github.com/zen-browser/desktop/issues).
+> :warning: New features are not bugs. Please see [Where do I recommend features?](#where-do-i-recommend-features) below
+
+If you want report an issue or a bug with the browser, you can do so on the browser's GitHub page. Before submitting your request, it's mandatory to check if the issue has already been reported. You can do this by searching through existing issues on the [GitHub issues page](https://github.com/zen-browser/desktop/issues).
 
 Keep in mind that the Zen Browser team is currently very small, so it might take some time for your request to be reviewed and addressed. The team is dedicated to improving the browser, but with limited resources, they prioritize the most critical and popular requests. Your patience and thoroughness in reporting can help make Zen Browser better for everyone.
+
+## Where do I recommend features?
+
+If you want to recommend features or new ideas for zen, you can do so on the GitHub discussion page. Before submitting your request, it's mandatory to check if the issue or feature has already been reported. You can do this by searching through existing issues on the [GitHub discussions page](https://github.com/zen-browser/desktop/discussions).
+
+It may also be a good idea to see the [Zen Browser Subreddit](https://www.reddit.com/r/zen_browser/) where there are active discussions of developent. Please remmber again that the team is small and always in need of help so if you can't find a way to develop the new feature yourself it will only come once someone is available and has enough interest to build it. Careful descriptions and explanation of the point of the feaature may help.
 
 ## How can I sync my data across multiple devices?
 
