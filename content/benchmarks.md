@@ -1,6 +1,6 @@
 ---
 title: Performance Benchmarks 📊
-lastmod: 2024-09-24
+lastmod: 2024-10-15
 ---
 
 These benchmarks were performed on a device with the following specifications:
@@ -20,6 +20,7 @@ These benchmarks were performed on a device with the following specifications:
 
 | Version | Score |
 |-----------|-----|
+| 1.0.1-a.10-opt | 25.4 |
 | 1.0.1-a.4-opt | 25.6 |
 | 1.0.1-a.2-opt | 25.4 |
 | 1.0.0-a.39-opt | 25.6 |
@@ -38,10 +39,10 @@ These benchmarks were performed on a device with the following specifications:
 ```mermaid
 xychart-beta
     title "Performance over time (Higher is better)"
-    x-axis [0.10, 0.11, 0.12, 0.13, 0.32, 0.33, 0.34, 0.37, 0.39, 1.2, 1.4]
+    x-axis [0.10, 0.11, 0.12, 0.13, 0.32, 0.33, 0.34, 0.37, 0.39, 1.2, 1.4,1.10]
     y-axis "Benchmark Points" 0 --> 30
-    bar [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6,25.4,25.6]
-    line [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6,25.4,25.6]
+    bar [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6,25.4,25.6,25.4]
+    line [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6,25.4,25.6,25.4]
 ```
 
 ### [JetStream 2.2](https://browserbench.org/JetStream/)
