@@ -30,9 +30,6 @@ export default (() => {
           </>
         )}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* Start of Umami */}
-        <script defer src="/static/uma.js" data-host-url="https://uma.zen-browser.app" data-website-id="8eaa82c8-5273-407f-824b-3984d7a862a0" data-domains="docs.zen-browser.app"></script>
-        {/* End of Umami */}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />}
