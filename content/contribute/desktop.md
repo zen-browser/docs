@@ -14,6 +14,47 @@ Before you begin, ensure you have the following tools installed:
 - [**Node.js**](https://nodejs.org/): Required for building the browser.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
 
+
+## Run Locally
+
+Clone the project
+
+```bash
+git clone https://github.com/zen-browser/desktop.git --recurse-submodules
+cd desktop
+```
+
+Install dependencies
+
+```bash
+npm i
+```
+
+Download and bootstrap the browser
+
+```
+npm run init
+```
+
+Copy a language pack
+```
+sh scripts/update-en-US-packs.sh
+```
+
+Start building the browser
+
+```
+npm run build
+```
+
+Finally, run the browser!
+
+```
+npm start
+```
+
+
+
 ## Making a Contribution
 
 #### 1. Fork the Repository
