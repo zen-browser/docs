@@ -57,6 +57,8 @@ Your support helps the team maintain and enhance Zen Browser for everyone!
 2. Right click a tab, and select `Split x Tabs`
 3. Change the view mode by pressing the 🔗 button in the top address bar
 
+<video src="https://cdn-zen-assets.b-cdn.net/assets/docs/content_assets_split-tabs.webm" controls loading="lazy"></video>
+
 ## How to switch tabs by scrolling?
 You can enable this feature by changing a setting in the browser's configuration. Here's how:
 
