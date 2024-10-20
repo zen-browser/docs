@@ -78,9 +78,9 @@ Keep in mind that the Zen Browser team is currently very small, so it might take
 
 ## Where do I recommend features?
 
-If you want to recommend features or new ideas for zen, you can do so on the GitHub discussion page. Before submitting your request, it's mandatory to check if the issue or feature has already been reported. You can do this by searching through existing issues on the [GitHub discussions page](https://github.com/zen-browser/desktop/discussions).
+If you want to recommend features or new ideas for Zen, you can do so on the GitHub discussion page. Before submitting your request, it's mandatory to check if the issue or feature has already been reported. You can do this by searching through existing issues on the [GitHub discussions page](https://github.com/zen-browser/desktop/discussions).
 
-It may also be a good idea to see the [Zen Browser Subreddit](https://www.reddit.com/r/zen_browser/) where there are active discussions of developent. Please remmber again that the team is small and always in need of help so if you can't find a way to develop the new feature yourself it will only come once someone is available and has enough interest to build it. Careful descriptions and explanation of the point of the feaature may help.
+It may also be a good idea to see the [Zen Browser Subreddit](https://www.reddit.com/r/zen_browser/) where there are active discussions of development. Please remember again that the team is small and always in need of help so if you can't find a way to develop the new feature yourself, it will only come once someone is available and has enough interest to build it. Careful descriptions and explanation of the point of the feature may help.
 
 ## How can I sync my data across multiple devices?
 

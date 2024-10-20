@@ -39,7 +39,7 @@ This [[guides/index|guide]] is designed to help you easily find and download the
 	- [AppImage 🚀](https://github.com/zen-browser/desktop/releases/latest/download/zen-generic.AppImage)
 	- [Portable 📦 `tar.bz2`](https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-generic.tar.bz2)
 	- [Arch User Repository 📂 `AUR`](https://aur.archlinux.org/packages/zen-browser-bin) 
-	- [Pacstall `comunity`](https://pacstall.dev/packages/zen-browser-generic-bin)
+	- [Pacstall `community`](https://pacstall.dev/packages/zen-browser-generic-bin)
 	- [Flatpak 🌐](https://flathub.org/apps/io.github.zen_browser.zen)  
 	  ```bash
 	  flatpak install flathub io.github.zen_browser.zen
