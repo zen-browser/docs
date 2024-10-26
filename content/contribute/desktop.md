@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Desktop Browser Development
 draft: false
-lastmod: 2024-09-21
+lastmod: 2024-10-25
 ---
 
 Contributing to the Zen Browser Desktop project is a great way to get involved with open-source software development. This guide will walk you through the steps to clone the project, set up your development environment, make contributions, and submit pull requests.
@@ -13,7 +13,9 @@ Before you begin, ensure you have the following tools installed:
 - [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
 - [**Node.js**](https://nodejs.org/): Required for building the browser.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
-
+- [**MozillaBuild**](https://wiki.mozilla.org/MozillaBuild): Meta-installer required to build the browser. 
+- [**Mercurial/TortoiseHg**](https://www.mercurial-scm.org/downloads): Required by Mozilla scripts, with its install directory added to PATH.
+- [**Python**](https://www.python.org/): Required by build scripts, with its install directory added to PATH.
 
 ## Run Locally
 
