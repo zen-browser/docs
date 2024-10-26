@@ -5,3 +5,4 @@ quartz/.quartz-cache
 .DS_Store
 workspace.json
 .idea/discord.xml
+content/.obsidian/core-plugins.json

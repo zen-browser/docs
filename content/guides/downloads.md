@@ -3,7 +3,7 @@ title: Download Hub
 draft: false
 aliases:
   - Download Hub
-lastmod: 2024-10-11
+lastmod: 2024-10-17
 ---
 
 This [[guides/index|guide]] is designed to help you easily find and download the version of Zen Browser that best fits your operating system and hardware. Whether you're using Windows, Linux, or macOS, you'll find both optimized and generic builds, along with portable and installer options to suit your needs. If you're unsure which version is right for you, be sure to check out our guide on [[generic-optimized | choosing between the generic and optimized builds]]
