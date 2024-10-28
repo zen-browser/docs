@@ -6,6 +6,7 @@
     "draft": "checkbox",
     "date": "date",
     "modified": "date",
-    "created": "date"
+    "created": "date",
+    "lastmod": "date"
   }
 }
