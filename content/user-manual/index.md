@@ -16,12 +16,3 @@ Welcome to the Zen Browser User Manual! This guide is designed to provide you wi
 Thank you for using Zen Browser, and happy browsing!
 
 # Manuals
-
-- ## [[user-manual/profiles/index|Profiles]]
-<a href="user-manual/profiles/index"><img src="/assets/user-manual/profiles/profiles.png" width="35%"></a>
-
-- ## [[user-manual/webpanel/index|Web Panel]]
-<a href="user-manual/profiles/index"><img src="/assets/user-manual/webpanel/webpanel.png" width="35%"></a>
-
-- ## [[user-manual/workspaces/index|Workspaces]]
-<a href="user-manual/profiles/index"><img src="/assets/user-manual/workspaces/workspaces.png" width="35%"></a>
