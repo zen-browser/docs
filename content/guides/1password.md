@@ -42,6 +42,7 @@ echo "zen-bin" | sudo tee -a /etc/1password/custom_allowed_browsers
 
 ---
 Special thanks to [u/xmansyx](https://www.reddit.com/user/xmansyx/) and [u/feelspeaceman](https://www.reddit.com/user/feelspeaceman/)
+
 Sources:
 - [1Password Integration fix (Linux) - Reddit](https://www.reddit.com/r/zen_browser/comments/1gcm33v/1password_integration_fix_linux/)
 - [1Password Extension fix for other Browsers on Linux - edb tools!](https://edb.tools/posts/1password-extension-fix/)
