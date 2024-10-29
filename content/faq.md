@@ -93,12 +93,12 @@ Zen Browser integrates with Firefox Sync, allowing you to sync your addons, book
 
 After signing in and selecting your preferences, your data will be synced across all devices where you are signed in with the same Mozilla account.
 
-## How to enable RTX Video Enhancement?
-
-Refer to [Nvidia's RTX Video FAQ](nvidia.custhelp.com/app/answers/detail/a_id/5448/~/rtx-video-faq) for getting started with RTX Super Resolution and HDR.
+## How do I use RTX Video Super Resolution?
 
 To enable Zen Browser to use the feature
 1. **Open 'about:config'**
 2. **Search for 'gfx.webrender.dcomp-video-hw-overlay-win-force-enabled'**
 3. **Double click the flag to toggle it to 'true'**
 4. **Restart the browser**
+
+Refer to [Nvidia's RTX Video FAQ](nvidia.custhelp.com/app/answers/detail/a_id/5448/~/rtx-video-faq) for additional information.
