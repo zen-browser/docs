@@ -56,7 +56,7 @@ This command will compile and process all the source files into a production-rea
 After installing the dependencies, you can start the development server:
 
 ```bash
-npm run rev
+npm run dev
 ```
 
 This command will start a local server and open the homepage in your default web browser. The server will automatically reload whenever you make changes to the code.
