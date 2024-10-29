@@ -41,17 +41,27 @@ npm install
 
 This command installs all the necessary packages listed in the `package.json` file.
 
-## Step 4: Start the Development Server
+## Step 4: Build the Project
+
+To build the project files:
+
+```bash
+npm run build
+```
+
+This command will compile and process all the source files into a production-ready format.
+
+## Step 5: Start the Development Server
 
 After installing the dependencies, you can start the development server:
 
 ```bash
-npm start
+npm run rev
 ```
 
 This command will start a local server and open the homepage in your default web browser. The server will automatically reload whenever you make changes to the code.
 
-## Step 5: Make Your Changes
+## Step 6: Make Your Changes
 
 You can now start making changes to the homepage. The project structure is as follows:
 
@@ -61,11 +71,11 @@ You can now start making changes to the homepage. The project structure is as fo
 
 Feel free to explore and modify the files to implement new features or fix bugs.
 
-## Step 6: Test Your Changes
+## Step 7: Test Your Changes
 
 Before submitting your changes, make sure they work as expected. Check the functionality across different pages and ensure that your changes do not introduce any new issues.
 
-## Step 7: Commit and Push Your Changes
+## Step 8: Commit and Push Your Changes
 
 Once you are satisfied with your changes, commit them to your local repository:
 
@@ -80,7 +90,7 @@ Push your changes to your forked repository:
 git push origin main
 ```
 
-## Step 8: Create a Pull Request
+## Step 9: Create a Pull Request
 
 After pushing your changes, go to the original Zen Browser Homepage Repository and submit a pull request:
 
