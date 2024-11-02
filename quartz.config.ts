@@ -13,7 +13,6 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    analytics:{ provider: 'umami', host: 'https://analytics.zen.sudovanilla.org', websiteId: '8211cbf1-008f-4531-9dfd-020905360586' },
     baseUrl: "docs.zen-browser.app",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
