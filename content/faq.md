@@ -101,4 +101,4 @@ To enable Zen Browser to use the feature
 3. **Double click the flag to toggle it to 'true'**
 4. **Restart the browser**
 
-Refer to [Nvidia's RTX Video FAQ](nvidia.custhelp.com/app/answers/detail/a_id/5448/~/rtx-video-faq) for additional information.
+Refer to [Nvidia's RTX Video FAQ](https://nvidia.custhelp.com/app/answers/detail/a_id/5448/~/rtx-video-faq) for additional information.
