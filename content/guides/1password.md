@@ -1,5 +1,5 @@
 ---
-title: 1Password Browser Integraion Fix
+title: 1Password Integration Fix
 draft: false
 lastmod: 2024-10-27
 ---
