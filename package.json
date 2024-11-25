@@ -35,7 +35,7 @@
     "quartz": "./quartz/bootstrap-cli.mjs"
   },
   "dependencies": {
-    "@clack/prompts": "^0.7.0",
+    "@clack/prompts": "^0.8.2",
     "@floating-ui/dom": "^1.6.12",
     "@napi-rs/simple-git": "0.1.19",
     "async-mutex": "^0.5.0",
