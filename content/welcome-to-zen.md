@@ -43,7 +43,9 @@ There is now an option for the URL in the sidebar (We also made this work with W
 
 ## Split View:
 
-![image.png](/assets/user-manual/welcome/image 2.png)
+<div align="center">
+    <img src="/assets/welcome/image 2.png" />
+</div>
 
 Split view now has options for resizing the splits as well as rearranging split view items. You can split more than 20 tabs in one split view at a time (this is insane but Arc limited me to 4 even on a widescreen).
 
