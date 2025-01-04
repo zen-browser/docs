@@ -13,12 +13,7 @@ lastmod: 2024-09-18
 Zen Browser lets you customize privacy and security settings to improve your browsing safety. If you want to adjust or change these settings:
 
 1. Click the `menu button` and select `Settings`.
-
-![[settings-menu.png]]
-
 2. On the sidebar, go to the `Privacy & Security` section.
-
-![[privacy-security-settings.png]]
 
 ---
 ## Security settings
