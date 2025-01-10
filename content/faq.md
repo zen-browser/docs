@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions ❓
-lastmod: 2024-09-21
+lastmod: 2025-01-10
 ---
 Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
 
@@ -57,8 +57,6 @@ Your support helps the team maintain and enhance Zen Browser for everyone!
 2. Right click a tab, and select `Split x Tabs`
 3. Change the view mode by pressing the 🔗 button in the top address bar
 
-<video src="https://branding-assets-zen-browser.b-cdn.net/docs/vids/content_assets_split-tabs.webm" controls loading="lazy"></video>
-
 ## How to switch tabs by scrolling?
 You can enable this feature by changing a setting in the browser's configuration. Here's how:
 
@@ -102,3 +100,12 @@ To enable Zen Browser to use the feature
 4. **Restart the browser**
 
 Refer to [Nvidia's RTX Video FAQ](https://nvidia.custhelp.com/app/answers/detail/a_id/5448/~/rtx-video-faq) for additional information.
+
+## Transparency bug
+
+Some users encounter the bug where websites are partialy transparent, to resolve it follow bellow:
+1. **Url `about:config`**
+2. Search for `browser.tabs.allow_transparent_browser`
+3. Set the flag to `false`
+4. **Restart the browser**
+
