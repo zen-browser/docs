@@ -44,7 +44,7 @@ This command handles all the necessary bootstrapping tasks, such as setting up c
 Before building the browser, it’s recommended to update the American English language packs to ensure that all localization files are up-to-date:
 
 ```bash
-sh ./scripts/update-en-US-packs.sh
+python3 ./scripts/update_en_US_packs.py
 ```
 
 This script updates the "en-US" localization files, which are necessary for proper language support in Zen Browser. Running this step ensures that your build includes the latest translations and language resources.
