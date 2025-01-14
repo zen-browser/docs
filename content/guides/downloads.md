@@ -42,7 +42,7 @@ This [[guides/index|guide]] is designed to help you easily find and download the
 	- [Pacstall `community`](https://pacstall.dev/packages/zen-browser-generic-bin)
 	- [Flatpak 🌐](https://flathub.org/apps/io.github.zen_browser.zen)  
 	  ```bash
-	  flatpak install flathub io.github.zen_browser.zen
+	  flatpak install flathub app.zen_browser.zen
 	  ```
 
 
