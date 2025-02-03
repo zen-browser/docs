@@ -20,7 +20,6 @@ We welcome a wide range of contributions, including but not limited to:
 
 To help you get started with contributing, we have created separate guides for each repository:
 
-- [[desktop | Getting Started with Desktop Browser Development]]
 - [[www | Getting Started with Zen's Homepage Development]]
 - [[docs | Getting Started with Documentation Contributions]]
 - [[translation | Getting Started with Translations]]
