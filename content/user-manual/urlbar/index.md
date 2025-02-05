@@ -6,7 +6,7 @@ aliases:
 
 <div align="center">
   <video width="100%" controls>
-    <source src="/assets/user-manual/urlbar/urlbar.mov" type="video/mov">
+    <source src="/assets/user-manual/urlbar/vid.mov" type="video/mov">
     Your browser does not support the video tag.
   </video>
 </div>
