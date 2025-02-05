@@ -14,4 +14,3 @@ Welcome to **Zen Browser's Documentation!** Here, you'll find everything you nee
 * #### [[benchmarks | Performance Benchmarks 📊]]
 * #### [[contribute/index | Contribution Guides 🌟]]
 * #### [[security|Security 🔐]]
-* #### [[welcome-to-zen|Welcome to Zen 🔐]]
