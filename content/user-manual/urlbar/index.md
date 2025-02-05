@@ -5,8 +5,8 @@ aliases:
 ---
 
 <div align="center">
-  <video width="100%" controls>
-    <source src="/assets/user-manual/urlbar/vid.mov" type="video/mov">
+  <video width="100%" loop autoplay>
+    <source src="/assets/user-manual/urlbar/vid.mov" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
