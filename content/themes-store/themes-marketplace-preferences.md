@@ -1,9 +1,9 @@
 ---
-title: Themes Store Preferences ⚙️
-lastmod: 2024-09-16
+title: Mods Registry Preferences ⚙️
+lastmod: 2025-02-07
 ---
 
-The `preferences.json` file allows theme developers to define custom preferences that control the behavior and appearance of themes in the Zen Browser. Each preference is defined with a `property`, a `label`, a `type`, and optionally `options` (for dropdown preferences), `defaultValue`, `placeholder` (to configure preference placeholder) and `disabledOn` (to disable property on selected OS). The `preferences.json` file contains a list of these preference objects at its root.
+The `preferences.json` file allows mod developers to define custom preferences that control the behavior and appearance of mods in the Zen Browser. Each preference is defined with a `property`, a `label`, a `type`, and optionally `options` (for dropdown preferences), `defaultValue`, `placeholder` (to configure preference placeholder) and `disabledOn` (to disable property on selected OS). The `preferences.json` file contains a list of these preference objects at its root.
 
 ## Preferences fields
 
@@ -11,7 +11,7 @@ The `preferences.json` file allows theme developers to define custom preferences
 
 The `property` field is a string that should follow Firefox's preference naming schema, similar to `about:config` entries. The `property` name can be any valid string that aligns with this schema.
 
-For example: `theme.mytheme.background_color`
+For example: `mod.mymod.background_color`
 
 
 ### Field: `label` - Label
@@ -35,7 +35,7 @@ The `checkbox` type allows a togglable input to enable or disable a property.
 
 ```json title="Checkbox Example"
 {
-  "property": "theme.mytheme.enable_dark_mode",
+  "property": "mod.mymod.enable_dark_mode",
   "label": "Enable dark mode",
   "type": "checkbox"
 }
@@ -47,7 +47,7 @@ The `dropdown` type allows to select a single choice on multiple options.
 
 ```json title="Dropdown Example"
 {
-  "property": "theme.mytheme.background_color",
+  "property": "mod.mymod.background_color",
   "label": "Background color",
   "type": "dropdown",
   "options": [
@@ -70,7 +70,7 @@ The `string` type is a text input that allows to insert valid css values without
 
 ```json title="String Example"
 {
-  "property": "theme.mytheme.tab_padding",
+  "property": "mod.mymod.tab_padding",
   "label": "Set tab padding",
   "type": "string"
 }
@@ -161,18 +161,18 @@ For example: `e.g: 10px`
 <details>
   <summary><font weight="bold" size=4.75><b>See Full Example</b></font></summary>
 
-Below is a full example of what a `preferences.json` file might look like with multiple preference objects in its root. Each object represents a preference defined for a theme:
+Below is a full example of what a `preferences.json` file might look like with multiple preference objects in its root. Each object represents a preference defined for a mod:
 
 ```json
 [
   {
-    "property": "theme.mytheme.enable_dark_mode",
+    "property": "mod.mymod.enable_dark_mode",
     "label": "Enable dark mode",
     "type": "checkbox",
     "defaultValue": true
   },
   {
-    "property": "theme.mytheme.background_color",
+    "property": "mod.mymod.background_color",
     "label": "Background color",
     "type": "dropdown",
     "placeholder": "Select a color",
@@ -189,7 +189,7 @@ Below is a full example of what a `preferences.json` file might look like with m
     ]
   },
   {
-    "property": "theme.mytheme.show_bookmarks_bar",
+    "property": "mod.mymod.show_bookmarks_bar",
     "label": "Show bookmarks bar",
     "type": "string",
     "disabledOn": ["macos"]
@@ -207,19 +207,19 @@ In this example:
 
 ---
 
-## Using preferences in the theme's CSS
+## Using preferences in the mod's CSS
 
-Once you have defined your preferences in the `preferences.json` file, you can use them in your theme’s CSS to modify the appearance or behavior based on the user’s selections.
+Once you have defined your preferences in the `preferences.json` file, you can use them in your mod’s CSS to modify the appearance or behavior based on the user’s selections.
 
 ### Checkbox Preferences
 
 Checkbox preferences can be detected in your CSS using the `-moz-bool-pref` media query, which evaluates the boolean value (`true` or `false`) of a checkbox preference.
 
-For example, if you have a preference to enable dark mode in your theme:
+For example, if you have a preference to enable dark mode in your mod:
 
 ```json
 {
-  "property": "theme.mytheme.enable_dark_mode",
+  "property": "mod.mymod.enable_dark_mode",
   "label": "Enable dark mode",
   "type": "checkbox"
 }
@@ -228,7 +228,7 @@ For example, if you have a preference to enable dark mode in your theme:
 You can use the following CSS to change the background color when the dark mode preference is enabled:
 
 ```css {1}
-@media (-moz-bool-pref: "theme.mytheme.enable_dark_mode") {
+@media (-moz-bool-pref: "mod.mymod.enable_dark_mode") {
   body {
     background-color: #000;
     color: #fff;
@@ -238,16 +238,16 @@ You can use the following CSS to change the background color when the dark mode 
 
 You can also have negative conditions
 ```css {1}
-@media not (-moz-bool-pref: "theme.mytheme.enable_dark_mode")
+@media not (-moz-bool-pref: "mod.mymod.enable_dark_mode")
 ```
 
 
 ### Dropdown Preferences
 
 > [!attention]
-> `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your themes CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
+> `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your mod’s CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
 >
-> E.g. `theme.mytheme.background_color` becomes `theme-mytheme-background_color` in the CSS file.
+> E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
 > This transformation ensures that the property can be used as an attribute selector or inside a media query.
 
 For dropdown preferences, you can detect the selected value using the `:has(){:css}` CSS pseudo-class, which applies styles based on the selected attribute and value in the DOM.
@@ -256,7 +256,7 @@ For example, if you have a preference to select the background color from a drop
 
 ```json
 {
-  "property": "theme.mytheme.background_color",
+  "property": "mod.mymod.background_color",
   "label": "Background color",
   "type": "dropdown",
   "options": [
@@ -276,13 +276,13 @@ You can use the following CSS to change the background color based on the select
 
 ```css {2,8,14}
 /* Green background */
-body:has(#theme-mytheme[theme-mytheme-background_color="green"]) {
+body:has(#mod-mymod[mod-mymod-background_color="green"]) {
   background-color: #008000;
   color: #000;
 }
 
 /* Blue background */
-body:has(#theme-mytheme[theme-mytheme-background_color="blue"]) {
+body:has(#mod-mymod[mod-mymod-background_color="blue"]) {
   background-color: #0000ff;
   color: #fff;
 }
@@ -290,7 +290,7 @@ body:has(#theme-mytheme[theme-mytheme-background_color="blue"]) {
 
 In this example:
 - The background color and text color change based on the value selected in the `background_color` dropdown.
-- The selector `body:has(#theme-mytheme[background_color="value"]){:css}` checks the `background_color` attribute and applies the relevant styles based on the selected option.
+- The selector `body:has(#mod-mymod[background_color="value"]){:css}` checks the `background_color` attribute and applies the relevant styles based on the selected option.
 
 ---
 
@@ -302,12 +302,12 @@ Suppose your `preferences.json` file includes these two preferences:
 ```json
 [
   {
-    "property": "theme.mytheme.enable_dark_mode",
+    "property": "mod.mymod.enable_dark_mode",
     "label": "Enable dark mode",
     "type": "checkbox"
   },
   {
-    "property": "theme.mytheme.background_color",
+    "property": "mod.mymod.background_color",
     "label": "Background color",
     "type": "dropdown",
     "options": [
@@ -328,7 +328,7 @@ You can combine the CSS like this:
 
 ```css
 /* Checkbox for dark mode */
-@media (-moz-bool-pref: "theme.mytheme.enable_dark_mode") {
+@media (-moz-bool-pref: "mod.mymod.enable_dark_mode") {
   body {
     background-color: #000;
     color: #fff;
@@ -336,12 +336,12 @@ You can combine the CSS like this:
 }
 
 /* Dropdown for background color selection */
-body:has(#theme-mytheme[theme-mytheme-background_color="green"]) {
+body:has(#mod-mymod[mod-mymod-background_color="green"]) {
   background-color: #008000;
   color: #000;
 }
 
-body:has(#theme-mytheme[theme-mytheme-background_color="blue"]) {
+body:has(#mod-mymod[mod-mymod-background_color="blue"]) {
   background-color: #0000ff;
   color: #fff;
 }
@@ -358,16 +358,16 @@ This allows users to:
 String preferences can be detected in your CSS using the `var(--property)` operator. The preference property is saved at `:root` level.
 
 > [!attention]
-> `property` fields defined in `preferences.json` using the `"string"` type will have one key difference when used in your themes CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
+> `property` fields defined in `preferences.json` using the `"string"` type will have one key difference when used in your mod’s CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
 >
-> E.g. `theme.mytheme.background_color` becomes `theme-mytheme-background_color` in the CSS file.
+> E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
 > This transformation ensures that the property can be used as an attribute selector or inside a media query.
 
-For example, if you have a preference to enable dark mode in your theme:
+For example, if you have a preference to enable dark mode in your mod:
 
 ```json
 {
-  "property": "theme.mytheme.background_color",
+  "property": "mod.mymod.background_color",
   "label": "Background color",
   "type": "string"
 }
@@ -377,6 +377,6 @@ You can use the following CSS to change the background color when the dark mode 
 
 ```css {2}
 .myClass {
-  background-color: var(--theme-mytheme-background_color)
+  background-color: var(--mod-mymod-background_color)
 }
 ```
