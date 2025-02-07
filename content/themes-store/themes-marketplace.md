@@ -1,16 +1,16 @@
 ---
-title: Information about Themes Store ℹ️
-lastmod: 2024-09-19
+title: Information about Mods Registry ℹ️
+lastmod: 2025-02-07
 ---
 
-The Themes Store is a place where you can find and install themes for Zen Browser.
+The Mods Registry is a place where you can find and install mods for Zen Browser.
 
-## How to install a theme
+## How to install a mod
 
 1. Open Zen Browser.
-2. Click on the theme you would like to install on the [Themes Store](https://www.zen-browser.app/themes).
+2. Click on the mod you would like to install on the [Mods Registry](https://www.zen-browser.app/mods).
 3. Click on the "Install" button.
 
-## For theme developers
+## For mod developers
 
-If you are a theme developer and would like to submit your theme, please follow the instructions on the [Submission Guidelines](themes-store/themes-marketplace-submission-guidelines.md) page.
+If you are a mod developer and would like to submit your mod, please follow the instructions on the [Submission Guidelines](themes-store/themes-marketplace-submission-guidelines.md) page.

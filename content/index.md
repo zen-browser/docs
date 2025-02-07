@@ -9,7 +9,7 @@ Welcome to **Zen Browser's Documentation!** Here, you'll find everything you nee
 * #### [[building|Building Zen Browser 📦]]
 * #### [[user-manual/index|User Manual 📖]]
 * #### [[guides/index|Guides 🛠️]]
-* #### [[themes-store/index|Theme Store 🎨]]
+* #### [[themes-store/index|Mods Registry 🎨]]
 * #### [[faq | Frequently Asked Questions ❓]]
 * #### [[benchmarks | Performance Benchmarks 📊]]
 * #### [[contribute/index | Contribution Guides 🌟]]
