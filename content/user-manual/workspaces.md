@@ -4,6 +4,9 @@ aliases:
   - Workspaces
 ---
 
+> [!danger]
+> This user manual is still in early stages of development and incomplete
+
 <div align="center">
 	<img src="/assets/user-manual/workspaces/workspaces.png">
 </div>

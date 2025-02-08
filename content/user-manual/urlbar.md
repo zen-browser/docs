@@ -4,6 +4,9 @@ aliases:
   - URL bar
 ---
 
+> [!danger]
+> This user manual is still in early stages of development and incomplete
+
 <div align="center">
   <video width="100%" loop autoplay>
     <source src="/assets/user-manual/urlbar/vid.mov" type="video/mp4">
@@ -17,7 +20,7 @@ Zen Browser’s **URL bar** is a powerful tool that helps you navigate the web q
 
 * Can be disabled in settings or `about:config` (`zen.urlbar.replace-newtab`)
 
-### How does it work?
+### How does it work?
 
 * When trying to open a new tab, the search bar will appear. This allows you to navigate faster and more efficiently by being able to type out the adress or getting auto-completed without having a change in the view.
   * If the newtab urlbar is closed but you've typed something. The text is remembered unless the URL or tab has been changed. 
