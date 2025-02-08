@@ -19,7 +19,7 @@ Zen Browser’s **URL bar** is a powerful tool that helps you navigate the web q
 
 ### How does it work?
 
-* When trying to open a new tab, the search bar will appear. This allows you to navigate faster and more efficiently by being able to type out the adress or getting auto-completed without having a change in the view.
+* When trying to open a new tab, the search bar will appear. This allows you to navigate faster and more efficiently by being able to type out the address or getting auto-completed without having a change in the view.
   * If the newtab urlbar is closed but you've typed something. The text is remembered unless the URL or tab has been changed. 
 * Otherwise, the functionality is basically the same as before, only when focusing the urlbar either by clicking on with the shortcut
 
