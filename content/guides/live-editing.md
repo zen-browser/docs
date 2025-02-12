@@ -19,6 +19,7 @@ This [[guides/index|guide]] will help you customize the appearance of Zen Browse
 
 1. In the Profile Folder, create a new folder and name it `chrome`.
 2. Inside the `chrome` folder, create a new blank file named `userChrome.css`.
+3. Restart Zen Browser to apply the changes.
 
 ## Step 3: Open Style Editor in Zen Browser
 
