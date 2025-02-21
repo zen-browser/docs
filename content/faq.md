@@ -11,7 +11,7 @@ Zen Browser will not support horizontal tabs in the near future. The decision to
 At the moment, our team does not have the time or resources to develop Android or iOS versions of Zen Browser. Additionally, we believe that Zen’s unique features, particularly its design around vertical tabs, do not translate well to the mobile form factor. As such, we do not currently have plans to develop a mobile version of Zen Browser.
 
 ## Why can't Zen Browser play DRM-protected content?
-> [!important] This only affects Microsoft Windows and MacOS
+> [!important] This only affects MacOS
 
 > [!question]- What is DRM?
 > [Digital Rights Management](https://wikipedia.org/wiki/Digital_rights_management) (DRM) is a technology used to control how digital content, such as videos and music, can be accessed and used. DRM is commonly used by streaming services to protect copyrighted content. When you try to play DRM-protected content, the website verifies if the necessary DRM software is available on your browser. Most browsers use [**Widevine**](https://www.widevine.com), a DRM technology developed by Google, to facilitate this.
