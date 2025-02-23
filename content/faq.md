@@ -55,7 +55,7 @@ Your support helps the team maintain and enhance Zen Browser for everyone!
 
 1. Select multiple tabs by left-clicking them while holding the `Ctrl` key, or left-click 2 tabs while holding the `Shift` key to select all tabs in between
 2. Right click a tab, and select `Split x Tabs`
-3. Change the view mode by pressing the 🔗 button in the top address bar
+3. Change the view mode by pressing the `[|]` button in the top address bar
 
 ## How to switch tabs by scrolling?
 You can enable this feature by changing a setting in the browser's configuration. Here's how:
