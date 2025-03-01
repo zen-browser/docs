@@ -14,7 +14,7 @@ If you are a [mod developer] and would like to submit your mod, please follow th
 2. **Mod Validation**:
     - Your mod's name must be unique and less than `25` characters.
     - Your mod's description must be less than `100` characters.
-    - Your mod's screenshot must be a `PNG` with a size of `300x200` (it can be resized after upload).
+    - Your mod's screenshot must be a `PNG` with a size of `600x400` (it can be resized after upload).
     - Your mod must contain a valid `README` describing the mod and how to use it.
     - If your mod has any preferences values, they must be set in the `preferences` text area as a `JSON` object.
       - See how preferences work [here](themes-store/themes-marketplace-preferences.md).
