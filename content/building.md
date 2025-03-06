@@ -1,6 +1,6 @@
 ---
 title: Building Zen Browser 📦
-lastmod: 2024-09-25
+lastmod: 2025-03-06
 ---
 
 We've taken the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge. 
@@ -28,6 +28,14 @@ pnpm i
 ```
 
 This command will install all the packages listed in the `package.json` file, which are required for building and running Zen Browser.
+
+If you see this error message:
+
+<div align="center">
+	<img src="/assets/building/ignored-builds-warning.png" width="80%">
+</div>
+
+Run `pnpm approve-builds` and approve them.
 
 ## Step 3: Download and Bootstrap the Browser
 
@@ -68,3 +76,38 @@ pnpm start
 ```
 
 This command launches the browser, allowing you to see your changes in action.
+
+# Troubleshooting
+
+<details>
+<summary>[Windows] Error: ccache not found</summary>
+
+Add `C:\Users\<your_user>\.mozbuild\sccache` to your PATH.
+
+</details>
+
+<details>
+<summary>[Windows] Error: 7z not found</summary>
+
+Download <a href="https://www.7-zip.org/download.html">7-zip</a> and add it to your PATH.
+
+</details>
+
+<details>
+<summary>[All OS] My code changes are not being reflected even after building</summary>
+
+If you are changing files in the `src/` directory:
+
+```bash
+pnpm run import
+pnpm run build:ui
+```
+
+</details>
+
+<details>
+<summary>[All OS] Something went wrong installing the "sharp" module</summary>
+
+You likely did not approve builds in [Step 2](#step-2-install-dependencies).
+
+</details>
