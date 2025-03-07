@@ -1,7 +1,7 @@
 ---
 title: Contributing to Zen Browser
 draft: false
-lastmod: 2024-08-26
+lastmod: 2025-02-07
 ---
 
 Thank you for considering contributing to Zen Browser! We appreciate your time and effort in improving this project. The following is a set of guidelines for contributing to Zen Browser. These guidelines are intended to make it easier for you to get involved.
@@ -20,11 +20,10 @@ We welcome a wide range of contributions, including but not limited to:
 
 To help you get started with contributing, we have created separate guides for each repository:
 
-- [[desktop | Getting Started with Desktop Browser Development]]
 - [[www | Getting Started with Zen's Homepage Development]]
 - [[docs | Getting Started with Documentation Contributions]]
 - [[translation | Getting Started with Translations]]
-  
+
 Please follow the appropriate guide based on the repository you want to contribute to.
 
 ### Reporting Bugs
@@ -34,7 +33,7 @@ If you find a bug, please open an issue and describe the problem in detail. Incl
 >[!important]
 >Open the issue in it's corresponding GitHub repository:
 >- [Desktop Browser App](https://github.com/zen-browser/desktop/issues)
->- [Zen's Custom Themes](https://github.com/zen-browser/theme-store)
+>- [Zen's Custom Mods](https://github.com/zen-browser/theme-store)
 >- [Zen's Homepage Website](https://github.com/zen-browser/www)
 >- [This documentation Website](https://github.com/zen-browser/docs)
 
@@ -42,7 +41,7 @@ If you find a bug, please open an issue and describe the problem in detail. Incl
 
 ![[discuss.png]]
 
-We welcome suggestions for new features or improvements to existing ones. To suggest a feature, please start a new Github discussion in the Ideas category. 
+We welcome suggestions for new features or improvements to existing ones. To suggest a feature, please start a new Github discussion in the Ideas category.
 *Use the correct Github Repository based on the list above*
 
 ---

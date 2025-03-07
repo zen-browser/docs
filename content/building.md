@@ -24,7 +24,7 @@ cd desktop
 Once you have cloned the project, navigate to the project directory and install the necessary dependencies using npm:
 
 ```bash
-npm i
+pnpm i
 ```
 
 This command will install all the packages listed in the `package.json` file, which are required for building and running Zen Browser.
@@ -34,7 +34,7 @@ This command will install all the packages listed in the `package.json` file, wh
 To set up the browser, you need to download additional files and prepare the environment:
 
 ```bash
-npm run init
+pnpm run init
 ```
 
 This command handles all the necessary bootstrapping tasks, such as setting up configuration files and downloading essential resources.
@@ -44,7 +44,7 @@ This command handles all the necessary bootstrapping tasks, such as setting up c
 Before building the browser, it’s recommended to update the American English language packs to ensure that all localization files are up-to-date:
 
 ```bash
-sh ./scripts/update-en-US-packs.sh
+python3 ./scripts/update_en_US_packs.py
 ```
 
 This script updates the "en-US" localization files, which are necessary for proper language support in Zen Browser. Running this step ensures that your build includes the latest translations and language resources.
@@ -54,7 +54,7 @@ This script updates the "en-US" localization files, which are necessary for prop
 Now that everything is set up, you can build the browser:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 This command compiles the source code and creates the necessary files for running Zen Browser.
@@ -64,7 +64,7 @@ This command compiles the source code and creates the necessary files for runnin
 After building the browser, you can start it using:
 
 ```bash
-npm start
+pnpm start
 ```
 
 This command launches the browser, allowing you to see your changes in action.

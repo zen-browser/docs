@@ -53,11 +53,9 @@ In MacOS you can use the Graphical Interface of the Desktop app to add Zen Brows
 
 #### 1. Go into the 1Password desktop app and open Settings.
 
-#### 2. In the Labs tab, click "Enable Custom Browser Support" and enable it.
+#### 2. In the Browser tab, click "Add Browser".
 
-#### 3. In the Browser tab, click "Add Browser".
-
-#### 4. In your Applications folder, find and add "Zen Browser, then authorize 1Password when prompted.
+#### 3. In your Applications folder, find and add "Zen Browser", then authorize 1Password when prompted.
 
 ![[macos-settings-4.png]]
 

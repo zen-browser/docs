@@ -9,7 +9,7 @@ Zen Browser Docs website
 
 Welcome to **Zen Browser’s Documentation Repo!** 
 
-[Uptime-Phare](https://uptime.zen-browser.app)
+[![Status badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fuptime.zen-browser.app%2Fshield-badges%2Fstatus.json&style=for-the-badge)](https://uptime.zen-browser.app)
 
 ## Contributing
 

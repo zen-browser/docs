@@ -35,7 +35,7 @@
     "quartz": "./quartz/bootstrap-cli.mjs"
   },
   "dependencies": {
-    "@clack/prompts": "^0.7.0",
+    "@clack/prompts": "^0.10.0",
     "@floating-ui/dom": "^1.6.12",
     "@napi-rs/simple-git": "0.1.19",
     "async-mutex": "^0.5.0",
@@ -64,7 +64,7 @@
     "pretty-time": "^1.1.0",
     "reading-time": "^1.5.0",
     "rehype-autolink-headings": "^7.1.0",
-    "rehype-citation": "^2.2.1",
+    "rehype-citation": "^2.2.2",
     "rehype-katex": "^7.0.1",
     "rehype-mathjax": "^6.0.0",
     "rehype-pretty-code": "^0.14.0",
@@ -81,7 +81,7 @@
     "rfdc": "^1.4.1",
     "rimraf": "^6.0.1",
     "serve-handler": "^6.1.6",
-    "shiki": "^1.22.2",
+    "shiki": "^3.0.0",
     "source-map-support": "^0.5.21",
     "to-vfile": "^8.0.0",
     "toml": "^3.0.0",
