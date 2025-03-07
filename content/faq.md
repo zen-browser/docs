@@ -2,39 +2,45 @@
 title: Frequently Asked Questions ❓
 lastmod: 2025-01-10
 ---
+
 Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
 
 ## How can I use horizontal tabs?
+
 Zen Browser will not support horizontal tabs in the near future. The decision to focus on **Vertical Tabs** is a core design choice, with the entire Zen Browser experience built around this concept. This approach is intended to maximize screen space and improve navigation, making vertical tabs an essential part of Zen's philosophy.
 
 ## Will there be mobile version for Zen Browser?
+
 At the moment, our team does not have the time or resources to develop Android or iOS versions of Zen Browser. Additionally, we believe that Zen’s unique features, particularly its design around vertical tabs, do not translate well to the mobile form factor. As such, we do not currently have plans to develop a mobile version of Zen Browser.
 
 ## Why can't Zen Browser play DRM-protected content?
+
 > [!important] This only affects Microsoft Windows and MacOS
 
 > [!question]- What is DRM?
 > [Digital Rights Management](https://wikipedia.org/wiki/Digital_rights_management) (DRM) is a technology used to control how digital content, such as videos and music, can be accessed and used. DRM is commonly used by streaming services to protect copyrighted content. When you try to play DRM-protected content, the website verifies if the necessary DRM software is available on your browser. Most browsers use [**Widevine**](https://www.widevine.com), a DRM technology developed by Google, to facilitate this.
 
-Zen Browser currently lacks DRM-support, because it does not have a Widevine license. Acquiring such a license requires the payment of large fees (at least $5,000). Acquiring this license is financially unresponsible for the developer of Zen. This means that DRM-protected media cannot be played in Zen Browser for the foreseeable future. 
+Zen Browser currently lacks DRM-support, because it does not have a Widevine license. Acquiring such a license requires the payment of large fees (at least $5,000). Acquiring this license is financially unresponsible for the developer of Zen. This means that DRM-protected media cannot be played in Zen Browser for the foreseeable future.
 We have to also consider that in order to be able to apply for this license, Zen must be a part of a company with size at least as big as Mozilla or Brave.
 
 Feel free to support the funding of a Widevine license for Zen on [Ko-Fi](https://ko-fi.com/zen_browser) or [Patreon](https://www.patreon.com/zen_browser)!
 
 > [!question]- Which Services Are Affected?
->Due to the lack of DRM support, you will not be able to stream content from the following services in Zen Browser:
->- **HBO Max**
->- **Netflix**
->- **Spotify**
->- **Disney+**
->- **Amazon Prime Video**
->- **Apple Music**
->- **Google Play Movies & TV**
->- **And possible other services that use DRM not listed here**
+> Due to the lack of DRM support, you will not be able to stream content from the following services in Zen Browser:
+>
+> - **HBO Max**
+> - **Netflix**
+> - **Spotify**
+> - **Disney+**
+> - **Amazon Prime Video**
+> - **Apple Music**
+> - **Google Play Movies & TV**
+> - **And possible other services that use DRM not listed here**
 
 > [!info] Alternative solutions
-> * Use a browser that has a Widevine license, such as [**Mozilla Firefox**](https://www.mozilla.org/firefox/), when streaming DRM-protected content.
-> * Use the native desktop app for the service you want to use
+>
+> - Use a browser that has a Widevine license, such as [**Mozilla Firefox**](https://www.mozilla.org/firefox/), when streaming DRM-protected content.
+> - Use the native desktop app for the service you want to use
 
 ## How do I know Zen is safe?
 
@@ -58,6 +64,7 @@ Your support helps the team maintain and enhance Zen Browser for everyone!
 3. Change the view mode by pressing the `[|]` button in the top address bar
 
 ## How to switch tabs by scrolling?
+
 You can enable this feature by changing a setting in the browser's configuration. Here's how:
 
 1. Open the `about:config` page. This page contains advanced settings for the browser.
@@ -68,7 +75,7 @@ Once this setting is enabled, you can hover your mouse over the tab bar and use 
 
 ## Where do report problems and bugs?
 
->[!caution] New features are not bugs. Please see [Where do I recommend features?](#where-do-i-recommend-features) below
+> [!caution] New features are not bugs. Please see [Where do I recommend features?](#where-do-i-recommend-features) below
 
 If you want report an issue or a bug with the browser, you can do so on the browser's GitHub page. Before submitting your request, it's mandatory to check if the issue has already been reported. You can do this by searching through existing issues on the [GitHub issues page](https://github.com/zen-browser/desktop/issues).
 
@@ -94,6 +101,7 @@ After signing in and selecting your preferences, your data will be synced across
 ## How do I use RTX Video Super Resolution?
 
 To enable Zen Browser to use the feature
+
 1. **Open 'about:config'**
 2. **Search for 'gfx.webrender.dcomp-video-hw-overlay-win-force-enabled'**
 3. **Double click the flag to toggle it to 'true'**
@@ -104,8 +112,8 @@ Refer to [Nvidia's RTX Video FAQ](https://nvidia.custhelp.com/app/answers/detail
 ## Transparency bug
 
 Some users encounter the bug where websites are partialy transparent, to resolve it follow bellow:
+
 1. **Url `about:config`**
 2. Search for `browser.tabs.allow_transparent_browser`
 3. Set the flag to `false`
 4. **Restart the browser**
-

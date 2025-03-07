@@ -14,6 +14,3 @@ Switching profiles gives you a “fresh” browsing instance each time, letting 
 
 > [!note]
 > If you'd like separate environments inside a single browser instance, try **[[Workspaces + Containers]]** for a flexible, organized setup within the same profile.
-
-
-

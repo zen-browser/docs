@@ -1,4 +1,4 @@
-// Nothing yet 
+// Nothing yet
 
 import { registerEscapeHandler } from "../../components/scripts/util"
 
@@ -6,18 +6,16 @@ type MaybeHTMLElement = HTMLElement | undefined
 
 function setFolder(folderPath: string, open: boolean) {
   const childrenList = document.querySelector(
-    `[data-ol-children-for='${folderPath}']`
+    `[data-ol-children-for='${folderPath}']`,
   ) as MaybeHTMLElement
   if (!childrenList) return
 
   const folderEntry = document.querySelector(
-    `[data-ol-selector-for='${folderPath}']`
+    `[data-ol-selector-for='${folderPath}']`,
   ) as MaybeHTMLElement
   if (!folderEntry) return
 
-  const collapseIcon = folderEntry.getElementsByTagName(
-    "svg"
-  )[0] as MaybeHTMLElement
+  const collapseIcon = folderEntry.getElementsByTagName("svg")[0] as MaybeHTMLElement
   if (!collapseIcon) return
 
   if (open) {
@@ -61,13 +59,11 @@ function setupOverlayExplorer() {
 
     const folderPath = target.parentNode.getAttribute("data-ol-selector-for")
     const childrenList = document.querySelector(
-      `[data-ol-children-for='${folderPath}']`
+      `[data-ol-children-for='${folderPath}']`,
     ) as MaybeHTMLElement
     if (!childrenList) return
 
-    const collapseIcon = target.parentNode.getElementsByTagName(
-      "svg"
-    )[0] as MaybeHTMLElement
+    const collapseIcon = target.parentNode.getElementsByTagName("svg")[0] as MaybeHTMLElement
     if (!collapseIcon) return
 
     childrenList.classList.toggle("open")
@@ -75,10 +71,7 @@ function setupOverlayExplorer() {
 
     if (useSaveState) {
       folderOpenMap.set(folderPath, collapseIcon.classList.contains("open"))
-      localStorage.setItem(
-        "olFileTree",
-        JSON.stringify(Array.from(folderOpenMap.entries()))
-      )
+      localStorage.setItem("olFileTree", JSON.stringify(Array.from(folderOpenMap.entries())))
     }
   }
 

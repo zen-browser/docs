@@ -4,7 +4,6 @@ draft: false
 lastmod: 2024-08-24
 ---
 
-
 This guide will walk you through the steps required to set up and contribute to the development of Zen Browser's homepage. Whether you're fixing bugs, adding new features, or enhancing the design, this guide will help you get started.
 
 ## Prerequisites
@@ -107,7 +106,6 @@ Your pull request will be reviewed by the maintainers, and you may be asked to m
 - [Zen Browser Homepage Repository](https://github.com/zen-browser/www)
 - [[CONTRIBUTING|  Contribution Guidelines]]
 - [[CODE_OF_CONDUCT | Code of Conduct]]
-
 
 ---
 

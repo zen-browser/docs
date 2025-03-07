@@ -23,13 +23,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-  ],  
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.MobileOnly(ExtraComponent.OverlayExplorer(
-      {filterFn: (node) => (node.name !== "tags" && node.name !== "License")},
-    )),
+    Component.MobileOnly(
+      ExtraComponent.OverlayExplorer({
+        filterFn: (node) => node.name !== "tags" && node.name !== "License",
+      }),
+    ),
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
@@ -47,9 +49,11 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.MobileOnly(ExtraComponent.OverlayExplorer(
-      {filterFn: (node) => (node.name !== "tags" && node.name !== "License")},
-    )),
+    Component.MobileOnly(
+      ExtraComponent.OverlayExplorer({
+        filterFn: (node) => node.name !== "tags" && node.name !== "License",
+      }),
+    ),
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),

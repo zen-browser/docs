@@ -3,7 +3,7 @@ title: Managing Firefox Profiles
 lastmod: 2024-08-23
 ---
 
-This [[guides/index|guide]]  will give you a comprehensive understanding of Firefox profiles, helping you manage them effectively even in the most challenging situations. By following this guide, you'll learn how to preserve key elements of your browsing experience, including bookmarks, history, passwords, and more.
+This [[guides/index|guide]] will give you a comprehensive understanding of Firefox profiles, helping you manage them effectively even in the most challenging situations. By following this guide, you'll learn how to preserve key elements of your browsing experience, including bookmarks, history, passwords, and more.
 
 ## Goal
 
@@ -20,7 +20,6 @@ This guide will help you:
 ## Steps to Follow
 
 ### 1. Open Your Current Profile Folder
-
 
 1. Go to `about:support` in Firefox.
 2. Under the "Application Basics" section, click on "Open Folder" next to "Profile Folder."
@@ -41,7 +40,7 @@ After turning off Firefox, copy the following files from your profile folder:
 - **prefs.js**: Contains your `about:config` settings.
 
 > [!NOTE] **Optional Files**
-> 
+>
 > - **storage folder**: If you want to keep add-on customizations (this may not work 100% of the time).
 > - **chrome folder**: If you want to retain your interface customizations.
 
@@ -56,11 +55,11 @@ After turning off Firefox, copy the following files from your profile folder:
 7. Paste the files you copied earlier into the new profile folder.
 
 > [!WARNING] **Incompatibility Error**
-> 
+>
 > If Firefox opens with an incompatibility error after pasting the files, go to the new profile folder and move the `compatibility.ini` file somewhere else.
 
 ### 4. Final Step: Set as Default Profile
 
- After ensuring everything works correctly, go back to `about:profiles` and set the newly created profile as the default. This will make it your main profile moving forward.
+After ensuring everything works correctly, go back to `about:profiles` and set the newly created profile as the default. This will make it your main profile moving forward.
 
 By following these steps, you'll maintain a consistent and personalized browsing experience across different Firefox profiles.

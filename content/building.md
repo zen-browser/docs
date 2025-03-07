@@ -3,7 +3,7 @@ title: Building Zen Browser 📦
 lastmod: 2024-09-25
 ---
 
-We've taken the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge. 
+We've taken the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge.
 
 > [!failure]
 > We cannot provide support if a build fails. Please understand this before proceeding with the following steps.
@@ -39,7 +39,7 @@ pnpm run init
 
 This command handles all the necessary bootstrapping tasks, such as setting up configuration files and downloading essential resources.
 
-## Step 4: Update Language Packs 
+## Step 4: Update Language Packs
 
 Before building the browser, it’s recommended to update the American English language packs to ensure that all localization files are up-to-date:
 

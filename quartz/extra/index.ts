@@ -1,5 +1,3 @@
 import OverlayExplorer from "./OverlayExplorer"
 
-export {
-  OverlayExplorer,
-}
+export { OverlayExplorer }

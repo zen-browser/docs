@@ -4,7 +4,6 @@ draft: false
 lastmod: 2024-08-26
 ---
 
-
 This guide will help you get started with contributing to the documentation for Zen Browser. The documentation is crucial for helping users and developers understand and use the project effectively. We use Quartz v4 for generating the static documentation site, and we recommend using Obsidian as your Markdown editor for making contributions.
 
 ## Prerequisites
@@ -14,7 +13,7 @@ Before you begin, ensure you have the following tools installed:
 - [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
 - [**Node.js**](https://nodejs.org/): Required for building the Quartz v4 site.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
-- [**Obsidian**](https://obsidian.md/): A powerful Markdown editor recommended for editing and organizing documentation. *(Optional)*
+- [**Obsidian**](https://obsidian.md/): A powerful Markdown editor recommended for editing and organizing documentation. _(Optional)_
 
 ## 1. Fork the Repository
 

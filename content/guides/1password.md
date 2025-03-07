@@ -4,13 +4,13 @@ draft: false
 lastmod: 2024-10-27
 ---
 
-This [[guides/index|guide]] is designed to help you integrate [1Password Desktop App](https://1password.com/downloads) with  Zen Browser, for a more **straight forward workflow** when accessing your credentials using this password manager browser extension.
+This [[guides/index|guide]] is designed to help you integrate [1Password Desktop App](https://1password.com/downloads) with Zen Browser, for a more **straight forward workflow** when accessing your credentials using this password manager browser extension.
 
 > [!important]
 > This guide only applies for **Linux** and **MacOS** users.
-> 
+>
 > **Windows** users can still use the Browser Extension without integration with the Desktop App
-> 
+>
 > See: [Adding another trusted browser - 1Password](https://support.1password.com/1password-browser-connection-security/#adding-another-trusted-browser)
 
 1Password browser integrations follows a [list of well-known/trusted browser](https://support.1password.com/1password-browser-connection-security/), with this integration account information and encryption keys are transferred using this connection to allow the 1Password app and browser extension to share your vaults and lock state and allowing you to unlock your Browser Extension Vault with [bio-metric](https://en.wikipedia.org/wiki/Biometrics) data.
@@ -19,17 +19,20 @@ Since Zen Browser is still under development and [under the usage threshold](htt
 
 ## Workarounds
 
-That being said, there  are workaround methods to add Zen Browser to this *Trusted Browsers* list for **Linux** and **MacOS**.
+That being said, there are workaround methods to add Zen Browser to this _Trusted Browsers_ list for **Linux** and **MacOS**.
 
 ### Linux
-You can create a *Custom Allowed Browsers* file that 1Password will use to allow Zen Browser -- or other non-officially supported browser-- to integrate with 1Password's desktop app.
+
+You can create a _Custom Allowed Browsers_ file that 1Password will use to allow Zen Browser -- or other non-officially supported browser-- to integrate with 1Password's desktop app.
 
 #### 1. Create 1Password's config directory
+
 ```bash
 sudo mkdir /etc/1password
 ```
 
 #### 2. Create the Custom Allowed Browsers file
+
 ```bash
 sudo touch /etc/1password/custom_allowed_browsers
 ```
@@ -41,14 +44,18 @@ echo "zen-bin" | sudo tee -a /etc/1password/custom_allowed_browsers
 ```
 
 ---
+
 Special thanks to [u/xmansyx](https://www.reddit.com/user/xmansyx/) and [u/feelspeaceman](https://www.reddit.com/user/feelspeaceman/)
 
 Sources:
+
 - [1Password Integration fix (Linux) - Reddit](https://www.reddit.com/r/zen_browser/comments/1gcm33v/1password_integration_fix_linux/)
 - [1Password Extension fix for other Browsers on Linux - edb tools!](https://edb.tools/posts/1password-extension-fix/)
+
 ---
 
 ### MacOS
+
 In MacOS you can use the Graphical Interface of the Desktop app to add Zen Browser to the trusted browsers list.
 
 #### 1. Go into the 1Password desktop app and open Settings.

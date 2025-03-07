@@ -101,7 +101,7 @@ svg {
     }
   }
 
-  & >#overlay-explorer-container {
+  & > #overlay-explorer-container {
     position: fixed;
     contain: layout;
     z-index: 999;
@@ -159,6 +159,5 @@ svg {
         }
       }
     }
-
   }
 }

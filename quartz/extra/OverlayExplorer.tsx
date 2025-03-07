@@ -1,5 +1,9 @@
 // Nothing yet
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../components/types"
+import {
+  QuartzComponent,
+  QuartzComponentConstructor,
+  QuartzComponentProps,
+} from "../components/types"
 import overlayexplorerStyle from "./styles/overlayexplorer.scss"
 
 // @ts-ignore
@@ -49,8 +53,7 @@ type OlExplorerNodeProps = {
   fullPath?: string
 }
 
-function OverlayExplorerNode({node, opts, fullPath, fileData}: OlExplorerNodeProps) {
-
+function OverlayExplorerNode({ node, opts, fullPath, fileData }: OlExplorerNodeProps) {
   // Calculate current folderPath
   const folderPath = node.name !== "" ? joinSegments(fullPath ?? "", node.name) : ""
   const href = resolveRelative(fileData.slug!, folderPath as SimpleSlug) + "/"
@@ -59,9 +62,7 @@ function OverlayExplorerNode({node, opts, fullPath, fileData}: OlExplorerNodePro
     <>
       {node.file ? (
         <li key={node.file.slug}>
-          <a href={resolveRelative(fileData.slug!, node.file.slug!)}>
-            {node.displayName}
-          </a>
+          <a href={resolveRelative(fileData.slug!, node.file.slug!)}>{node.displayName}</a>
         </li>
       ) : (
         <li>
@@ -87,33 +88,36 @@ function OverlayExplorerNode({node, opts, fullPath, fileData}: OlExplorerNodePro
                 </a>
               ) : (
                 <>
-                <button class="ol-folder-button">
-                  <span class="ol-folder-title">{node.displayName}</span>
-                </button>
-                {opts.folderClickBehavior === "mixed" && (
-                  <a href={href}>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="12"
-                      viewBox="0 4 21 15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <polyline points="0 9 18 9"></polyline>
-                      <polyline points="0 15 18 15"></polyline>
-                      <polyline points="15 6 21 12 15 18"></polyline>
-                    </svg>
-                  </a>
-                )}
+                  <button class="ol-folder-button">
+                    <span class="ol-folder-title">{node.displayName}</span>
+                  </button>
+                  {opts.folderClickBehavior === "mixed" && (
+                    <a href={href}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="12"
+                        viewBox="0 4 21 15"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="0 9 18 9"></polyline>
+                        <polyline points="0 15 18 15"></polyline>
+                        <polyline points="15 6 21 12 15 18"></polyline>
+                      </svg>
+                    </a>
+                  )}
                 </>
               )}
             </div>
           )}
-          <div data-ol-children-for={folderPath} class={`ol-folder-outer ${(node.depth === 0 || opts.folderDefaultState === "open") && "open"}`}>
+          <div
+            data-ol-children-for={folderPath}
+            class={`ol-folder-outer ${(node.depth === 0 || opts.folderDefaultState === "open") && "open"}`}
+          >
             <ul
               style={{
                 paddingLeft: node.name !== "" ? "1.4rem" : "0",

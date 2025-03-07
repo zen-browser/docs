@@ -13,7 +13,6 @@ The `property` field is a string that should follow Firefox's preference naming 
 
 For example: `mod.mymod.background_color`
 
-
 ### Field: `label` - Label
 
 The `label` field is the description that will be visible to users in the Zen Mods settings page.
@@ -63,10 +62,9 @@ The `dropdown` type allows to select a single choice on multiple options.
 }
 ```
 
-####  Type: `string`
+#### Type: `string`
 
 The `string` type is a text input that allows to insert valid css values without being a selection.
-
 
 ```json title="String Example"
 {
@@ -75,7 +73,6 @@ The `string` type is a text input that allows to insert valid css values without
   "type": "string"
 }
 ```
-
 
 ### Field: `options` - Options (only for `type`: `dropdown`)
 
@@ -96,13 +93,13 @@ The `options` field is an array of option objects, only available for the `dropd
 
 Each option object defines a possible value for the dropdown menu. It contains two fields: `label` and `value`.
 
-* The `label` is the description that will be displayed in the dropdown menu. This field accepts a string and allows white space.
-* The `value` field contains the value that will be assigned as a CSS property. Only `string` or `int` values are valid. Strings may not contain white space or special characters.
+- The `label` is the description that will be displayed in the dropdown menu. This field accepts a string and allows white space.
+- The `value` field contains the value that will be assigned as a CSS property. Only `string` or `int` values are valid. Strings may not contain white space or special characters.
 
 ```json title="Example"
 {
-    "label": "Green",
-    "value": "green" // valid string
+  "label": "Green",
+  "value": "green" // valid string
 }
 ```
 
@@ -131,6 +128,7 @@ Some CSS modifications may not function properly on all operating systems. You c
 This field accepts an array of the following values: `macos`, `linux` or/and `windows`.
 
 For example:
+
 ```json title="Disabled on MacOS" {2}
 {
   "disabledOn": ["macos"] // disables the preference for MacOS
@@ -198,6 +196,7 @@ Below is a full example of what a `preferences.json` file might look like with m
 ```
 
 In this example:
+
 - The `preferences.json` file contains a list of three preference objects.
 - Each object defines a `property`, `label`, and `type`.
 - Optionally, each object defines either a `defaultValue`, `disabledOn` or `placeholder`.
@@ -237,15 +236,14 @@ You can use the following CSS to change the background color when the dark mode 
 ```
 
 You can also have negative conditions
-```css {1}
-@media not (-moz-bool-pref: "mod.mymod.enable_dark_mode")
-```
 
+```css {1}
+@media not (-moz-bool-pref: "mod.mymod.enable_dark_mode");
+```
 
 ### Dropdown Preferences
 
-> [!attention]
-> `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your mod’s CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
+> [!attention] > `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your mod’s CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
 >
 > E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
 > This transformation ensures that the property can be used as an attribute selector or inside a media query.
@@ -289,6 +287,7 @@ body:has(#mod-mymod[mod-mymod-background_color="blue"]) {
 ```
 
 In this example:
+
 - The background color and text color change based on the value selected in the `background_color` dropdown.
 - The selector `body:has(#mod-mymod[background_color="value"]){:css}` checks the `background_color` attribute and applies the relevant styles based on the selected option.
 
@@ -348,6 +347,7 @@ body:has(#mod-mymod[mod-mymod-background_color="blue"]) {
 ```
 
 This allows users to:
+
 - Toggle dark mode on/off using the checkbox.
 - Select a background color from the dropdown, which dynamically changes the background and text colors based on the user's choice.
 
@@ -357,8 +357,7 @@ This allows users to:
 
 String preferences can be detected in your CSS using the `var(--property)` operator. The preference property is saved at `:root` level.
 
-> [!attention]
-> `property` fields defined in `preferences.json` using the `"string"` type will have one key difference when used in your mod’s CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
+> [!attention] > `property` fields defined in `preferences.json` using the `"string"` type will have one key difference when used in your mod’s CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
 >
 > E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
 > This transformation ensures that the property can be used as an attribute selector or inside a media query.
@@ -377,6 +376,6 @@ You can use the following CSS to change the background color when the dark mode 
 
 ```css {2}
 .myClass {
-  background-color: var(--mod-mymod-background_color)
+  background-color: var(--mod-mymod-background_color);
 }
 ```
