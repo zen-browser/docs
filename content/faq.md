@@ -23,8 +23,6 @@ At the moment, our team does not have the time or resources to develop Android o
 Zen Browser currently lacks DRM-support, because it does not have a Widevine license. Acquiring such a license requires the payment of large fees (at least $5,000). Acquiring this license is financially unresponsible for the developer of Zen. This means that DRM-protected media cannot be played in Zen Browser for the foreseeable future.
 We have to also consider that in order to be able to apply for this license, Zen must be a part of a company with size at least as big as Mozilla or Brave.
 
-Feel free to support the funding of a Widevine license for Zen on [Ko-Fi](https://ko-fi.com/zen_browser) or [Patreon](https://www.patreon.com/zen_browser)!
-
 > [!question]- Which Services Are Affected?
 > Due to the lack of DRM support, you will not be able to stream content from the following services in Zen Browser:
 >
