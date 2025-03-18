@@ -54,7 +54,7 @@ This script updates the "en-US" localization files, which are necessary for prop
 Now that everything is set up, you can build the browser:
 
 ```bash
-npm build
+npm run build
 ```
 
 This command compiles the source code and creates the necessary files for running Zen Browser.
