@@ -44,7 +44,7 @@
     "cli-spinner": "^0.2.10",
     "d3": "^7.9.0",
     "esbuild-sass-plugin": "^2.16.1",
-    "flexsearch": "0.7.43",
+    "flexsearch": "0.8.117",
     "github-slugger": "^2.0.0",
     "globby": "^14.0.2",
     "gray-matter": "^4.0.3",
