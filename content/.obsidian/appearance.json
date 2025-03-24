@@ -1,3 +1,4 @@
 {
-  "cssTheme": "Catppuccin"
+  "cssTheme": "Catppuccin",
+  "showRibbon": false
 }
