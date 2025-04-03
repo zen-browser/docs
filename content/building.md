@@ -110,7 +110,7 @@ This command launches the browser, allowing you to see your changes in action.
 #### Q: Build stuck or freezing?  
 > Try running with fewer threads:  
 > ```sh
-> cd engine && python mach build --jobs=2
+> npm run build -- --jobs 2
 > ```  
 
 #### Q: "Git submodule" errors after cloning?  
@@ -122,7 +122,7 @@ This command launches the browser, allowing you to see your changes in action.
 #### Q: "npm run init" fails?  
 > Manually bootstrap the project:  
 > ```sh
-> cd engine && python mach bootstrap
+> npm run bootstrap
 > ```  
 
 #### Q: "zen.exe" not found after build?  
