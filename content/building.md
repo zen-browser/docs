@@ -1,6 +1,6 @@
 ---
 title: Building Zen Browser 📦
-lastmod: 2024-04-03
+lastmod: 2025-04-03
 ---
 
 We've taken the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge.
