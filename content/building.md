@@ -1,9 +1,23 @@
 ---
 title: Building Zen Browser 📦
-lastmod: 2024-09-25
+lastmod: 2025-04-03
 ---
 
 We've taken the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge.
+
+#### Basic Requirements  
+
+The following resources are essential for a successful build. Without them, you will encounter unnecessary build failures:  
+
+- Disk Space: Keep _30GB_ of free space on the disk (the build process is resource-intensive).  
+- Git ([Download here](https://git-scm.com/downloads)) – Required for version control and managing source code.  
+- Python 3 ([Download here](https://www.python.org/downloads/)) – Needed for running build scripts and automation tools.   
+- Node.js 21+ ([Download here](https://nodejs.org/)) – Required for managing dependencies and running JavaScript-based tools.    
+- MozillaBuild ([Download here](https://wiki.mozilla.org/MozillaBuild)) – Required for `mach` and Gecko compilation.  
+- 7-Zip ([Download here](https://www.7-zip.org/download.html)) – Used to extract Firefox source archives.  
+- sccache ([Download here](https://github.com/mozilla/sccache/releases)) – A caching tool that speeds up rebuilds by storing compiled objects.    
+
+> **Note:** If you're using Windows, ensure that all the basic software requirements are added to the `PATH` variable.
 
 > [!failure]
 > We cannot provide support if a build fails. Please understand this before proceeding with the following steps.
@@ -59,6 +73,16 @@ npm run build
 
 This command compiles the source code and creates the necessary files for running Zen Browser.
 
+- If your changes are only in JavaScript, you can run the following command after completing the first build for faster rebuilds:  
+
+  ```bash
+  npm run build:ui
+  ```  
+
+  This skips unnecessary compilation steps and only rebuilds the UI components.  
+
+For changes in other languages or core functionality, you should always run the full build using `npm run build` after every code change.  
+
 ## Step 6: Run the Browser
 
 After building the browser, you can start it using:
@@ -68,3 +92,43 @@ npm start
 ```
 
 This command launches the browser, allowing you to see your changes in action.
+
+---
+---
+
+### Common Build Errors & Fixes
+
+#### Q: "mach not found" error?  
+> Install [MozillaBuild](https://wiki.mozilla.org/MozillaBuild), add it to your `PATH`, then restart your terminal.
+
+#### Q: "7z" or "7-Zip" missing during build?  
+> Download [7-Zip](https://www.7-zip.org/), add it to your `PATH`, then restart your terminal.
+
+#### Q: "Unsupported Microsoft Visual Studio version" or build failing for similar reasons on Windows?  
+> Ensure Visual Studio is installed with the "Desktop development with C++" workload and Windows 10/11 SDK.
+
+#### Q: Build stuck or freezing?  
+> Try running with fewer threads:  
+> ```sh
+> npm run build -- --jobs 2
+> ```  
+
+#### Q: "Git submodule" errors after cloning?  
+> Run:  
+> ```sh
+> git submodule update --init --recursive
+> ```  
+
+#### Q: "npm run init" fails?  
+> Manually bootstrap the project:  
+> ```sh
+> npm run bootstrap
+> ```  
+
+#### Q: "zen.exe" not found after build?  
+> Perform a clean rebuild:  
+> ```sh
+> npm run reset-ff && npm run init && npm run build
+> ```  
+
+---
