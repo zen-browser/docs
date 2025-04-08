@@ -27,11 +27,12 @@ The following resources are essential for a successful build. Without them, you 
 First, you need to clone the Zen Browser repository to your local machine. This will create a local copy of the project that you can work on.
 
 ```bash
-git clone https://github.com/zen-browser/desktop.git --recurse-submodules
+git clone https://github.com/zen-browser/desktop.git --recurse-submodules --depth 10
 cd desktop
 ```
 
 - **`--recurse-submodules`**: This flag ensures that all submodules are cloned along with the main project. Zen Browser relies on several submodules, so this step is essential.
+- **`--depth 10`**: This makes sure you dont download the entire git history, it would take a long time otherwise due to that we used to store compiled binaries on the repository.
 
 ## Step 2: Install Dependencies
 
