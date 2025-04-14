@@ -1,0 +1,141 @@
+---
+title: Picture-in-Picture
+description: Watch videos in a separate window
+---
+
+With **Picture-in-Picture (PiP)** in **Zen**, you can pop videos out of webpages into a clean, always-on-top floating window. Whether you're working, browsing, or just casually scrolling, PiP keeps your video visible without disrupting your flow.
+
+
+## How to Use Picture-in-Picture
+**Stay in flow while watching.**
+
+### 1. On-Screen Video Toggle
+
+When you hover over a supported video, a **Zen PiP toggle** will appear.  
+Click it to launch the video in a floating window.  
+![PIP toggle](/assets/user-manual/pip/open-toggle.png)
+
+- Right-click the toggle to move it to the left or right side.  
+- The toggle is hidden when the video is in full-screen mode.
+
+### 2. Address Bar Icon
+
+On pages with a single video, Zen displays a PiP icon in the **address bar**.  
+![Toolbar Toggle](/assets/user-manual/pip/toolbar-toggle.png)
+
+- If there are multiple videos or none, the icon remains hidden.
+
+### 3. Right-Click Menu
+
+You can also launch PiP by **right-clicking** on the video.
+
+- Some platforms like YouTube use custom menus.  
+  In that case, use **Shift + Right-Click** or **double right-click** to access Zen’s native menu.
+
+![PIP context menu](/assets/user-manual/pip/pip-context-menu.png)
+
+### 4. **Auto-Play in Mini Player**  
+  When you switch tabs while a video is playing, Zen quietly tucks the video into a floating player at the bottom right.
+Enable it by setting the property below in about:config to TRUE
+`media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled`
+
+### 5. **Resize**
+  Hover over any corner of the mini player and drag to adjust its size—just how you like it.
+
+
+## Keyboard Shortcuts
+
+| Action                        | Shortcut                    |
+|------------------------------|-----------------------------|
+| Launch/Close PiP             | `Ctrl + Shift + ]`          |
+| Mute / Unmute                | `Ctrl + ↓ / Ctrl + ↑`       |
+| Volume Control               | `↑ / ↓`                     |
+| Seek 5s Back / Forward       | `← / →`                     |
+| Seek 10% Back / Forward      | `Ctrl + ← / Ctrl + →`       |
+| Jump to Start / End          | `Home / End`                |
+| Pause / Play                 | `Space`                     |
+| Fullscreen Toggle            | `Double-click` or `F`       |
+| Close PiP Window             | `Ctrl + W`                  |
+
+
+## How to Disable Picture-in-Picture
+
+### Option 1: From the Player
+
+- Hover over the Picture-in-Picture Player 
+- Click on the [x] button
+
+![Close pip](/assets/user-manual/pip/close.png)
+
+### Option 2: From Zen Settings
+
+- Go to **Settings → General → Browsing**  
+- Uncheck **"Enable picture-in-picture video controls"**  
+  You can always re-enable it later.
+
+![Disable pip](/assets/user-manual/pip/disable.png)
+
+### Option 3: From the Toggle
+
+- Hover over a video and right-click the PiP toggle.
+    
+- Select **"Hide Picture-in-Picture Toggle"**.
+    
+
+### Option 4: From Configuration Page
+
+If you’d like to disable Picture-in-Picture functionality entirely, you can do so via Zen’s advanced configuration page:
+
+1. In the address bar, type `about:config` and press Enter.  
+2. Accept any warning that appears.  
+3. Search for the setting: `zen.mediacontrols.enabled`.  
+4. Set it to **false** to disable Picture-in-Picture across Zen.
+
+You can always re-enable it by returning to this setting and switching it back to **true**.
+
+
+<Callout title="Why You Might Not See the Toggle"> 
+- The video is shorter than 45 seconds or has no audio.  
+- It’s in full-screen mode.  
+- The site may restrict PiP, but Zen gives you the option to override this via **"Enable Anyway"** when available.
+</Callout>
+
+
+## Subtitles & Captions
+
+Turn on captions **before** activating PiP to see them in the floating window.  
+Zen supports captions on major platforms including:
+
+- YouTube  
+- Netflix  
+- Disney+  
+- Amazon Prime Video  
+- Funimation  
+- Dailymotion  
+- Khan Academy  
+- BBC  
+- Washington Post  
+- Nebula  
+- Tubi  
+- Hotstar  
+- SonyLIV  
+- Any site using **WebVTT** (e.g. Coursera, Twitter)
+
+More platforms are being added.
+
+
+## Media Player
+
+**Audio, always within reach.**
+
+![Media Player](/assets/user-manual/pip/media-player.png)
+
+- **Automatic Playback Controls**  
+  When audio is playing in a background tab, Zen adds a subtle media controller to the bottom of your sidebar.
+
+{/* TODO: enter video */}
+
+- **Simple Dismissal**  
+  To hide the Media Player, just click the “X” on the controller. Zen will take the hint.
+
+{/* TODO: enter video */}

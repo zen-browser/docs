@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+@source '../../node_modules/fumadocs-ui/dist/**/*.js';
+
+:root {
+  --color-fd-background: #F2F0E3;
+  --color-fd-foreground: #2E2E2E;
+  --color-fd-primary: #F76F53;
+  --color-fd-accent: #E6E4D7;
+  --color-fd-accent-foreground: #2E2E2E;
+  --color-fd-card: #F7F6EE;
+  --color-fd-card-foreground: #2E2E2E;
+  --color-fd-muted: #2e2e2e0b;
+  --color-fd-muted-foreground: #2e2e2ec5;
+  --color-fd-secondary: #E6E4D7;
+  --color-fd-secondary-foreground: #2E2E2E;
+  --color-fd-popover: #F2F0E3;
+  --color-fd-popover-foreground: #2E2E2E;
+  --color-fd-border: #EAE9E2;
+}
+ 
+.dark {
+  --color-fd-background: #1F1F1F;
+  --color-fd-foreground: #D1CFC0;
+  --color-fd-primary: #F76F53;
+  --color-fd-accent: #363636;
+  --color-fd-accent-foreground: #D1CFC0;
+  --color-fd-card: #161616;
+  --color-fd-card-foreground: #D1CFC0;
+  --color-fd-muted: #d1cfc00b;
+  --color-fd-muted-foreground: #D1CFC0c5;
+  --color-fd-secondary: #363636;
+  --color-fd-secondary-foreground: #2E2E2E;
+  --color-fd-popover: #1F1F1F;
+  --color-fd-popover-foreground: #D1CFC0;
+  --color-fd-border: #2E2E2E;
+}
+
+aside {
+  background-color: var(--color-fd-background) !important;
+}
+
+aside a[data-active="true"] {
+  color: var(--color-fd-foreground) !important;
+  background-color: var(--color-fd-accent) !important;
+}
+
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  font-size: 14px;
+}
+
+g.main:has(> g.plot) > rect {
+  display: none;
+}
+
+video {
+  border-radius: 40px;
+}

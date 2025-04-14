@@ -1,20 +1,45 @@
 {
   "compilerOptions": {
-    "lib": ["esnext", "DOM", "DOM.Iterable"],
-    "experimentalDecorators": true,
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "node",
-    "strict": true,
-    "incremental": true,
-    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "target": "ESNext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "esModuleInterop": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/.source": [
+        "./.source/index.ts"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["**/*.ts", "**/*.tsx", "./package.json"],
-  "exclude": ["build/**/*.d.ts"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
