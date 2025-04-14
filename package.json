@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "postinstall": "fumadocs-mdx"
+    "postinstall": "fumadocs-mdx",
+    "lint": "next lint"
   },
   "dependencies": {
     "@theguild/remark-mermaid": "^0.3.0",
