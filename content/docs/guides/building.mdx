@@ -1,0 +1,135 @@
+---
+title: Building Zen Browser
+---
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+
+We've taken the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge.
+
+#### Basic Requirements  
+
+The following resources are essential for a successful build. Without them, you will encounter unnecessary build failures:  
+
+- Disk Space: Keep _30GB_ of free space on the disk (the build process is resource-intensive).  
+- Git ([Download here](https://git-scm.com/downloads)) – Required for version control and managing source code.  
+- Python 3 ([Download here](https://www.python.org/downloads/)) – Needed for running build scripts and automation tools.   
+- Node.js 21+ ([Download here](https://nodejs.org/)) – Required for managing dependencies and running JavaScript-based tools.    
+- MozillaBuild ([Download here](https://wiki.mozilla.org/MozillaBuild)) – Required for `mach` and Gecko compilation.  
+- 7-Zip ([Download here](https://www.7-zip.org/download.html)) – Used to extract Firefox source archives.  
+- sccache ([Download here](https://github.com/mozilla/sccache/releases)) – A caching tool that speeds up rebuilds by storing compiled objects.    
+
+<Callout>
+If you're using Windows, ensure that all the basic software requirements are added to the `PATH` variable.
+</Callout>
+
+<Callout type="warn">
+We cannot provide support if a build fails. Please understand this before proceeding with the following steps.
+</Callout>
+
+## Step 1: Clone the Project
+
+First, you need to clone the Zen Browser repository to your local machine. This will create a local copy of the project that you can work on.
+
+```bash
+git clone https://github.com/zen-browser/desktop.git --recurse-submodules --depth 10
+cd desktop
+```
+
+- **`--recurse-submodules`**: This flag ensures that all submodules are cloned along with the main project. Zen Browser relies on several submodules, so this step is essential.
+- **`--depth 10`**: This makes sure you dont download the entire git history, it would take a long time otherwise due to that we used to store compiled binaries on the repository.
+
+## Step 2: Install Dependencies
+
+Once you have cloned the project, navigate to the project directory and install the necessary dependencies using npm:
+
+```bash
+npm i
+```
+
+This command will install all the packages listed in the `package.json` file, which are required for building and running Zen Browser.
+
+## Step 3: Download and Bootstrap the Browser
+
+To set up the browser, you need to download additional files and prepare the environment:
+
+```bash
+npm run init
+```
+
+This command handles all the necessary bootstrapping tasks, such as setting up configuration files and downloading essential resources.
+
+## Step 4: Update Language Packs
+
+Before building the browser, it’s recommended to update the American English language packs to ensure that all localization files are up-to-date:
+
+```bash
+python3 ./scripts/update_en_US_packs.py
+```
+
+This script updates the "en-US" localization files, which are necessary for proper language support in Zen Browser. Running this step ensures that your build includes the latest translations and language resources.
+
+## Step 5: Build the Browser
+
+Now that everything is set up, you can build the browser:
+
+```bash
+npm run build
+```
+
+This command compiles the source code and creates the necessary files for running Zen Browser.
+
+- If your changes are only in JavaScript, you can run the following command after completing the first build for faster rebuilds:  
+
+  ```bash
+  npm run build:ui
+  ```  
+
+  This skips unnecessary compilation steps and only rebuilds the UI components.  
+
+For changes in other languages or core functionality, you should always run the full build using `npm run build` after every code change.  
+
+## Step 6: Run the Browser
+
+After building the browser, you can start it using:
+
+```bash
+npm start
+```
+
+This command launches the browser, allowing you to see your changes in action.
+
+---
+
+### Common Build Errors & Fixes
+
+#### Q: "mach not found" error?  
+> Install [MozillaBuild](https://wiki.mozilla.org/MozillaBuild), add it to your `PATH`, then restart your terminal.
+
+#### Q: "7z" or "7-Zip" missing during build?  
+> Download [7-Zip](https://www.7-zip.org/), add it to your `PATH`, then restart your terminal.
+
+#### Q: "Unsupported Microsoft Visual Studio version" or build failing for similar reasons on Windows?  
+> Ensure Visual Studio is installed with the "Desktop development with C++" workload and Windows 10/11 SDK.
+
+#### Q: Build stuck or freezing?  
+> Try running with fewer threads:  
+> ```sh
+> npm run build -- --jobs 2
+> ```  
+
+#### Q: "Git submodule" errors after cloning?  
+> Run:  
+> ```sh
+> git submodule update --init --recursive
+> ```  
+
+#### Q: "npm run init" fails?  
+> Manually bootstrap the project:  
+> ```sh
+> npm run bootstrap
+> ```  
+
+#### Q: "zen.exe" not found after build?  
+> Perform a clean rebuild:  
+> ```sh
+> npm run reset-ff && npm run init && npm run build
+> ```

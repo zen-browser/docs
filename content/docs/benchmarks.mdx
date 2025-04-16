@@ -1,0 +1,142 @@
+---
+title: Benchmarks
+icon: ChartNoAxesCombined
+---
+import { Callout } from 'fumadocs-ui/components/callout';
+
+These benchmarks were performed on a device with the following specifications:
+
+- Windows 11
+- Intel® Core i5-13600K Processor
+
+<Callout type="warn">
+These benchmarks only focus on specific performance aspects of a browser, and your personal results may vary drastically depending on your hardware.
+This page is not a definitive indicator of overall browser speed.
+</Callout>
+
+<Callout title="Where are the latest versions?">
+This page is maintained by [NOCanoa](https://github.com/NOCanoa). These benchmarks are only updated when he is available.
+</Callout>
+
+## Browserbench.org
+
+<Callout type="none">
+[Browserbench.org website](https://browserbench.org/)
+</Callout>
+
+### Speedometer 3.0
+
+<Callout type="none">
+[Speedometer 3.0 benchmark](https://browserbench.org/Speedometer3.0/)
+</Callout>
+
+| Version             | Score |
+| ------------------- | ----- |
+| 1.0.1-a.10-opt      | 25.4  |
+| 1.0.1-a.4-opt       | 25.6  |
+| 1.0.1-a.2-opt       | 25.4  |
+| 1.0.0-a.39-opt      | 25.6  |
+| 1.0.0-a.37-opt      | 25.5  |
+| 1.0.0-a.34-opt      | 21.6  |
+| 1.0.0-a.33-opt      | 21.7  |
+| 1.0.0-a.32-opt      | 21.8  |
+| 1.0.0-a.13-opt      | 21.1  |
+| 1.0.0-a.12-opt      | 21.5  |
+| 1.0.0-a.11-opt      | 20.8  |
+| 1.0.0-a.10          | 21.2  |
+| Vivaldi 6.7.3329.39 | 27.8  |
+| FF nightly 130.0a1  | 27.0  |
+| Librewolf 128.0-2   | 20.2  |
+
+```mermaid
+xychart-beta
+    title "Performance over time (Higher is better)"
+    x-axis [0.10, 0.11, 0.12, 0.13, 0.32, 0.33, 0.34, 0.37, 0.39, 1.2, 1.4,1.10]
+    y-axis "Benchmark Points" 0 --> 30
+    bar [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6,25.4,25.6,25.4]
+    line [21.2,20.8,21.5,21.1,21.8,21.7,21.6,25.5,25.6,25.4,25.6,25.4]
+```
+
+### JetStream 2.2
+
+<Callout type="none">
+[JetStream 2.2 benchmark](https://browserbench.org/JetStream/)
+</Callout>
+
+| Version        | Score |
+| -------------- | ----- |
+| 1.0.1-a.4-opt  | 240   |
+| 1.0.1-a.2-opt  | 237   |
+| 1.0.0-a.39-opt | 238   |
+| 1.0.0-a.37-opt | 239   |
+| 1.0.0-a.34-opt | 228   |
+
+```mermaid
+xychart-beta
+    title "Performance over time (Higher is better)"
+    x-axis [0.34,0.37,0.39,1.2,1.4]
+    y-axis "Benchmark Points" 0 --> 260
+    bar [228,239,238,237,240]
+    line [228,239,238,237,240]
+```
+
+### MotionMark
+
+<Callout type="none">
+[MotionMark benchmark](https://browserbench.org/MotionMark1.3.1/)
+</Callout>
+
+| Version        | Score |
+| -------------- | ----- |
+| 1.0.1-a.4-opt  | 1515  |
+| 1.0.1-a.2-opt  | 1527  |
+| 1.0.0-a.39-opt | 1538  |
+| 1.0.0-a.37-opt | 1562  |
+| 1.0.0-a.34-opt | 1464  |
+
+```mermaid
+xychart-beta
+    title "Performance over time (Higher is better)"
+    x-axis [0.34,0.37,0.39,1.2,1.5]
+    y-axis "Benchmark Points" 0 --> 1600
+    bar [1464,1562,1538,1527,1515]
+    line [1464,1562,1538,1527,1515]
+```
+
+---
+
+Archived Benchmarks (Basemark Web 3.0)
+### Basemark Web 3.0
+
+<Callout type="none">
+[Basemark Web 3.0 benchmark](https://web.basemark.com/)
+</Callout>
+
+| Version            | Score   | CSS    | HTML5  | Page Responsiveness |
+| ------------------ | ------- | ------ | ------ | ------------------- |
+| 1.0.0-a.X          | ---     | ---    | ---    | ---                 |
+| 1.0.0-a.34-opt     | 1920    | 59%    | 91%    | 91%                 |
+| 1.0.0-a.33-opt     | 1957    | 59%    | 91%    | 91%                 |
+| 1.0.0-a.32-opt     | 1732    | 59%    | 91%    | 90%                 |
+| 1.0.0-a.15-opt     | 2141    | 59%    | 91%    | 90%                 |
+| 1.0.0-a.13-opt     | 1658    | 59%    | 91%    | 90%                 |
+| 1.0.0-a.12-opt     | 1874    | 59%    | 91%    | 91%                 |
+| 1.0.0-a.11-opt     | 1678    | 59%    | 91%    | 91%                 |
+| 1.0.0-a.10         | 1660    | 59%    | 91%    | 91%                 |
+| 1.0.0-a.9          | 470     |        |        |                     |
+| 1.0.0-a.8          | 446.74  | 59%    | 91%    | 96%                 |
+| 1.0.0-a.7          | 1964.43 | 59%    | 91%    | 91%                 |
+| 1.0.0-a.6          | 1747.98 | 59%    | 91%    | 91%                 |
+| 1.0.0-a.4          | 470.49  | 59%    | 91%    | 97%                 |
+| 1.0.0-a.3          | 475.52  | 59%    | 91%    | 97%                 |
+| Librewolf 128.0-2  | 1953.65 | 59.66% | 89.01% | 91.72%              |
+| FF nightly 130.0a1 | 1912.77 | 59.66% | 90.91% | 91.72%              |
+
+```mermaid
+xychart-beta
+    title "Performance over time (Higher is better)"
+    x-axis [.3, .4, .6, .7, .8, .9, .10, .11, .12, .13, .15, .32, .33, .34]
+    y-axis "Benchmark Points" 0 --> 2100
+    bar [475.52, 470.49, 1747.98, 1964.43, 446.74, 470, 1660.89, 1678.49, 1874.49, 1658.87, 2141.63, 1732, 1957, 1920]
+    line [475.52, 470.49, 1747.98, 1964.43, 446.74, 470, 1660.89, 1678.49, 1874.49, 1658.87, 2141.63, 1732, 1957, 1920]
+```

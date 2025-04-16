@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://docs.zen-browser.app/sitemap.xml
