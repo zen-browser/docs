@@ -29,10 +29,8 @@ export default async function Page(props: {
           components={{
             ...defaultMdxComponents,
             a: createRelativeLink(source, page),
-            img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
-              const { src, ...rest } = props;
-              if (typeof src !== "string") return null;
-              return <ImageZoom src={src} {...rest} />;
+            img: (props) => {
+              return <ImageZoom {...props} />;
             },
             pre: (props) => (
               <CodeBlock {...props}>
