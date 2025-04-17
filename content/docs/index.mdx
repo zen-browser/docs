@@ -7,12 +7,12 @@ icon: BookOpen
 import { 
   SpeechIcon,
   BookIcon,
-  WrenchIcon,
   PaletteIcon,
   HelpCircleIcon,
-  BarChartIcon,
   HeartIcon,
-  ShieldIcon
+  ShieldIcon,
+  Paintbrush,
+  Hammer
 } from 'lucide-react';
 
 Welcome to **Zen Browser's Documentation!** Here, you'll find everything you need to get the most out of your browsing experience. Dive in to explore how Zen can make your browsing more secure, private, and efficient.
@@ -25,10 +25,16 @@ Welcome to **Zen Browser's Documentation!** Here, you'll find everything you nee
     description="Complete user guide and features" 
   />
   <Card 
-    icon={<WrenchIcon />} 
-    title="Guides" 
+    icon={<Paintbrush />} 
+    title="CSS Live Editing" 
     href="/guides/live-editing" 
-    description="Tutorials and how-to guides" 
+    description="Live CSS editing for customizing the browser" 
+  />
+  <Card
+    icon={<Hammer />}
+    title="Build the Browser"
+    href="/guides/building"
+    description="Build the browser from source"
   />
   <Card 
     icon={<PaletteIcon />} 
@@ -41,12 +47,6 @@ Welcome to **Zen Browser's Documentation!** Here, you'll find everything you nee
     title="FAQ" 
     href="/faq" 
     description="Frequently asked questions" 
-  />
-  <Card 
-    icon={<BarChartIcon />} 
-    title="Benchmarks" 
-    href="/benchmarks" 
-    description="Performance comparisons" 
   />
   <Card 
     icon={<ShieldIcon />} 
