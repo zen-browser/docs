@@ -1,0 +1,76 @@
+---
+title: Editing with VS Code
+description: How to use Visual Studio Code to contribute to the Zen Browser documentation.
+---
+
+Visual Studio Code (VS Code) is a popular and powerful code editor that works well for editing Zen Browser documentation, especially with the right extensions.
+
+## Prerequisites
+
+- [**Visual Studio Code**](https://code.visualstudio.com/) installed on your machine.
+  - *Note: Popular forks of VS Code, such as [VSCodium](https://vscodium.com/), should also work well.*
+
+## Recommended Extension: MDX
+
+To get the best experience editing `.mdx` files in VS Code, we recommend installing the official MDX extension.
+
+- **Extension Name:** MDX
+- **Publisher:** unifiedjs
+- **Marketplace Link:** [MDX - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx)
+
+### Benefits
+
+- **Syntax Highlighting:** Provides accurate syntax highlighting for both Markdown and JSX components within `.mdx` files.
+- **IntelliSense:** Offers autocompletion and suggestions for MDX syntax and potentially imported components.
+- **Error Checking:** Helps identify syntax errors in your MDX code.
+
+### Installation
+
+1.  Open VS Code.
+2.  Go to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (macOS).
+3.  Search for `mdx`.
+4.  Click **Install** on the MDX extension by unifiedjs.
+
+## Steps
+
+1.  **Open the Repository Folder**:
+    - In VS Code, go to `File > Open Folder...` (or `File > Open...` on macOS).
+    - Navigate to the cloned `docs` repository folder on your local machine and open it.
+
+2.  **Start Editing**:
+    - Open VS Code's File Explorer (left sidebar) and navigate to these key directories:
+      - **`content/docs/`** - Contains all documentation `.mdx` files you'll be editing
+      - **`public/assets/`** - Stores images and static assets referenced in documentation
+      - _**`src/`** - Contains site source code (no editing needed here)_
+    - Select any `.mdx` file to begin editing. With the MDX extension installed, you'll get:
+      - Syntax highlighting for Markdown and JSX
+      - IntelliSense suggestions
+      - Error checking
+    <Callout type="warn" title="Image Paths">
+      When adding images, reference them from `/assets` (not `/public/assets`). Example:
+      ```
+      ![Example Image](/assets/user-manual/image.png)
+      ```
+    </Callout>
+
+3.  **Using Fumadocs Components**:
+    - Our documentation uses [Fumadocs UI](https://fumadocs.vercel.app/docs/ui) components like `<Callout />`, `<Tabs />`, `<Steps />`, etc.
+    - You can use these components directly within your `.mdx` files.
+    - **Global Components:** Components like `<Callout />` are globally available and don't require an explicit import.
+    - **Imported Components:** Components like `<Tabs />` or `<Steps />` need to be imported at the top of the `.mdx` file. Check existing files or the Fumadocs documentation for import examples.
+      ```ts
+      import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+      import { Steps, Step } from 'fumadocs-ui/components/steps';
+      ```
+    - Refer to the [Fumadocs UI Documentation](https://fumadocs.vercel.app/docs/ui) for details on available components and their usage.
+
+4.  **Run the Development Server** (Recommended):
+    - Open a terminal within VS Code (`Terminal > New Terminal`).
+    - Run the command `npm run dev`.
+    - This will start the development server, usually accessible at `http://localhost:3000`.
+    - The site will automatically update in your browser as you save changes to the `.mdx` files.
+
+4.  **Follow Contribution Steps**:
+    - Once you've made your changes, follow the standard contribution steps outlined in the main [Docs Contribution Guide](/contribute/docs#writing-guidelines): commit your changes, push them to your fork, and create a pull request.
+
+Using VS Code with the MDX extension provides a robust environment for contributing to the Zen Browser documentation.
