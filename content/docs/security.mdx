@@ -19,17 +19,27 @@ Zen Browser lets you customize privacy and security settings to improve your bro
 
 ---
 
-## Security settings
+## Security
 
 <Callout type="info" title="Latest Firefox Version">
 Zen Browser is built on the **latest version of Firefox**, one of the most secure browsers available today. This means you benefit from all of Firefox's security patches and updates as soon as they are released, keeping you safe from known vulnerabilities.
 </Callout>
 
-### 1. OCSP Enabled
+### 1. Staying Up-to-Date with Firefox
+
+Zen Browser tracks Firefox updates very closely:
+
+- We update Zen to the latest Firefox release within **0–72 hours** so we can always stay up to date with security fixes.
+- We test upcoming versions using Firefox **RC builds** on the *Twilight* branch about **one week before** each official release.
+
+You can check which Firefox version Zen is currently based on here:  
+[🔗 Compatibility Status](https://github.com/zen-browser/desktop/?tab=readme-ov-file#%EF%B8%8F-compatibility)
+
+### 2. OCSP Enabled
 
 Zen Browser uses **OCSP (Online Certificate Status Protocol)** to check the validity of a website’s security certificate. This ensures that you only connect to safe websites with up-to-date and valid certificates, protecting you from malicious sites that may have expired or revoked certificates.
 
-### 2. HTTPS Only Mode
+### 3. HTTPS Only Mode
 
 **HTTPS Only Mode** ensures that you connect securely to websites by using the HTTPS version whenever possible. HTTPS encrypts the communication between you and the website, protecting your data from being intercepted by hackers.
 
@@ -39,13 +49,13 @@ You can enable HTTPS-Only Mode in **all windows** or **private windows only**
 
 For more information visit [HTTPS-Only Mode in Firefox](https://support.mozilla.org/en-US/kb/https-only-prefs)
 
-### 3. Deceptive Content and Dangerous Software Protection
+###43. Deceptive Content and Dangerous Software Protection
 
 Zen Browser helps protect you from **phishing, malware, and fraudulent websites**. It uses URL filters and real-time checks to block harmful content, making your browsing experience safer.
 
 To learn more, visit [Block deceptive content and dangerous downloads in Firefox](https://support.mozilla.org/en-US/kb/block-deceptive-content-and-dangerous-downloads-firefox)
 
-### 4. SSL – Treat Unsafe Negotiation as Broken by Default
+### 5. SSL – Treat Unsafe Negotiation as Broken by Default
 
 Zen Browser treats insecure SSL connections (those that don't meet modern security standards) as broken by default. This means that if a **website is not properly secured**, Zen Browser will alert you and **block the unsafe connection**, preventing potential security risks.
 
