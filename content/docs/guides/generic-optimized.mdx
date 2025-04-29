@@ -3,7 +3,7 @@ title: Optimized builds
 description: Why have optimized builds been removed?
 ---
 
-For Windows and Linux, Zen Browser used to have the option to download optimized builds. These builds utilized AVX2 instructions to improve perfomance. These builds have been removed because of the following reasons:
+For Windows and Linux, Zen Browser used to have the option to download optimized builds. These builds utilized AVX2 instructions to improve performance. These builds have been removed because of the following reasons:
 
 1. **The optimized version isn't necessarily faster**: Profile-guided optimizations (PGO) aren't working with the optimized version because Clang fails to handle them properly, leading to a crash. As a result, we cannot build optimized versions if we want to include both PGO and Link Time Optimization (LTO). Additionally, AVX2 increases power consumption and is not ideal for heavy parallel computations.
 
