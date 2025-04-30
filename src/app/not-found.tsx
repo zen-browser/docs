@@ -1,4 +1,4 @@
-import { buttonVariants } from "fumadocs-ui/components/api";
+import { buttonVariants } from "fumadocs-ui/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
