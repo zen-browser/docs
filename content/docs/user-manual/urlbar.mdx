@@ -29,25 +29,25 @@ Zen has several floating behavior on its URL bar, which can be changed in `Setti
 
 ### Setting default search engine
 
-By default, Zen provided Google, DuckDuckGo, and Wikipedia (English) as default search engine providers. You can choose between Google and DuckDuckGo in the onboarding process, after installing Zen. 
+By default, Zen provided **Google**, **DuckDuckGo**, and **Wikipedia** (English) as default search engine providers. You can choose between Google and DuckDuckGo in the onboarding process, after installing Zen. 
 
 ![Default search engines during onboarding](/assets/user-manual/urlbar/onboarding-search.png)
 
 You can also change, edit and manage search engines by opening `Settings` > `Search`. Some of the available settings includes:
-- Set different search engines to use by default in regular and Private Browsing windows.
-- Show or hide search suggestions and set its priority towards browsing history when URL bar is opened.
-- Show recent search as one of the search suggestion when using URL bar.
-- Toggle suggestion entries from Browsing History, Bookmarks, Clipboard, Open Tabs, or Search Engines to appear when using URL bar.
+- **Set different search engines** to use by default in regular and Private Browsing windows.
+- **Show or hide search suggestions** and set its priority towards browsing history when URL bar is opened.
+- Show **recent search** as one of the search suggestion when using URL bar.
+- **Toggle suggestion entries** from Browsing History, Bookmarks, Clipboard, Open Tabs, or Search Engines to appear when using URL bar.
 
 ### Add a website as Search Engine
 
 Most search engine sites supported the [OpenSearch protocol](https://developer.mozilla.org/docs/Web/OpenSearch) that enabled it to be added as search engine easily, as well as other sites, including YouTube, X, Spotify, YouTube Music, Github, and Amazon. 
 
-Just visit the site, and after loading process is finished, if supported, you can see `Add "Website Name"` option in the right click context menu.
+Just visit the site, and after loading process is finished, if supported, you can see **Add "Website Name"** option in the right click context menu.
 
 ![Add new search engine](/assets/user-manual/urlbar/add-new-service.png)
 
-You can also add search engines from the [Mycroft Project site](https://mycroftproject.com/search-engines.html), where they listed more than 20.000 search engine plugins for various websites. Once you got search engine page for the website you want to add, right click the URL bar and click the `Add "Website Name"` option.
+You can also add search engines from the [Mycroft Project site](https://mycroftproject.com/search-engines.html), where they listed more than 20.000 search engine plugins for various websites. Once you got search engine page for the website you want to add, right click the URL bar and click the **Add "Website Name"** option.
 
 ### Add, manage, and remove Search Engine from Search Shortcuts settings
 
@@ -55,16 +55,32 @@ Open `Settings` > `Search` > `Search Shortcuts` to show the list of available se
 
 ![Search Shortcuts Menu](/assets/user-manual/urlbar/search-shortcuts.png)
 
-Click "Add" to add a new search engine manually, with these text field to insert:
+Click **Add** button to add a new search engine manually, with these text field to insert:
 
-- Search engine name
-- Engine URL (use %s in place of the search term)
-- Search suggestion URL (use %s in place of the search term)
-- Custom keyword you can type in URL bar to switch into searching mode for the search engine easily
+- **Search engine name**
+- **Engine URL** (use %s in place of the search term)
+- **Search suggestion URL** (use %s in place of the search term, you can use the same link as the Engine URL)
+- **Custom keyword** you can type in URL bar to switch into searching mode for the search engine easily
 
-Here is an example of the search 
-![Search Shortcuts Menu](/assets/user-manual/urlbar/search-shortcuts.png)
+Here is an example of adding Qwant as search engine manually:
+![Add Custom Search Engine](/assets/user-manual/urlbar/add-manual.png)
 
+You can also set a **custom keyword** to the search engines you add, by double clicking the Keyword column on the row of a search engine. Type the keyword, and press **Enter** to save it. Use the search engine by clicking the **New Tab** button, type the custom keyword and press **Space** key to activate the search engine. Type your search query, and press **Enter** to show the search results in new tab.
+
+{
+<div align="center">
+  <video width="100%" loop autoPlay>
+    <source src="/assets/user-manual/urlbar/search_engine.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+}
+
+Some other configuration you can do with search engines:
+- You can also drag a search engine up or down to set the order of its appearance when searching in the URL bar.
+- Custom search engines that were added manually can be edited by clicking on it (in the Search Shortcuts settings) and click **Edit**.
+- To remove a search engine, click the search engine in Search Shortcuts settings and click **Remove**.
+- Click **Restore Default Search Engines** if you removed one of the default search engines (Google, DuckDuckGo or Wikipedia) and want to restore them back.
 
 ### Enable legacy New Tab mechanism back
 
