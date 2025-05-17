@@ -1,7 +1,9 @@
 ---
-title: Zen URL bar
+title: URL Bar & Search Functions
 description: Smart navigation with persistent input memory
 ---
+
+Different from most browsers, Zen uses the **URL bar** as a quick and efficient way to navigate the web, eliminating the need of dedicated new tab page. 
 
 {
 <div align="center">
@@ -12,12 +14,76 @@ description: Smart navigation with persistent input memory
 </div>
 }
 
-Zen Browser’s **URL bar** is a powerful tool that helps you navigate the web quickly and efficiently. There's no need to open a new tab or window to search the web—simply type your query into the URL bar and hit Enter to search. The URL bar also supports direct navigation to websites, so you can type a URL and press Enter to visit the site directly.
+When you click the **New Tab** button in Zen, the URL bar will popped up on top of your current tab. Simply type your URL or search query into the bar, and hit Enter to search keywords or visit sites directly in a new tab. 
 
-- Can be disabled in settings or `about:config` (`zen.urlbar.replace-newtab`)
+<Callout>
+If you close the URL bar after typing a URL or search query, the text will still be saved unless you navigate to a different URL or refresh the page.
+</Callout>
 
-### How does it work?
+### Toggle floating behavior of the URL bar
 
-- When trying to open a new tab, the search bar will appear. This allows you to navigate faster and more efficiently by being able to type out the address or getting auto-completed without having a change in the view.
-  - If the newtab urlbar is closed but you've typed something. The text is remembered unless the URL or tab has been changed.
-- Otherwise, the functionality is basically the same as before, only when focusing the urlbar either by clicking on with the shortcut
+Zen has several floating behavior on its URL bar, which can be changed in `Settings` > `Look and Feel` > `Zen URL Bar`:
+- **Floating only when typing** (Default) – The URL bar will float in the center when you access it from the New Tab button or the `Ctrl + L`/ keyboard shortcut. But, if you open the URL bar by clicking, it will stick to its regular position at the top.
+- **Always floating** – The URL bar will always float in the center, both from clicking directly, New Tab button, and keyboard shortcuts.
+- **Normal** – Position of the opened URL bar will always be attached to top side, both from clicking directly, New Tab button, and keyboard shortcuts.
+
+### Setting default search engine
+
+By default, Zen provided **Google**, **DuckDuckGo**, and **Wikipedia** (English) as default search engine providers. You can choose between Google and DuckDuckGo in the onboarding process, after installing Zen. 
+
+![Default search engines during onboarding](/assets/user-manual/urlbar/onboarding-search.png)
+
+You can also change, edit and manage search engines by opening `Settings` > `Search`. Some of the available settings includes:
+- **Set different search engines** to use by default in regular and Private Browsing windows.
+- **Show or hide search suggestions** and set its priority towards browsing history when URL bar is opened.
+- Show **recent search** as one of the search suggestion when using URL bar.
+- **Toggle suggestion entries** from Browsing History, Bookmarks, Clipboard, Open Tabs, or Search Engines to appear when using URL bar.
+
+### Add a website as Search Engine
+
+Most search engine sites supported the [OpenSearch protocol](https://developer.mozilla.org/docs/Web/OpenSearch) that enabled it to be added as search engine easily, as well as other sites, including YouTube, X, Spotify, YouTube Music, Github, and Amazon. 
+
+Just visit the site, and after loading process is finished, if supported, you can see **Add "Website Name"** option in the right click context menu.
+
+![Add new search engine](/assets/user-manual/urlbar/add-new-service.png)
+
+You can also add search engines from the [Mycroft Project site](https://mycroftproject.com/search-engines.html), where they listed more than 20.000 search engine plugins for various websites. Once you got search engine page for the website you want to add, right click the URL bar and click the **Add "Website Name"** option.
+
+### Add, manage, and remove Search Engine from Search Shortcuts settings
+
+Open `Settings` > `Search` > `Search Shortcuts` to show the list of available search engines, as well as further configurations.
+
+![Search Shortcuts Menu](/assets/user-manual/urlbar/search-shortcuts.png)
+
+Click **Add** button to add a new search engine manually, with these text field to insert:
+
+- **Search engine name**
+- **Engine URL** (use %s in place of the search term)
+- **Search suggestion URL** (use %s in place of the search term, you can use the same link as the Engine URL)
+- **Custom keyword** you can type in URL bar to switch into searching mode for the search engine easily
+
+Here is an example of adding Qwant as search engine manually:
+![Add Custom Search Engine](/assets/user-manual/urlbar/add-manual.png)
+
+You can also set a **custom keyword** to the search engines you add, by double clicking the Keyword column on the row of a search engine. Type the keyword, and press **Enter** to save it. Use the search engine by clicking the **New Tab** button, type the custom keyword and press **Space** key to activate the search engine. Type your search query, and press **Enter** to show the search results in new tab.
+
+{
+<div align="center">
+  <video width="100%" loop autoPlay>
+    <source src="/assets/user-manual/urlbar/search_engine.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+}
+
+Some other configuration you can do with search engines:
+- You can also drag a search engine up or down to set the order of its appearance when searching in the URL bar.
+- Custom search engines that were added manually can be edited by clicking on it (in the Search Shortcuts settings) and click **Edit**.
+- To remove a search engine, click the search engine in Search Shortcuts settings and click **Remove**.
+- Click **Restore Default Search Engines** if you removed one of the default search engines (Google, DuckDuckGo or Wikipedia) and want to restore them back.
+
+### Enable legacy New Tab mechanism back
+
+The legacy new tab page from Firefox can still be accessed by opening `about:newtab`.
+
+But, if you want to revert the New Tab mechanism, you can do it by accessing Advanced Preferences page (`about:config`). Search for `zen.urlbar.replace-newtab`, and toggle it to `false`. Clicking the New Tab button will open the legacy New Tab page.
