@@ -1,0 +1,177 @@
+---
+title: Keyboard Shortcuts
+description: Enhance your Zen experience with customizable keybinds
+---
+
+Zen Browser supported lots of keyboard shortcuts to help you do common tasks quicker. Access `Settings` > `Keyboard Shortcuts` and edit the available shortcuts to suit your workflow even more!
+
+### Change or rebind keyboard shortcuts in Zen
+- In Keyboard Shortcuts setting page, to change or rebind shortcut of a feature, click the text field beside it, press your shortcuts, and press Esc to save your new shortcut.
+  - The text field will show a dark green outline quickly when the new shortcut is succesfully assigned and saved.
+  - The text field will show a red outline if the new shortcut you assign is already taken as default shortcut for other feature in Zen. Below the field, a *Conflict with another shortcut* warning will be shown. If you encounter this, you can try assign another shortcut, or press Backspace to clear the shortcut field. You can also clear the shortcut field of a feature you don't need, before assigning it as a new shortcut for other features.
+  - 
+
+{/* TODO: insert video of editing a keyboard shortcuts */}
+
+## List of editable keyboard shortcuts in Zen
+
+### Compact Mode
+
+| **Action**              | **Shortcut**         |
+| ----------------------- | -------------------- | 
+| Toggle Floating Toolbar | `Alt + Ctrl/Cmd + T` |
+| Toggle Floating Sidebar | `Alt + Ctrl/Cmd + S` |
+| Toggle Compact Mode     | `Alt + Ctrl/Cmd + C` |
+
+### Workspaces
+
+| **Action**                 | **Shortcut**         |
+| -------------------------- | -------------------- |
+| Backward Workspace         | `Alt + Ctrl/Cmd + Q` |
+| Forward Workspace          | `Alt + Ctrl/Cmd + E` |
+| Switch to Workspace (1-10) | Not set by default   |
+
+You can assign custom keyboard shortcuts to switch into up to 10 workspaces.
+
+### Split View
+
+The "Toggle Split View" shortcuts currently only applicable when selecting multiple tabs in tab sidebar, and doesn't worked when used inside a split view.
+
+| **Action**                     | **Shortcut**         |
+| ------------------------------ | -------------------- |
+| Close Split View (Unsplit All) | `Alt + Ctrl/Cmd + U` |
+| Toggle Split View Horizontal^  | `Alt + Ctrl/Cmd + H` |
+| Toggle Split View Vertical^    | `Alt + Ctrl/Cmd + V` |
+| Toggle Split View Grid^        | `Alt + Ctrl/Cmd + G` |
+
+### Window & Tab Management
+
+| **Action**              | **Shortcut**           |
+| ----------------------- | ---------------------- |
+| New Window              | `Alt + Ctrl/Cmd + U`   |
+| New Tab                 | `Ctrl/Cmd + T`         |
+| Close Tab               | `Ctrl/Cmd + W`         |
+| Close Window            | `Shift + Ctrl/Cmd + W` |
+| Quit Application        | `Ctrl/Cmd + Q`         |
+| Restore Last Closed Tab | `Shift + Ctrl/Cmd + T` |
+| Undo Close Window       | `Shift + Ctrl/Cmd + N` |
+| Select tab #1 - #8^     | `Alt + 1/2/.../8`      |
+| Select last tab         | `Alt + 9`              |
+
+^ Tab numbers listed for these keyboard shortcuts includes Essentials and pinned tabs. Example: If you have three Essentials, four pinned tabs, and five regular tabs:
+- `Alt + 1` until `Alt + 3` will switch you to your Essentials,
+- `Alt + 4` until `Alt + 7` will switch you to your pinned tabs,
+- `Alt + 8` will switch you to your first regular tab,
+- `Alt + 9` will switch you to your last tab (12th).
+  
+### Navigation
+
+| **Action**                           | **Shortcut**           |
+| ------------------------------------ | ---------------------- |
+| Go Back                              | `Alt + <=`             |
+| Go Forward                           | `Alt + =>`             |
+| Navigate Back (Alternative)          | `Ctrl/Cmd + [`         |
+| Navigate Forward (Alternative)       | `Ctrl/Cmd + ]`         |
+| Go Home                              | `Alt + Home`           |
+| Reload Page                          | `Ctrl/Cmd + R`         |
+| Reload Page (Skip Current Cache)     | `Shift + Ctrl/Cmd + R` |
+| Go to History (Open History Sidebar) | `Ctrl/Cmd + H`         |
+| Open Private Browsing Window         | `Shift + Ctrl/Cmd + P` |
+  
+### Search & Find
+
+| **Action**                              | **Shortcut**           |
+| --------------------------------------- | ---------------------- |
+| Focus Search^                           | `Ctrl/Cmd + K`         |
+| Focus Search^ (Alternative)             | `Ctrl/Cmd + J`         |
+| Find on Page                            | `Ctrl/Cmd + F`         |
+| Find Again (Jump to Next Result)        | `Ctrl/Cmd + G`         |
+| Find Previous (Jump to Previous Result) | `Shift + Ctrl/Cmd + G` |
+
+^ Focus Search shortcut will open your URL bar, shift focus and enable Search mode using your default search engine.
+  
+### Page Operations
+
+| **Action**                              | **Shortcut**           |
+| --------------------------------------- | ---------------------- |
+| Open Location (Current link in URL Bar) | `Ctrl/Cmd + L`         |
+| Open Location (Alternative)             | `Alt + D`              |
+| Save Page                               | `Ctrl/Cmd + S`         |
+| Print Page                              | `Ctrl/Cmd + P`         |
+| Toggle Reader Mode                      | `Alt + Ctrl/Cmd + R`   |
+| Toggle Picture-in-Picture               | `Shift + Ctrl/Cmd + ]` |
+| View Page Source                        | `Ctrl/Cmd + U`         |
+| View Page Info                          | `Ctrl/Cmd + [`         |
+
+### History & Bookmarks
+
+| **Action**                       | **Shortcut**           |
+| -------------------------------- | ---------------------- |
+| Show All History                 | `Shift + Ctrl/Cmd + H` |
+| Bookmark This Page               | `Ctrl/Cmd + D`         |
+| Bookmark This Page (Alternative) | `Shift + Ctrl/Cmd + D` |
+| Show Bookmarks Library           | `Shift + Ctrl/Cmd + O` |
+
+### Media & Display
+
+| **Action**            | **Shortcut**           |
+| --------------------- | ---------------------- |
+| Toggle Mute           | `Ctrl/Cmd + M`         |
+| Zoom Out              | `Ctrl/Cmd + -`         |
+| Zoom In               | `Ctrl/Cmd + +`         |
+| Reset Zoom Level      | `Ctrl/Cmd + 0`         |
+| Switch Text Direction | `Shift + Ctrl/Cmd + X` |
+| Take Screenshot       | `Shift + Ctrl/Cmd + S` |
+
+### Developer Tools
+
+| **Action**                    | **Shortcut**                 |
+| ----------------------------- | ---------------------------- |
+| Toggle DevTools               | `Shift + Ctrl/Cmd + I`       |
+| Toggle Browser Toolbox        | `Alt + Shift + Ctrl/Cmd + I` |
+| Toggle Browser Console        | `Shift + Ctrl/Cmd + J`       |
+| Toggle Responsive Design Mode | `Shift + Ctrl/Cmd + M`       |
+| Toggle Inspector              | `Shift + Ctrl/Cmd + L`       |
+| Toggle Web Console            | `Shift + Ctrl/Cmd + K`       |
+| Toggle JavaScript Debugger    | `Shift + Ctrl/Cmd + Z`       |
+| Toggle Network Monitor        | `Shift + Ctrl/Cmd + E`       |
+| Toggle Style Editor           | `Shift + F7`                 |
+| Toggle Performance            | `Shift + F5`                 |
+| Toggle Storage                | `Shift + F9`                 |
+| Toggle DOM                    | `Shift + Ctrl/Cmd + W`       |
+| Toggle Accessibility          | `Shift + F12`                |
+
+### Zen Features
+
+| **Action**                     | **Shortcut**                 |
+| ------------------------------ | ---------------------------- |
+| Copy Current URL as Markdown   | `Alt + Shift + Ctrl/Cmd + C` |
+| Copy Current URL               | `Shift + Ctrl/Cmd + C`       |
+| Toggle Sidebar Width           | `Alt + B`                    |
+| Reset Pinned Tab to Pinned URL | Not set by default           |
+
+### Other Features
+
+| **Action**                 | **Shortcut**                |
+| -------------------------- | --------------------------- |
+| Open Downloads             | `Shift + Ctrl/Cmd + Y`      |
+| Open Add-ons               | `Shift + Ctrl/Cmd + A`      |
+| Open File                  | `Ctrl/Cmd + O`              |
+| Delete Key                 | `Delete`                    |
+| Enter Full Screen          | `F11`                       |
+| Exit Full Screen           | `F11`                       |
+| About Processes            | `Shift + Escape`            |
+| Show Bookmarks Sidebar     | `Ctrl/Cmd + B`              |
+| Show Bookmarks Toolbar     | `Shift + Ctrl/Cmd + B`      |
+| Stop Loading               | `Escape`                    |
+| Toggle AI Chatbot Sidebar^ | `Alt + Ctrl/Cmd + X`        |
+| Toggle Firefox Sidebar     | `Alt + Ctrl/Cmd + Z`        |
+| Show All Tabs              | `Shift + Ctrl + Tab`        |
+| Clear Browsing Data        | `Shift + Ctrl/Cmd + Delete` |
+| WR Capture Command         | `Ctrl/Cmd + #`              |
+| Toggle WR Capture Sequence | `Ctrl/Cmd + ^`              |
+  
+---
+
+Read more about default keyboard shortcuts in Firefox: 
+[Keyboard shortcuts - Perform common Firefox tasks quickly | Firefox Help](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly)
