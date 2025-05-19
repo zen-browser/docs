@@ -6,12 +6,15 @@ description: Enhance your Zen experience with customizable keybinds
 Zen Browser supported lots of keyboard shortcuts to help you do common tasks quicker. Access `Settings` > `Keyboard Shortcuts` and edit the available shortcuts to suit your workflow even more!
 
 ### Change or rebind keyboard shortcuts in Zen
+
+{/* TODO: insert video of editing a keyboard shortcuts */}
+
 - In Keyboard Shortcuts setting page, to change or rebind shortcut of a feature, click the text field beside it, press your shortcuts, and press Esc to save your new shortcut.
   - The text field will show a dark green outline quickly when the new shortcut is succesfully assigned and saved.
   - The text field will show a red outline if the new shortcut you assign is already taken as default shortcut for other feature in Zen. Below the field, a *Conflict with another shortcut* warning will be shown. If you encounter this, you can try assign another shortcut, or press Backspace to clear the shortcut field. You can also clear the shortcut field of a feature you don't need, before assigning it as a new shortcut for other features.
-  - 
+  - Some Zen features might not have conflict when its original shortcut got reassigned for other features, but when the shortcut is called, it will resort to do the original feature. You can check the Keyboard Settings if the shortcut you're assigning is already set for other feature, and try assign other shortcut to make it work.
+- Not all features are available in the Keyboard Shortcuts settings, especially alternative shortcuts derived from Firefox ([Check default Firefox shortcut lists](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly)). This might result in failure when applying or accessing the feature using a custom shortcut you assigned. If a Firefox shortcut is not available in the Keyboard Shortcuts settings, you won't be able to use it as a custom shortcut yet. Kindly report it to [Zen Github Issues page](https://github.com/zen-browser/desktop/issues) first!
 
-{/* TODO: insert video of editing a keyboard shortcuts */}
 
 ## List of editable keyboard shortcuts in Zen
 
@@ -40,9 +43,9 @@ The "Toggle Split View" shortcuts currently only applicable when selecting multi
 | **Action**                     | **Shortcut**         |
 | ------------------------------ | -------------------- |
 | Close Split View (Unsplit All) | `Alt + Ctrl/Cmd + U` |
-| Toggle Split View Horizontal^  | `Alt + Ctrl/Cmd + H` |
-| Toggle Split View Vertical^    | `Alt + Ctrl/Cmd + V` |
-| Toggle Split View Grid^        | `Alt + Ctrl/Cmd + G` |
+| Toggle Split View Horizontal   | `Alt + Ctrl/Cmd + H` |
+| Toggle Split View Vertical     | `Alt + Ctrl/Cmd + V` |
+| Toggle Split View Grid         | `Alt + Ctrl/Cmd + G` |
 
 ### Window & Tab Management
 
@@ -55,14 +58,18 @@ The "Toggle Split View" shortcuts currently only applicable when selecting multi
 | Quit Application        | `Ctrl/Cmd + Q`         |
 | Restore Last Closed Tab | `Shift + Ctrl/Cmd + T` |
 | Undo Close Window       | `Shift + Ctrl/Cmd + N` |
-| Select tab #1 - #8^     | `Alt + 1/2/.../8`      |
+| Select tab #1 - #8 ^    | `Alt + 1/2/.../8`      |
 | Select last tab         | `Alt + 9`              |
 
-^ Tab numbers listed for these keyboard shortcuts includes Essentials and pinned tabs. Example: If you have three Essentials, four pinned tabs, and five regular tabs:
-- `Alt + 1` until `Alt + 3` will switch you to your Essentials,
-- `Alt + 4` until `Alt + 7` will switch you to your pinned tabs,
-- `Alt + 8` will switch you to your first regular tab,
-- `Alt + 9` will switch you to your last tab (12th).
+- By default, you can **switch to next tab** using the `Ctrl/Cmd + Tab` shortcut and **switch to previous tab** using the `Ctrl/Cmd + Shift + Tab` shortcut.
+- When you're in Compact Mode and switching tabs using `Ctrl/Cmd + Tab` or `Ctrl/Cmd + Shift + Tab`, you can peek into the tab you're switching in by enabling the **"Briefly make the toolbar popup when switching or opening new tabs in compact mode"** option in `Settings` > `Look and Feel` > `Theme Settings`.
+- Pressing `Ctrl/Cmd + Tab` when you're in the last tab will switch you to the first available tab (Essentials first, then pinned tabs, and lastly, regular tabs).
+- ^ Tab numbers listed for these keyboard shortcuts includes Essentials and pinned tabs. Example: If you have three Essentials, four pinned tabs, and five regular tabs:
+  - `Alt + 1` until `Alt + 3` will switch you to your Essentials,
+  - `Alt + 4` until `Alt + 7` will switch you to your pinned tabs,
+  - `Alt + 8` will switch you to your first regular tab,
+  - `Alt + 9` will switch you to your last tab (12th).
+- Zen can also let you cycle through recently used tabs, instead of cycling through all of your tabs. Enable it by go to `Settings` > `General` > `Tabs` and check the `Ctrl + Tab cycles through tabs in recently used order`. A popup containing up to 7 recently used tabs will show up when you press `Ctrl/Cmd + Tab`.
   
 ### Navigation
 
@@ -82,8 +89,8 @@ The "Toggle Split View" shortcuts currently only applicable when selecting multi
 
 | **Action**                              | **Shortcut**           |
 | --------------------------------------- | ---------------------- |
-| Focus Search^                           | `Ctrl/Cmd + K`         |
-| Focus Search^ (Alternative)             | `Ctrl/Cmd + J`         |
+| Focus Search ^                          | `Ctrl/Cmd + K`         |
+| Focus Search ^ (Alternative)            | `Ctrl/Cmd + J`         |
 | Find on Page                            | `Ctrl/Cmd + F`         |
 | Find Again (Jump to Next Result)        | `Ctrl/Cmd + G`         |
 | Find Previous (Jump to Previous Result) | `Shift + Ctrl/Cmd + G` |
