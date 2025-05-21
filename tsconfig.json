@@ -25,9 +25,6 @@
       ],
       "@/*": [
         "./src/*"
-      ],
-      "@components/*": [
-        "./components/*"
       ]
     },
     "plugins": [
