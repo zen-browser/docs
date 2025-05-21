@@ -14,12 +14,10 @@ const KeyboardShortcut: React.FC<KeyboardShortcutProps> = ({
   className,
 }) => {
   const [displayShortcut, setDisplayShortcut] = useState(shortcut);
-  const [isMac, setIsMac] = useState(false);
 
   useEffect(() => {
     // OS detection should run only on the client-side
     const isMacUser = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
-    setIsMac(isMacUser);
 
     if (isMacUser) {
       if (macosShortcut) {
