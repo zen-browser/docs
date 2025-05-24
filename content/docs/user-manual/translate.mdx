@@ -1,0 +1,133 @@
+---
+title: Translations
+description: Translate webpages or text selections directly in Zen
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+Based on Firefox, Zen also inherit its translation features, allowing you navigate websites in various language easily. The translation process are done locally on your device, instead of relying in cloud services. You can translate a whole page, translate a specific text selection, or translated a link text!
+
+### Translating the full page
+
+When you visit a webpage in a supported language, the translation panel will popped up automatically. You can also do it manually by opening **Main Menu** button and selecting **Translate page** option.
+
+![Translation Panel Popped Up](/assets/user-manual/translations/translate-panel.png)
+
+<Callout type="info" title="Translate Button">
+You can also use a dedicated Translate button in the right side of the URL bar, which shows up when visiting webpages outside of your preferred language. In Single Toolbar mode, the button will be hidden by default and can be accessed after clicking the URL bar.
+</Callout>
+
+Zen detects the page languages manually and will suggest to translate it to your preferred languages. You can use the "**Translate from**" dropdown menu to change page language to detect, and use the "**Translate to**" dropdown menu to change your translation output language. Select "**Translate**" to translate the entire page.
+
+<Callout>
+Zen will download the language first if you're using this feature for the first time. After the language is downloaded, translation process will take around 20-60 seconds, depend on the length of contents.
+</Callout>
+
+The **Translate button** in URL bar will be updated along with the translation process, and after the translation process gets completed, your preferred language will be shown beside the icon. 
+
+To revert the page to the original language, click the Translate button in the URL bar and select "**Show original**".
+
+![Translate original](/assets/user-manual/translations/translate-original.png)
+
+### Translating text selection
+
+You can also translate a specific word or sentence, which will be handy when reading pages or learning in a foreign language. Select the text you want to translate, right click, and select "**Translate Selection to...**" option.
+
+![Translate selected](/assets/user-manual/translations/translate-selected.png)
+
+The selected texts will be translated and displayed in a pop-up. Select "**Copy**" to save the whole translation to your clipboard, "**Translate full page**" to translate the entire webpage, or "**Done**" to close the pop-up. 
+
+![Translate selection](/assets/user-manual/translations/translate-selection.png)
+
+You can also select a text manually to copy only a specific part of your translation, or change the input and output translation language using the "From" and "To" dropdown menu.
+
+You can also right click a hyperlink without selecting any text, and select "**Translate Link Text to...**" to translate the link text.
+
+![Translate link text](/assets/user-manual/translations/translate-link-text.png)
+
+#### What if I encounter a page with mixed languages or contents in multiple languages?
+
+The translation feature primarily focuses on the main language of the webpage, so it might not handle pages with mixed languages or content in multiple languages optimally. You can translate specific part of the webpage that uses one language and do this multiple times for different parts to understand the webpage better.
+
+## Customize Translation Settings
+
+You can tailor your translation experience from two places: the translation panel pop-up and the "**Language & Appearance**" section in Settings.
+
+### Apply settings from translation panel
+
+1. Click the **Translate** button in your URL bar or click `Main Menu` button >  "**Translate Page**" option to open the "**Translate this page?**" panel pop-up.
+2. Click the gear button on the top side of the panel to reveal translation options.
+
+![Translate options](/assets/user-manual/translations/translate-options.png)
+
+3. "**Always offer to translate**" checkbox will determine whether the translation panel will automatically popped up, and suggest you to translate when visiting sites outside your preferred languages.
+4. With "**Always translate...**" and "**Never translate...**" checkboxes, you can choose to automatically translate the whole webpages, or to never translate the webpages at all for a specific language.
+5. You can check "**Never translate this site**" so the translation will not be suggested nor processed after a specific website is loaded.
+6. To revert a change, simply reselect an option to uncheck it. The checkmark will dissapear, indicating that it's disabled.
+6. Selecting "**Manage languages**" will open `Settings` > `General` > `Language & Appearance` to reveal more settings regarding languages and translation features.
+
+### Using Webpage Language Settings
+
+Zen lets you set separate languages for displaying user interface (menu, messages, notifications) and webpages, accessible from `Settings` > `General` > `Language & Appearance` > `Language`. 
+
+Select "**Choose**" beside the "Choose your preferred language for displaying pages" text to open the Webpage Language Settings.
+
+![Webpage Language Settings](/assets/user-manual/translations/webpage-language-settings.png)
+
+You can click **Select a language to add** to add more language to your preference and click **Add** to put it onto the options. Then, you can choose a language and click **Move Up** to prioritize it, click **Move Down** to deprioritize it, or **Remove** to remove it from your preferred language. Click **OK** to confirm your preference.
+
+### Translations Options
+
+Below the Language section in Settings, the **Translations** section lets you: 
+- Download languages for offline translations. Translation for all languages will weigh around 1.3 GB, meanwhile individual languages varies from 17-34 MB (for languages using regular Latin characters) to 59-116 MB (for languages that uses its own character set like Arabic, Japanese, Korean, Russian, or Traditional Chinese).
+- Add or remove languages on the "Always translate these languages" list to enable the translation process automatically.
+- Add or remove languages to the "Never translate these languages" list to prevent the translation process happen automatically.
+- Manage the "Never translate these sites" list. (Websites can be added to the list from the translation panel, as described above)
+
+![More Translation Options](/assets/user-manual/translations/more-translation-options.png)
+
+### Supported Languages
+
+Here are the languages that currently supported for translating webpages in Zen:
+- Arabic
+- Bulgarian
+- Chinese (Simplified)
+- Catalan
+- Croatian
+- Czech
+- Danish
+- Dutch
+- Estonian
+- Finnish
+- French
+- German
+- Greek
+- Hungarian
+- Indonesian
+- Italian
+- Japanese
+- Korean
+- Latvian
+- Lithuanian
+- Polish
+- Portuguese
+- Romanian
+- Russian
+- Serbian
+- Slovak
+- Slovenian
+- Spanish
+- Swedish
+- Turkish
+- Ukrainian
+- Vietnamese
+
+New languages are constantly added over time. You can learn further about the translation development process and language availability in [Mozilla/Translations](https://mozilla.github.io/translations/) website.
+
+#### Report incorrect translations
+
+You can help enhance translations in Zen and Firefox-based browsers by reporting inaccuracies to Mozilla through [this form](https://docs.google.com/forms/d/e/1FAIpQLSdoRWnsHX6vVnGIRyLi4Kl-p0GrmeVIioqWsTz3aVTRfLScng/viewform). Report translation errors by entering the source language, the target langauge, the original sentence and translated sentence. Optionally, you can also provide a rating of the translation and a correct translation.
+
+---
+
+Read more about translation feature in Firefox: [Firefox Translation | Firefox Help](https://support.mozilla.org/en-US/kb/website-translation)
