@@ -2,6 +2,7 @@
 title: Picture-in-Picture
 description: Watch videos in a separate window
 ---
+import KeyboardShortcut from '@/components/KeyboardShortcut';
 
 With **Picture-in-Picture (PiP)** in **Zen**, you can pop videos out of webpages into a clean, always-on-top floating window. Whether you're working, browsing, or just casually scrolling, PiP keeps your video visible without disrupting your flow.
 
@@ -30,7 +31,7 @@ On pages with a single video, Zen displays a PiP icon in the **address bar**.
 You can also launch PiP by **right-clicking** on the video.
 
 - Some platforms like YouTube use custom menus.  
-  In that case, use **Shift + Right-Click** or **double right-click** to access Zen’s native menu.
+  In that case, use <KeyboardShortcut shortcut="Shift + Right-Click" /> or **double right-click** to access Zen’s native menu.
 
 ![PIP context menu](/assets/user-manual/pip/pip-context-menu.png)
 
@@ -45,17 +46,17 @@ Enable it by setting the property below in about:config to TRUE
 
 ## Keyboard Shortcuts
 
-| Action                        | Shortcut                    |
-|------------------------------|-----------------------------|
-| Launch/Close PiP             | `Ctrl + Shift + ]`          |
-| Mute / Unmute                | `Ctrl + ↓ / Ctrl + ↑`       |
-| Volume Control               | `↑ / ↓`                     |
-| Seek 5s Back / Forward       | `← / →`                     |
-| Seek 10% Back / Forward      | `Ctrl + ← / Ctrl + →`       |
-| Jump to Start / End          | `Home / End`                |
-| Pause / Play                 | `Space`                     |
-| Fullscreen Toggle            | `Double-click` or `F`       |
-| Close PiP Window             | `Ctrl + W`                  |
+| Action                       | Shortcut                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| Launch/Close PiP             | <KeyboardShortcut shortcut="Ctrl + Shift + ]" />                                          |
+| Mute / Unmute                | <KeyboardShortcut shortcut="Ctrl + ↓" /> / <KeyboardShortcut shortcut="Ctrl + ↑" />       |
+| Volume Control               | <KeyboardShortcut shortcut="↑" /> / <KeyboardShortcut shortcut="↓" />                     |
+| Seek 5s Back / Forward       | <KeyboardShortcut shortcut="←" /> / <KeyboardShortcut shortcut="→" />                     |
+| Seek 10% Back / Forward      | <KeyboardShortcut shortcut="Ctrl + ←" /> / <KeyboardShortcut shortcut="Ctrl + →" />       |
+| Jump to Start / End          | <KeyboardShortcut shortcut="Home" /> / <KeyboardShortcut shortcut="End" />                |
+| Pause / Play                 | <KeyboardShortcut shortcut="Space" />                                                     |
+| Fullscreen Toggle            | <KeyboardShortcut shortcut="Double-click" /> or <KeyboardShortcut shortcut="F" />         |
+| Close PiP Window             | <KeyboardShortcut shortcut="Ctrl + W" />                                                  |
 
 
 ## How to Disable Picture-in-Picture
@@ -139,3 +140,4 @@ More platforms are being added.
   To hide the Media Player, just click the “X” on the controller. Zen will take the hint.
 
 {/* TODO: enter video */}
+

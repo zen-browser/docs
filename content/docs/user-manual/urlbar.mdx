@@ -2,6 +2,7 @@
 title: URL Bar & Search Functions
 description: Smart navigation with persistent input memory
 ---
+import KeyboardShortcut from '@/components/KeyboardShortcut';
 
 Different from most browsers, Zen uses the **URL bar** as a quick and efficient way to navigate the web, eliminating the need for a dedicated new tab page. 
 
@@ -23,13 +24,13 @@ If you close the URL bar after typing a URL or search query, the text will still
 ### Toggle floating behavior of the URL bar
 
 Zen has several floating behaviors for its URL bar, which can be changed in `Settings` > `Look and Feel` > `Zen URL Bar`:
-- **Floating only when typing** (Default) – The URL bar will float in the center when you access it from the New Tab button or the `Ctrl + L`/ keyboard shortcut. But, if you open the URL bar by clicking, it will stick to its regular position at the top.
+- **Floating only when typing** (Default) – The URL bar will float in the center when you access it from the New Tab button or the <KeyboardShortcut shortcut="Ctrl + L" /> keyboard shortcut. But, if you open the URL bar by clicking, it will stick to its regular position at the top.
 - **Always floating** – The URL bar will always float in the center, both from clicking directly, New Tab button, and keyboard shortcuts.
 - **Normal** – The position of the opened URL bar will always be attached to the top, whether accessed by clicking directly, using the New Tab button, or via keyboard shortcuts.
 
 ### Setting default search engine
 
-By default, Zen provides **Google**, **DuckDuckGo**, and **Wikipedia** (English) as default search engine providers. You can choose between Google and DuckDuckGo in the onboarding process after installing Zen. 
+By default, Zen provides **Google**, **DuckDuckGo**, and **Wikipedia** (English) as default search engine providers. You can choose between Google, DuckDuckGo and *[Ecosia*](https://blog.ecosia.org/ecosia-firefox-switch/)* in the onboarding process after installing Zen. 
 
 ![Default search engines during onboarding](/assets/user-manual/urlbar/onboarding-search.png)
 

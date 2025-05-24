@@ -3,6 +3,7 @@ title: Bookmarks
 description: Managing bookmarks in Zen
 ---
 import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import KeyboardShortcut from '@/components/KeyboardShortcut';
 
 Zen, as a fork of Firefox, inherits its webpage bookmarking system primarily from Firefox itself, with some additional Zen enhancements. Zen offers two vertical tab layouts: **Single toolbar layout**, which integrates a compact address bar into the vertical tabs toolbar, and **Multiple toolbars layout**, featuring a traditional, full-size address bar in a separate horizontal toolbar. This guide covers the basics of creating and managing bookmarks, tailored to your chosen Zen layout.
 
@@ -29,7 +30,7 @@ To bookmark a page, find and click on the bookmark icon in the address bar. A po
 
 
 <Callout type="info" title="Tips:">
-    While you could use your mouse to click the bookmark icon, we recommend using the keyboard shortcut `Ctrl/Cmd + D` for bookmarking, especially in **Single toolbar layout**.
+    While you could use your mouse to click the bookmark icon, we recommend using the keyboard shortcut <KeyboardShortcut shortcut="Ctrl + D" /> for bookmarking, especially in **Single toolbar layout**.
 </Callout>
 
 Alternatively, you can bookmark a single tab by right-clicking it and selecting `"Bookmark Tab..."` from the context menu, which opens a detailed bookmarking dialog with options for *tagging* and *keywords*. 
@@ -47,7 +48,7 @@ You can find your recently added bookmarks through Zen's application menu. Click
 ### Bookmarks Toolbar and Bookmarks Menu
 
 Taken from the default behavior of Gecko, Zen offers 3 locations (or, groups) for bookmarks:
-- **Bookmarks Toolbar**: This can be considered a public location for bookmarks, displayed in the browser's [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome). You typically find it beneath the main browser toolbar, which is featured in **Multiple toolbars layout** in Zen, while in **Single toolbar layout**, hovering your cursor to the top edge will display the hidden Bookmarks Toolbar, next to your window controls. To toggle the visibility of your Bookmarks Toolbar, use the shortcut `Ctrl/Cmd + Shift + B`
+- **Bookmarks Toolbar**: This can be considered a public location for bookmarks, displayed in the browser's [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome). You typically find it beneath the main browser toolbar, which is featured in **Multiple toolbars layout** in Zen, while in **Single toolbar layout**, hovering your cursor to the top edge will display the hidden Bookmarks Toolbar, next to your window controls. To toggle the visibility of your Bookmarks Toolbar, use the shortcut <KeyboardShortcut shortcut="Ctrl + Shift + B" />
 
 {/* TODO: *insert video* */}
 ![Bookmarks Toolbar](/assets/user-manual/bookmarks/bookmarks-toolbar.png)
@@ -64,14 +65,14 @@ Taken from the default behavior of Gecko, Zen offers 3 locations (or, groups) fo
 
 ### Bookmarks Sidebar
 
-Your bookmarks are also available via what is known as the [Firefox Sidebar](https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-synced). The Sidebar can be opened by adding a Sidebar button to your controls, or preferably by using the shortcut `Ctr/Cmd + B` to open the Bookmarks Sidebar. You can find all of your bookmarks here including entries from both Bookmarks Toolbar and Bookmarks Menu, in the form of a tree structure explorer with access to a searching function at the top.
+Your bookmarks are also available via what is known as the [Firefox Sidebar](https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-synced). The Sidebar can be opened by adding a Sidebar button to your controls, or preferably by using the shortcut <KeyboardShortcut shortcut="Ctrl + B" /> to open the Bookmarks Sidebar. You can find all of your bookmarks here including entries from both Bookmarks Toolbar and Bookmarks Menu, in the form of a tree structure explorer with access to a searching function at the top.
 
 {/* TODO: *insert video/image* */}
 ![Bookmarks Sidebar](/assets/user-manual/bookmarks/bookmarks-sidebar.png)
 
 ### Bookmarks Library
 
-The Firefox Library is a unified manager for Bookmarks, History, and Downloads. You can access the Library by the shortcut `Ctrl/Cmd + Shift + O` or from the application menu `"Bookmarks"`>`"Manage bookmarks"`. While most of its functions here have already been offered via the Bookmarks Sidebar, the Library is important for your purpose of Importing and Backing up Zen's bookmarks.
+The Firefox Library is a unified manager for Bookmarks, History, and Downloads. You can access the Library by the shortcut <KeyboardShortcut shortcut="Ctrl + Shift + O" /> or from the application menu `"Bookmarks"`>`"Manage bookmarks"`. While most of its functions here have already been offered via the Bookmarks Sidebar, the Library is important for your purpose of Importing and Backing up Zen's bookmarks.
 
 ![Bookmarks Library](/assets/user-manual/bookmarks/bookmarks-library.png)
 

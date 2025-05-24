@@ -1,0 +1,151 @@
+---
+title: Hidden/Advanced Preferences
+description: A list of useful flags in Zen Browser's Advanced Preferences page (about:config).
+---
+These are a variety of settings that can change Zen's appearance, behavior, and more. To access them, go to `about:config` in Zen Browser, and search for the title of the flag. Some of these flags may require a restart to work.
+
+### Appearance
+#### `zen.theme.content-element-separation`
+Changes the size of the border around the browser window. 8 by default.
+#### `zen.theme.accent-color`
+The color hex value of Zen's main accent color.
+#### `zen.theme.essentials-favicon-bg`
+Enables a colorful icon for when an essential tab is selected, based on the website's favicon. Enabled by default.
+#### `zen.theme.gradient`
+Allows setting custom sidebar colors. Enabled by default.
+#### `zen.theme.gradient.show-custom-colors`
+Allows setting a color hex as your sidebar color. Disabled by default.
+#### `zen.view.experimental-rounded-view`
+??? Disabled by default.
+#### `zen.view.gray-out-inactive-windows`
+If a window is inactive, the theme color fades to gray. Enabled by default.
+#### `zen.watermark.enabled`
+Shows a splash screen briefly when Zen is opened. Enabled by default.
+
+### Transparency & Blur
+#### `zen.theme.acrylic-elements`
+Windows-specific. Allows use of Windows' Acrylic protocol for a blur effect in Zen. Enabled by default on Windows.
+#### `zen.widget.linux.transparency`
+Linux-specific. Makes the browser UI transparent.
+#### `browser.tabs.allow_transparent_browser`
+Changes the default website background to your theme color. Disabled by default.
+<Callout type="warn">
+Enabling could break the way certain websites look.
+</Callout>
+
+### Tabs
+#### `zen.tab-unloader.excluded-urls`
+A comma-separated list of URLs exempt from being unloaded.
+#### `zen.tabs.dim-pending`
+Dims unloaded tabs. Enabled by default.
+#### `zen.tabs.rename-tabs`
+Allows renaming pinned tabs. Enabled by default.
+#### `zen.ctrlTab.show-pending-tabs`
+Allow switching to unloaded tabs using Ctrl+Tab, when "Ctrl+Tab cycles through tabs in recently used order" is enabled. Disabled by default.
+#### `zen.startup.smooth-scroll-in-tabs`
+Turns on smooth scrolling when scrolling through tabs. Enabled by default.
+#### `toolkit.tabbox.switchByScrolling`
+Allows to switch tabs by scrolling when hovering over tabs. Disabled by default.
+
+### New Tabs
+#### `zen.urlbar.replace-newtab`
+Replaces opening a new tab, with instead showing the URL bar and allowing you to input a query which will then open a new tab. Enabled by default.
+#### `zen.workspaces.open-new-tab-if-last-unpinned-tab-is-closed`
+Opens a new tab when all pinned tabs are unloaded, and all tabs are closed. Disabled by default.
+
+### URL Bar
+#### `zen.urlbar.hide-one-offs`
+Hides the alternative search engines from appearing in the URL bar. Enabled by default.
+#### `zen.urlbar.show-domain-only-in-sidebar`
+When Single Toolbar is enabled, shows only the website domain(ex: example.com) instead of the full URL(ex: example.com\/page). Enabled by default.
+#### `zen.urlbar.show-protections-icon`
+Shows the "protections" icon in the URL bar, which details security information about the current website. Disabled by default.
+#### `zen.urlbar.wait-to-clear`
+How long the URL bar saves what you typed, if you typed something in and unfocused it in milliseconds. 45000 by default.
+
+### Sidebar
+#### `zen.view.sidebar-collapsed.hide-mute-button`
+Hides the mute button in Collapsed Toolbar mode.
+#### `zen.view.sidebar-expanded.max-width`
+Controls the width of the sidebar in Single Toolbar or Multiple Toolbars mode.
+#### `zen.view.sidebar-height-throttle`
+??? 200 by default.
+
+### Window Controls
+#### `zen.view.hide-window-controls`
+Hides the window controls. Enabled by default.
+<Callout>
+In Single Toolbar mode, this hides the toolbar, which can then be revealed on hover.
+</Callout>
+#### `zen.view.experimental-force-window-controls-left`
+Forces the window controls to appear on the left side of the window. Disabled by default.
+<Callout>
+If the sidebar is in the left side, it will appear in it.
+</Callout>
+#### `zen.view.experimental-no-window-controls`
+Removes the window controls entirely. Disabled by default.
+<Callout>
+This will disable the toolbar in Single Toolbar mode.
+</Callout>
+
+### Workspaces
+#### `zen.workspaces.swipe-actions`
+Allows swiping with the trackpad on the sidebar to switch workspaces. Enabled by default.
+#### `zen.workspaces.wrap-around-navigation`
+When swiping through tabs, allow going to the last workspace from the first workspace by swiping left, or vice versa. Enabled by default.
+#### `zen.workspaces.natural-scroll`
+Turns on natural scrolling for swiping through workspaces. Disabled by default.
+#### `zen.workspaces.scroll-modifier-key`
+Controls the hotkey that enables hovering over the sidebar and switching workspaces by scrolling. Options are 'ctrl', 'alt', 'shift'. Default is 'ctrl'.
+
+### Compact mode
+#### `zen.view.compact.animate-sidebar`
+Animates the webpage moving in/out when compact mode is enabled/disabled. Enabled by default.
+#### `zen.view.compact.color-sidebar`
+Colors the sidebar with your custom theme color during compact mode. Enabled by default.
+#### `zen.view.compact.color-toolbar`
+Colors the toolbar with your custom theme color during compact mode. Enabled by default.
+#### `zen.view.show-background-tab-toast`
+Shows a toast when a tab is open while compact mode is enabled. Enabled by default.
+#### `zen.view.compact.show-sidebar-and-toolbar-on-hover`
+Shows the sidebar/toolbar if you hover in their general area during compact mode. Enabled by default.
+#### `zen.view.compact.toolbar-flash-popup`
+Shows the sidebar for a moment when opening a new tab during compact mode. Disabled by default.
+<Callout type="info">
+`zen.view.compact.toolbar-flash-popup.duration` controls the duration in milliseconds. 800 by default.
+</Callout>
+#### `zen.view.compact.toolbar-hide-after-hover.duration`
+Controls the duration until which the toolbar/sidebar hides after you stopped hovering over it in compact mode. 1000 by default.
+
+### Split View
+#### `zen.splitView.enable-tab-drop`
+When enabled, dropping a tab from the sidebar to the current webpage starts split view. Enabled by default.
+#### `zen.splitView.min-resize-width`
+The minimum width or height of any split view tab. The number represents the percentage of the screen taken up by the tab. 7 by default.
+#### `zen.splitView.rearrange-hover-size`
+??? 24 by default.
+
+### Media
+#### `zen.mediacontrols.enabled`
+Shows a media player interface if audio is playing in another tab, or a conference call interface if you're in a conference call. Enabled by default.
+#### `media.videocontrols.picture-in-picture.enabled`
+Allows picture-in-picture. Enabled by default.
+#### `media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled`
+Automatically turns on picture-in-picture when switching tabs during video playback. Disabled by default.
+
+### Other
+#### `zen.keyboard.shortcuts.enabled`
+Allows changing keyboard shortcuts. Enabled by default.
+#### `zen.glance.open-essential-external-links`
+When enabled, external links that are opened inside an essential tab will open in Glance. Enabled by default.
+#### `browser.toolbars.bookmarks.visibility`
+Controls when the bookmarks toolbar is shown. Options are 'always', 'newtab', 'never'. Default is 'never'.
+#### `zen.downloads.download-animation`
+When enabled, plays an animation when a download begins. Enabled by default.
+<Callout type="info">
+`zen.downloads.download-animation-duration` controls the duration in miliseconds. 1000 by default.
+</Callout>
+#### `zen.haptic-feedback.enabled`
+macOS-specific. Triggers haptic feedback on the trackpad's vibration motor when you drag tabs around, or change the texture in the Change Theme Colors pop-up. Enabled by default.
+#### `zen.browser.is-cool`
+This is true.

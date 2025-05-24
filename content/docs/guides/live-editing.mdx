@@ -2,6 +2,7 @@
 title: Live Editing Zen Theme
 description: Learn how to live edit the appearance of Zen Browser by editing the userChrome.css file.
 ---
+import KeyboardShortcut from '@/components/KeyboardShortcut';
 
 import { Callout } from 'fumadocs-ui/components/callout';
 
@@ -34,7 +35,7 @@ This Guide will help you customize the appearance of Zen Browser by live editing
   3. Search for `devtools.chrome.enabled` and toggle it to `true`.
 </Callout>
 
-1. In Zen Browser, press `Ctrl + Shift + Alt + I` to open the Developer Tools.
+1. In Zen Browser, press <KeyboardShortcut shortcut="Ctrl + Shift + Alt + I" /> to open the Developer Tools.
 2. Navigate to the **Style Editor** tab.
 3. In the filter/search bar, type `userChrome` to locate the `userChrome.css` file you created earlier.
 
@@ -52,7 +53,7 @@ This Guide will help you customize the appearance of Zen Browser by live editing
 2. You can start editing the file directly within the Style Editor.
    ![inspect button](/assets/live-editing/inspect.png)
    - **Note:** You can use the **Inspect** button to hover over and select elements on the page. This allows you to learn about the `id`, `class`, or other attributes of elements, which you can then target in your `userChrome.css` file.
-3. To apply your changes, save the file by clicking **Save** or by pressing `Ctrl + S`.
+3. To apply your changes, save the file by clicking **Save** or by pressing <KeyboardShortcut shortcut="Ctrl + S" />.
 
 Any changes you make to the `userChrome.css` file will be applied immediately to Zen Browser.
 Use this file to customize various UI elements, such as colors, fonts, and the layout.
