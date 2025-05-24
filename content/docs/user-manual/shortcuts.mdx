@@ -3,7 +3,9 @@ title: Keyboard Shortcuts
 description: Enhance your Zen experience with customizable keybinds
 ---
 
-Zen Browser supported lots of keyboard shortcuts to help you do common tasks quicker. Access `Settings` > `Keyboard Shortcuts` and edit the available shortcuts to suit your workflow even more!
+import KeyboardShortcut from '@/components/KeyboardShortcut';
+
+Zen Browser supported lots of keyboard shortcuts to help you do common tasks quicker. Access `Settings" /> > `Keyboard Shortcuts" /> and edit the available shortcuts to suit your workflow even more!
 
 ### Change or rebind keyboard shortcuts in Zen
 
@@ -20,19 +22,19 @@ Zen Browser supported lots of keyboard shortcuts to help you do common tasks qui
 
 ### Compact Mode
 
-| **Action**              | **Shortcut**         |
-| ----------------------- | -------------------- | 
-| Toggle Floating Toolbar | `Alt + Ctrl/Cmd + T` |
-| Toggle Floating Sidebar | `Alt + Ctrl/Cmd + S` |
-| Toggle Compact Mode     | `Alt + Ctrl/Cmd + C` |
+| **Action**              | **Shortcut**                                   |
+| ----------------------- | ---------------------------------------------- | 
+| Toggle Floating Toolbar | <KeyboardShortcut shortcut="Alt + Ctrl + T" /> |
+| Toggle Floating Sidebar | <KeyboardShortcut shortcut="Alt + Ctrl + S" /> |
+| Toggle Compact Mode     | <KeyboardShortcut shortcut="Alt + Ctrl + C" /> |
 
 ### Workspaces
 
-| **Action**                 | **Shortcut**         |
-| -------------------------- | -------------------- |
-| Backward Workspace         | `Alt + Ctrl/Cmd + Q` |
-| Forward Workspace          | `Alt + Ctrl/Cmd + E` |
-| Switch to Workspace (1-10) | Not set by default   |
+| **Action**                 | **Shortcut**                                   |
+| -------------------------- | ---------------------------------------------- |
+| Backward Workspace         | <KeyboardShortcut shortcut="Alt + Ctrl + Q" /> |
+| Forward Workspace          | <KeyboardShortcut shortcut="Alt + Ctrl + E" /> |
+| Switch to Workspace (1-10) | Not set by default                             |
 
 You can assign custom keyboard shortcuts to switch into up to 10 workspaces.
 
@@ -40,143 +42,143 @@ You can assign custom keyboard shortcuts to switch into up to 10 workspaces.
 
 The "Toggle Split View" shortcuts currently only applicable when selecting multiple tabs in tab sidebar, and doesn't worked when used inside a split view.
 
-| **Action**                     | **Shortcut**         |
-| ------------------------------ | -------------------- |
-| Close Split View (Unsplit All) | `Alt + Ctrl/Cmd + U` |
-| Toggle Split View Horizontal   | `Alt + Ctrl/Cmd + H` |
-| Toggle Split View Vertical     | `Alt + Ctrl/Cmd + V` |
-| Toggle Split View Grid         | `Alt + Ctrl/Cmd + G` |
+| **Action**                     | **Shortcut**                                   |
+| ------------------------------ | ---------------------------------------------- |
+| Close Split View (Unsplit All) | <KeyboardShortcut shortcut="Alt + Ctrl + U" /> |
+| Toggle Split View Horizontal   | <KeyboardShortcut shortcut="Alt + Ctrl + H" /> |
+| Toggle Split View Vertical     | <KeyboardShortcut shortcut="Alt + Ctrl + V" /> |
+| Toggle Split View Grid         | <KeyboardShortcut shortcut="Alt + Ctrl + G" /> |
 
 ### Window & Tab Management
 
-| **Action**              | **Shortcut**           |
-| ----------------------- | ---------------------- |
-| New Window              | `Alt + Ctrl/Cmd + U`   |
-| New Tab                 | `Ctrl/Cmd + T`         |
-| Close Tab               | `Ctrl/Cmd + W`         |
-| Close Window            | `Shift + Ctrl/Cmd + W` |
-| Quit Application        | `Ctrl/Cmd + Q`         |
-| Restore Last Closed Tab | `Shift + Ctrl/Cmd + T` |
-| Undo Close Window       | `Shift + Ctrl/Cmd + N` |
-| Select tab #1 - #8 ^    | `Alt + 1/2/.../8`      |
-| Select last tab         | `Alt + 9`              |
+| **Action**              | **Shortcut**                                     |
+| ----------------------- | ------------------------------------------------ |
+| New Window              | <KeyboardShortcut shortcut="Alt + Ctrl + U" />   |
+| New Tab                 | <KeyboardShortcut shortcut="Ctrl + T" />         |
+| Close Tab               | <KeyboardShortcut shortcut="Ctrl + W" />         |
+| Close Window            | <KeyboardShortcut shortcut="Shift + Ctrl + W" /> |
+| Quit Application        | <KeyboardShortcut shortcut="Ctrl + Q" />         |
+| Restore Last Closed Tab | <KeyboardShortcut shortcut="Shift + Ctrl + T" /> |
+| Undo Close Window       | <KeyboardShortcut shortcut="Shift + Ctrl + N" /> |
+| Select tab #1 - #8 ^    | <KeyboardShortcut shortcut="Alt + 1/2/.../8" />  |
+| Select last tab         | <KeyboardShortcut shortcut="Alt + 9" />          |
 
-- By default, you can **switch to next tab** using the `Ctrl/Cmd + Tab` shortcut and **switch to previous tab** using the `Ctrl/Cmd + Shift + Tab` shortcut.
-- When you're in Compact Mode and switching tabs using `Ctrl/Cmd + Tab` or `Ctrl/Cmd + Shift + Tab`, you can peek into the tab you're switching in by enabling the **"Briefly make the toolbar popup when switching or opening new tabs in compact mode"** option in `Settings` > `Look and Feel` > `Theme Settings`.
-- Pressing `Ctrl/Cmd + Tab` when you're in the last tab will switch you to the first available tab (Essentials first, then pinned tabs, and lastly, regular tabs).
+- By default, you can **switch to next tab** using the <KeyboardShortcut shortcut="Ctrl + Tab" /> shortcut and **switch to previous tab** using the <KeyboardShortcut shortcut="Ctrl + Shift + Tab" /> shortcut.
+- When you're in Compact Mode and switching tabs using <KeyboardShortcut shortcut="Ctrl + Tab" /> or <KeyboardShortcut shortcut="Ctrl + Shift + Tab`, you can peek into the tab you're switching in by enabling the **"Briefly make the toolbar popup when switching or opening new tabs in compact mode"** option in `Settings` > `Look and Feel` > `Theme Settings`.
+- Pressing <KeyboardShortcut shortcut="Ctrl + Tab" /> when you're in the last tab will switch you to the first available tab (Essentials first, then pinned tabs, and lastly, regular tabs).
 - ^ Tab numbers listed for these keyboard shortcuts includes Essentials and pinned tabs. Example: If you have three Essentials, four pinned tabs, and five regular tabs:
-  - `Alt + 1` until `Alt + 3` will switch you to your Essentials,
-  - `Alt + 4` until `Alt + 7` will switch you to your pinned tabs,
-  - `Alt + 8` will switch you to your first regular tab,
-  - `Alt + 9` will switch you to your last tab (12th).
-- Zen can also let you cycle through recently used tabs, instead of cycling through all of your tabs. Enable it by go to `Settings` > `General` > `Tabs` and check the `Ctrl + Tab cycles through tabs in recently used order`. A popup containing up to 7 recently used tabs will show up when you press `Ctrl/Cmd + Tab`.
+  - <KeyboardShortcut shortcut="Alt + 1" /> until <KeyboardShortcut shortcut="Alt + 3" /> will switch you to your Essentials,
+  - <KeyboardShortcut shortcut="Alt + 4" /> until <KeyboardShortcut shortcut="Alt + 7" /> will switch you to your pinned tabs,
+  - <KeyboardShortcut shortcut="Alt + 8" /> will switch you to your first regular tab,
+  - <KeyboardShortcut shortcut="Alt + 9" /> will switch you to your last tab (12th).
+- Zen can also let you cycle through recently used tabs, instead of cycling through all of your tabs. Enable it by go to `Settings` > `General` > `Tabs` and check the `Ctrl + Tab cycles through tabs in recently used order`. A popup containing up to 7 recently used tabs will show up when you press <KeyboardShortcut shortcut="Ctrl + Tab`.
   
 ### Navigation
 
-| **Action**                           | **Shortcut**           |
-| ------------------------------------ | ---------------------- |
-| Go Back                              | `Alt + <=`             |
-| Go Forward                           | `Alt + =>`             |
-| Navigate Back (Alternative)          | `Ctrl/Cmd + [`         |
-| Navigate Forward (Alternative)       | `Ctrl/Cmd + ]`         |
-| Go Home                              | `Alt + Home`           |
-| Reload Page                          | `Ctrl/Cmd + R`         |
-| Reload Page (Skip Current Cache)     | `Shift + Ctrl/Cmd + R` |
-| Go to History (Open History Sidebar) | `Ctrl/Cmd + H`         |
-| Open Private Browsing Window         | `Shift + Ctrl/Cmd + P` |
+| **Action**                           | **Shortcut**                                     |
+| ------------------------------------ | ------------------------------------------------ |
+| Go Back                              | <KeyboardShortcut shortcut="Alt + ←" />          |
+| Go Forward                           | <KeyboardShortcut shortcut="Alt + →" />          |
+| Navigate Back (Alternative)          | <KeyboardShortcut shortcut="Ctrl + [" />         |
+| Navigate Forward (Alternative)       | <KeyboardShortcut shortcut="Ctrl + ]" />         |
+| Go Home                              | <KeyboardShortcut shortcut="Alt + Home" />       |
+| Reload Page                          | <KeyboardShortcut shortcut="Ctrl + R" />         |
+| Reload Page (Skip Current Cache)     | <KeyboardShortcut shortcut="Shift + Ctrl + R" /> |
+| Go to History (Open History Sidebar) | <KeyboardShortcut shortcut="Ctrl + H" />         |
+| Open Private Browsing Window         | <KeyboardShortcut shortcut="Shift + Ctrl + P" /> |
   
 ### Search & Find
 
-| **Action**                              | **Shortcut**           |
-| --------------------------------------- | ---------------------- |
-| Focus Search ^                          | `Ctrl/Cmd + K`         |
-| Focus Search ^ (Alternative)            | `Ctrl/Cmd + J`         |
-| Find on Page                            | `Ctrl/Cmd + F`         |
-| Find Again (Jump to Next Result)        | `Ctrl/Cmd + G`         |
-| Find Previous (Jump to Previous Result) | `Shift + Ctrl/Cmd + G` |
+| **Action**                              | **Shortcut**                                     |
+| --------------------------------------- | ------------------------------------------------ |
+| Focus Search ^                          | <KeyboardShortcut shortcut="Ctrl + K" />         |
+| Focus Search ^ (Alternative)            | <KeyboardShortcut shortcut="Ctrl + J" />         |
+| Find on Page                            | <KeyboardShortcut shortcut="Ctrl + F" />         |
+| Find Again (Jump to Next Result)        | <KeyboardShortcut shortcut="Ctrl + G" />         |
+| Find Previous (Jump to Previous Result) | <KeyboardShortcut shortcut="Shift + Ctrl + G" /> |
 
 ^ Focus Search shortcut will open your URL bar, shift focus and enable Search mode using your default search engine.
   
 ### Page Operations
 
-| **Action**                              | **Shortcut**           |
-| --------------------------------------- | ---------------------- |
-| Open Location (Current link in URL Bar) | `Ctrl/Cmd + L`         |
-| Open Location (Alternative)             | `Alt + D`              |
-| Save Page                               | `Ctrl/Cmd + S`         |
-| Print Page                              | `Ctrl/Cmd + P`         |
-| Toggle Reader Mode                      | `Alt + Ctrl/Cmd + R`   |
-| Toggle Picture-in-Picture               | `Shift + Ctrl/Cmd + ]` |
-| View Page Source                        | `Ctrl/Cmd + U`         |
-| View Page Info                          | `Ctrl/Cmd + [`         |
+| **Action**                              | **Shortcut**                                     |
+| --------------------------------------- | ------------------------------------------------ |
+| Open Location (Current link in URL Bar) | <KeyboardShortcut shortcut="Ctrl + L" />         |
+| Open Location (Alternative)             | <KeyboardShortcut shortcut="Alt + D" />          |
+| Save Page                               | <KeyboardShortcut shortcut="Ctrl + S" />         |
+| Print Page                              | <KeyboardShortcut shortcut="Ctrl + P" />         |
+| Toggle Reader Mode                      | <KeyboardShortcut shortcut="Alt + Ctrl + R" />   |
+| Toggle Picture-in-Picture               | <KeyboardShortcut shortcut="Shift + Ctrl + ]" /> |
+| View Page Source                        | <KeyboardShortcut shortcut="Ctrl + U" />         |
+| View Page Info                          | <KeyboardShortcut shortcut="Ctrl + [" />         |
 
 ### History & Bookmarks
 
-| **Action**                       | **Shortcut**           |
-| -------------------------------- | ---------------------- |
-| Show All History                 | `Shift + Ctrl/Cmd + H` |
-| Bookmark This Page               | `Ctrl/Cmd + D`         |
-| Bookmark This Page (Alternative) | `Shift + Ctrl/Cmd + D` |
-| Show Bookmarks Library           | `Shift + Ctrl/Cmd + O` |
+| **Action**                       | **Shortcut**                                     |
+| -------------------------------- | ------------------------------------------------ |
+| Show All History                 | <KeyboardShortcut shortcut="Shift + Ctrl + H" /> |
+| Bookmark This Page               | <KeyboardShortcut shortcut="Ctrl + D" />         |
+| Bookmark This Page (Alternative) | <KeyboardShortcut shortcut="Shift + Ctrl + D" /> |
+| Show Bookmarks Library           | <KeyboardShortcut shortcut="Shift + Ctrl + O" /> |
 
 ### Media & Display
 
-| **Action**            | **Shortcut**           |
-| --------------------- | ---------------------- |
-| Toggle Mute           | `Ctrl/Cmd + M`         |
-| Zoom Out              | `Ctrl/Cmd + -`         |
-| Zoom In               | `Ctrl/Cmd + +`         |
-| Reset Zoom Level      | `Ctrl/Cmd + 0`         |
-| Switch Text Direction | `Shift + Ctrl/Cmd + X` |
-| Take Screenshot       | `Shift + Ctrl/Cmd + S` |
+| **Action**            | **Shortcut**                                     |
+| --------------------- | ------------------------------------------------ |
+| Toggle Mute           | <KeyboardShortcut shortcut="Ctrl + M" />         |
+| Zoom Out              | <KeyboardShortcut shortcut="Ctrl + -" />         |
+| Zoom In               | <KeyboardShortcut shortcut="Ctrl + +" />         |
+| Reset Zoom Level      | <KeyboardShortcut shortcut="Ctrl + 0" />         |
+| Switch Text Direction | <KeyboardShortcut shortcut="Shift + Ctrl + X" /> |
+| Take Screenshot       | <KeyboardShortcut shortcut="Shift + Ctrl + S" /> |
 
 ### Developer Tools
 
-| **Action**                    | **Shortcut**                 |
-| ----------------------------- | ---------------------------- |
-| Toggle DevTools               | `Shift + Ctrl/Cmd + I`       |
-| Toggle Browser Toolbox        | `Alt + Shift + Ctrl/Cmd + I` |
-| Toggle Browser Console        | `Shift + Ctrl/Cmd + J`       |
-| Toggle Responsive Design Mode | `Shift + Ctrl/Cmd + M`       |
-| Toggle Inspector              | `Shift + Ctrl/Cmd + L`       |
-| Toggle Web Console            | `Shift + Ctrl/Cmd + K`       |
-| Toggle JavaScript Debugger    | `Shift + Ctrl/Cmd + Z`       |
-| Toggle Network Monitor        | `Shift + Ctrl/Cmd + E`       |
-| Toggle Style Editor           | `Shift + F7`                 |
-| Toggle Performance            | `Shift + F5`                 |
-| Toggle Storage                | `Shift + F9`                 |
-| Toggle DOM                    | `Shift + Ctrl/Cmd + W`       |
-| Toggle Accessibility          | `Shift + F12`                |
+| **Action**                    | **Shortcut**                                           |
+| ----------------------------- | ------------------------------------------------------ |
+| Toggle DevTools               | <KeyboardShortcut shortcut="Shift + Ctrl + I" />       |
+| Toggle Browser Toolbox        | <KeyboardShortcut shortcut="Alt + Shift + Ctrl + I" /> |
+| Toggle Browser Console        | <KeyboardShortcut shortcut="Shift + Ctrl + J" />       |
+| Toggle Responsive Design Mode | <KeyboardShortcut shortcut="Shift + Ctrl + M" />       |
+| Toggle Inspector              | <KeyboardShortcut shortcut="Shift + Ctrl + L" />       |
+| Toggle Web Console            | <KeyboardShortcut shortcut="Shift + Ctrl + K" />       |
+| Toggle JavaScript Debugger    | <KeyboardShortcut shortcut="Shift + Ctrl + Z" />       |
+| Toggle Network Monitor        | <KeyboardShortcut shortcut="Shift + Ctrl + E" />       |
+| Toggle Style Editor           | <KeyboardShortcut shortcut="Shift + F7" />             |
+| Toggle Performance            | <KeyboardShortcut shortcut="Shift + F5" />             |
+| Toggle Storage                | <KeyboardShortcut shortcut="Shift + F9" />             |
+| Toggle DOM                    | <KeyboardShortcut shortcut="Shift + Ctrl + W" />       |
+| Toggle Accessibility          | <KeyboardShortcut shortcut="Shift + F12" />            |
 
 ### Zen Features
 
-| **Action**                     | **Shortcut**                 |
-| ------------------------------ | ---------------------------- |
-| Copy Current URL as Markdown   | `Alt + Shift + Ctrl/Cmd + C` |
-| Copy Current URL               | `Shift + Ctrl/Cmd + C`       |
-| Toggle Sidebar Width           | `Alt + B`                    |
-| Reset Pinned Tab to Pinned URL | Not set by default           |
+| **Action**                     | **Shortcut**                                           |
+| ------------------------------ | ------------------------------------------------------ |
+| Copy Current URL as Markdown   | <KeyboardShortcut shortcut="Alt + Shift + Ctrl + C" /> |
+| Copy Current URL               | <KeyboardShortcut shortcut="Shift + Ctrl + C" />       |
+| Toggle Sidebar Width           | <KeyboardShortcut shortcut="Alt + B" />                |
+| Reset Pinned Tab to Pinned URL | Not set by default                                     |
 
 ### Other Features
 
-| **Action**                 | **Shortcut**                |
-| -------------------------- | --------------------------- |
-| Open Downloads             | `Shift + Ctrl/Cmd + Y`      |
-| Open Add-ons               | `Shift + Ctrl/Cmd + A`      |
-| Open File                  | `Ctrl/Cmd + O`              |
-| Delete Key                 | `Delete`                    |
-| Enter Full Screen          | `F11`                       |
-| Exit Full Screen           | `F11`                       |
-| About Processes            | `Shift + Escape`            |
-| Show Bookmarks Sidebar     | `Ctrl/Cmd + B`              |
-| Show Bookmarks Toolbar     | `Shift + Ctrl/Cmd + B`      |
-| Stop Loading               | `Escape`                    |
-| Toggle AI Chatbot Sidebar^ | `Alt + Ctrl/Cmd + X`        |
-| Toggle Firefox Sidebar     | `Alt + Ctrl/Cmd + Z`        |
-| Show All Tabs              | `Shift + Ctrl + Tab`        |
-| Clear Browsing Data        | `Shift + Ctrl/Cmd + Delete` |
-| WR Capture Command         | `Ctrl/Cmd + #`              |
-| Toggle WR Capture Sequence | `Ctrl/Cmd + ^`              |
+| **Action**                 | **Shortcut**                                          |
+| -------------------------- | ----------------------------------------------------- |
+| Open Downloads             | <KeyboardShortcut shortcut="Shift + Ctrl + Y" />      |
+| Open Add-ons               | <KeyboardShortcut shortcut="Shift + Ctrl + A" />      |
+| Open File                  | <KeyboardShortcut shortcut="Ctrl + O" />              |
+| Delete Key                 | <KeyboardShortcut shortcut="Delete" />                |
+| Enter Full Screen          | <KeyboardShortcut shortcut="F11" />                   |
+| Exit Full Screen           | <KeyboardShortcut shortcut="F11" />                   |
+| About Processes            | <KeyboardShortcut shortcut="Shift + Escape" />        |
+| Show Bookmarks Sidebar     | <KeyboardShortcut shortcut="Ctrl + B" />              |
+| Show Bookmarks Toolbar     | <KeyboardShortcut shortcut="Shift + Ctrl + B" />      |
+| Stop Loading               | <KeyboardShortcut shortcut="Escape" />                |
+| Toggle AI Chatbot Sidebar^ | <KeyboardShortcut shortcut="Alt + Ctrl + X" />        |
+| Toggle Firefox Sidebar     | <KeyboardShortcut shortcut="Alt + Ctrl + Z" />        |
+| Show All Tabs              | <KeyboardShortcut shortcut="Shift + Ctrl + Tab" />    |
+| Clear Browsing Data        | <KeyboardShortcut shortcut="Shift + Ctrl + Delete" /> |
+| WR Capture Command         | <KeyboardShortcut shortcut="Ctrl + #" />              |
+| Toggle WR Capture Sequence | <KeyboardShortcut shortcut="Ctrl + ^" />              |
   
 ---
 
