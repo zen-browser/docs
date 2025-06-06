@@ -50,7 +50,11 @@ const KeyboardShortcut: React.FC<KeyboardShortcutProps> = ({
       {keys.map((key, index) => (
         <React.Fragment key={index}>
           <kbd className="px-1 py-0.5 text-xs font-semibold text-fd-foreground bg-fd-card border border-fd-border rounded-sm">
-            {key.toLowerCase() === "shift" ? "⇧" : key}
+            {key.toLowerCase() === "shift"
+              ? "⇧"
+              : key.toLowerCase() === "plus"
+              ? "+"
+              : key}
           </kbd>
           {index < keys.length - 1 && <span className="mx-1">+</span>}
         </React.Fragment>
