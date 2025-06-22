@@ -11,7 +11,7 @@ Before you begin, make sure you have the following installed on your machine:
 
 - [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
 - [**Node.js**](https://nodejs.org/): JavaScript runtime for running the development server and building the project.
-- [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
+- [**pnpm**](https://pnpm.io/): Fast, disk-efficient Node package manager used by this project.
 
 ## Step 1: Fork the Repository
 
@@ -34,17 +34,17 @@ Replace `<your-username>` with your GitHub username.
 Navigate to the project directory and install the required dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
-This command installs all the necessary packages listed in the `package.json` file.
+This command installs all the necessary packages listed in the `package.json` file and respects the exact versions defined in `pnpm-lock.yaml`.
 
 ## Step 4: Build the Project
 
 To build the project files:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 This command will compile and process all the source files into a production-ready format.
@@ -54,7 +54,7 @@ This command will compile and process all the source files into a production-rea
 After installing the dependencies, you can start the development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 This command will start a local server and open the homepage in your default web browser. The server will automatically reload whenever you make changes to the code.
@@ -75,11 +75,16 @@ Before submitting your changes, make sure they work as expected. Check the funct
 
 ## Step 8: Commit and Push Your Changes
 
-Once you are satisfied with your changes, commit them to your local repository:
+Once you are satisfied with your changes, commit them to your local repository. **All commits must:**
+
+1. Follow the [Conventional Commits](https://www.conventionalcommits.org/) specification (checked automatically by **commitlint**).
+2. Commits must be signed. You can learn more about Commit Signing [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).
+
+Example:
 
 ```bash
 git add .
-git commit -m "Description of your changes"
+git commit -m "feat(www): add dark mode toggle"
 ```
 
 Push your changes to your forked repository:
