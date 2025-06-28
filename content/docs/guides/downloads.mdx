@@ -1,0 +1,247 @@
+---
+title: Download & Installation Guide
+description: Step-by-step instructions for downloading and installing Zen Browser on Windows, macOS, and Linux.
+icon: Download
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+# Download & Installation Guide 📥
+
+Get Zen Browser up and running on your system with these comprehensive platform-specific installation instructions.
+
+<Callout type="info" title="System Requirements">
+**Minimum Requirements:**
+- RAM: 4GB (8GB recommended)
+- Storage: 200MB free space
+- OS: Windows 10+, macOS 10.14+, or modern Linux distribution
+</Callout>
+
+## Download Options
+
+### Release Channels
+
+- **🟢 Stable Release**: Recommended for most users - thoroughly tested and reliable
+- **🟡 Beta Release**: Latest features with potential minor bugs - good for early adopters
+- **🔴 Nightly Builds**: Development version with cutting-edge features - for developers and testers
+
+### Platform Support
+
+| Platform | Architecture | Status |
+|----------|-------------|--------|
+| **Windows** | x64, ARM64 | ✅ Fully Supported |
+| **macOS** | Intel, Apple Silicon | ✅ Fully Supported |
+| **Linux** | x64, ARM64 | ✅ Multiple Formats |
+
+## Installation Instructions
+
+### Windows Installation
+
+#### Method 1: Installer (Recommended)
+
+1. **Download**: Visit the [official releases page](https://github.com/zen-browser/desktop/releases)
+2. **Select**: Download the latest `.exe` installer for Windows
+3. **Run**: Double-click the downloaded installer file
+4. **Install**: Follow the installation wizard prompts
+5. **Launch**: Zen Browser will start automatically after installation
+
+#### Method 2: Portable Version
+
+1. **Download**: Get the portable `.zip` file from releases
+2. **Extract**: Unzip to your desired location
+3. **Run**: Execute `zen.exe` directly (no installation required)
+
+<Callout type="warn" title="Windows Security Warning">
+Windows may show a security warning for unsigned executables. Click "More info" → "Run anyway" to proceed with installation.
+</Callout>
+
+### macOS Installation
+
+#### Intel and Apple Silicon
+
+1. **Download**: Get the appropriate `.dmg` file for your Mac architecture:
+   - Intel Macs: `zen-macos-x64.dmg`
+   - Apple Silicon: `zen-macos-aarch64.dmg`
+2. **Mount**: Double-click the downloaded `.dmg` file
+3. **Install**: Drag Zen Browser to your Applications folder
+4. **Launch**: Open from Applications or Spotlight search
+
+<Callout type="info" title="Gatekeeper Notice">
+On first launch, macOS may show a security warning. Right-click the app → "Open" → "Open" to bypass Gatekeeper restrictions.
+</Callout>
+
+#### Homebrew Installation
+
+```bash
+# Add the Zen Browser tap
+brew tap zen-browser/zen
+
+# Install Zen Browser
+brew install zen-browser
+```
+
+### Linux Installation
+
+#### AppImage (Universal)
+
+```bash
+# Download AppImage
+wget https://github.com/zen-browser/desktop/releases/latest/download/zen-browser.AppImage
+
+# Make executable
+chmod +x zen-browser.AppImage
+
+# Run directly
+./zen-browser.AppImage
+
+# Optional: Integrate with system
+./zen-browser.AppImage --appimage-extract
+sudo mv squashfs-root /opt/zen-browser
+sudo ln -s /opt/zen-browser/zen /usr/local/bin/zen-browser
+```
+
+#### Flatpak
+
+```bash
+# Install from Flathub
+flatpak install flathub app.zen_browser.zen
+
+# Run Zen Browser
+flatpak run app.zen_browser.zen
+```
+
+#### Snap Package
+
+```bash
+# Install from Snap Store
+sudo snap install zen-browser
+
+# Run Zen Browser
+zen-browser
+```
+
+#### Arch Linux (AUR)
+
+```bash
+# Using yay
+yay -S zen-browser-bin
+
+# Using paru
+paru -S zen-browser-bin
+
+# Manual installation
+git clone https://aur.archlinux.org/zen-browser-bin.git
+cd zen-browser-bin
+makepkg -si
+```
+
+#### Ubuntu/Debian
+
+```bash
+# Download .deb package
+wget https://github.com/zen-browser/desktop/releases/latest/download/zen-browser.deb
+
+# Install with apt
+sudo apt install ./zen-browser.deb
+
+# Or install with dpkg
+sudo dpkg -i zen-browser.deb
+sudo apt-get install -f  # Fix any dependency issues
+```
+
+#### Fedora/CentOS/RHEL
+
+```bash
+# Download .rpm package
+wget https://github.com/zen-browser/desktop/releases/latest/download/zen-browser.rpm
+
+# Install with dnf
+sudo dnf install zen-browser.rpm
+
+# Or install with rpm
+sudo rpm -i zen-browser.rpm
+```
+
+## Post-Installation Setup
+
+### First Launch Configuration
+
+1. **Import Data**: Import bookmarks, passwords, and settings from your previous browser
+2. **Set Default**: Choose whether to make Zen your default browser
+3. **Privacy Settings**: Configure telemetry and data collection preferences
+4. **Sync Setup**: Sign in with Firefox Account for cross-device synchronization
+
+### Essential Settings
+
+<Callout type="info" title="Recommended Initial Setup">
+- **Enable hardware acceleration**: Settings → General → Performance
+- **Configure privacy**: Settings → Privacy & Security
+- **Set up workspaces**: Organize your browsing with custom workspaces
+- **Install extensions**: Add essential extensions from Firefox Add-ons
+</Callout>
+
+## Troubleshooting
+
+### Common Installation Issues
+
+#### Windows
+- **"App can't run on this PC"**: Ensure you downloaded the correct architecture (x64/ARM64)
+- **Antivirus blocking**: Add Zen Browser to your antivirus whitelist
+- **Installation fails**: Run installer as administrator
+
+#### macOS
+- **"App is damaged"**: Re-download the installer or use `xattr -d com.apple.quarantine` command
+- **Can't open app**: Right-click → Open instead of double-clicking
+- **Permission denied**: Check that the app has necessary permissions in System Preferences
+
+#### Linux
+- **AppImage won't run**: Install `fuse` package and ensure executable permissions
+- **Missing dependencies**: Install required libraries for your distribution
+- **Flatpak issues**: Update Flatpak runtime: `flatpak update`
+
+### Performance Issues
+
+If Zen Browser runs slowly after installation:
+
+1. **Disable hardware acceleration** temporarily in Settings
+2. **Clear cache and cookies** from previous installations
+3. **Reset to default theme** if using custom modifications
+4. **Check for conflicting extensions** and disable them
+
+## Updating Zen Browser
+
+### Automatic Updates
+Zen Browser includes an automatic update system that will notify you when new versions are available.
+
+### Manual Updates
+- **Windows/macOS**: Download and install the latest version over your existing installation
+- **Linux**: Update through your package manager or download the latest AppImage
+- **Flatpak**: `flatpak update app.zen_browser.zen`
+
+## Uninstallation
+
+### Windows
+- Use "Add or Remove Programs" in Windows Settings
+- Or run the uninstaller from the installation directory
+
+### macOS
+- Drag Zen Browser from Applications to Trash
+- Remove user data: `~/Library/Application Support/zen`
+
+### Linux
+- **Package managers**: Use your distribution's package manager
+- **AppImage**: Simply delete the AppImage file
+- **Flatpak**: `flatpak uninstall app.zen_browser.zen`
+
+## Getting Help
+
+If you encounter issues during installation:
+
+- **Documentation**: Check our [User Manual](/user-manual) for detailed guides
+- **Community**: Join discussions on [r/zen_browser](https://www.reddit.com/r/zen_browser)
+- **Issues**: Report bugs on [GitHub Issues](https://github.com/zen-browser/desktop/issues)
+- **Discussions**: Ask questions on [GitHub Discussions](https://github.com/zen-browser/desktop/discussions)
+
+---
+
+*Installation guide last updated: January 2025. For the most current download links, always check the official GitHub releases page.*

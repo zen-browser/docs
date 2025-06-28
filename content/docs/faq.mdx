@@ -140,3 +140,79 @@ Some users may encounter a bug where themes are broken, to resolve it to follow 
 3. Delete (or edit) the zen-themes.json file and restart the browser.
 
 Its recommended to backup the file before updating it manually. By editing you could break the browser
+
+## How do I import bookmarks and settings from other browsers?
+
+Zen Browser supports importing bookmarks, passwords, and settings from most major browsers including Chrome, Safari, Edge, and other Firefox-based browsers.
+
+1. **Open Zen Browser Settings**
+2. **Navigate to "General" → "Import Data"**
+3. **Select your previous browser** from the list
+4. **Choose what data to import** (bookmarks, passwords, history, etc.)
+5. **Click "Import"** to complete the process
+
+## Does Zen Browser collect telemetry data?
+
+Zen Browser is built on Firefox's foundation and follows similar privacy practices. By default, some telemetry is enabled to help improve the browser, but this can be disabled:
+
+1. **Go to `about:config`**
+2. **Search for `datareporting.healthreport.uploadEnabled`**
+3. **Set to `false`** to disable telemetry
+4. **Also disable `toolkit.telemetry.enabled`** for complete telemetry opt-out
+
+For complete privacy, we recommend reviewing all telemetry settings in `about:config`.
+
+## How do I create and manage tab groups in workspaces?
+
+Zen's workspace feature allows you to organize tabs into different contexts:
+
+1. **Create Workspace**: Click the "+" button in the workspace sidebar
+2. **Switch Workspaces**: Click on workspace names or use <KeyboardShortcut shortcut="Ctrl+Shift+E" />
+3. **Move Tabs**: Drag tabs between workspaces
+4. **Rename Workspace**: Right-click workspace name → "Rename"
+5. **Delete Workspace**: Right-click workspace name → "Delete"
+
+## Why doesn't Zen Browser show up correctly in app switchers?
+
+Some users report that Zen's icon doesn't display correctly in Alt+Tab or similar app switchers. This is typically resolved by:
+
+1. **Ensuring you have the latest version** installed
+2. **Restarting your system** after installation
+3. **On Windows**: Clearing the icon cache
+4. **On macOS**: Rebuilding the Launch Services database with `sudo /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user`
+
+## How do I enable hardware acceleration?
+
+Hardware acceleration can improve performance, especially for video playback and graphics-intensive websites:
+
+1. **Open Settings** → **General**
+2. **Scroll to "Performance"** section
+3. **Check "Use recommended performance settings"** (or uncheck to customize)
+4. **Enable "Use hardware acceleration when available"**
+5. **Restart Zen Browser** for changes to take effect
+
+## Can I use Chrome extensions in Zen Browser?
+
+Zen Browser is Firefox-based, so it uses **Firefox Add-ons** rather than Chrome extensions. However, many popular Chrome extensions have Firefox equivalents:
+
+- **uBlock Origin**: Available for Firefox
+- **LastPass/Bitwarden**: Native Firefox versions available
+- **Grammarly**: Firefox-compatible version available
+
+You can find extensions at [addons.mozilla.org](https://addons.mozilla.org).
+
+## How do I backup my Zen Browser profile?
+
+To backup your Zen Browser data:
+
+1. **Close Zen Browser completely**
+2. **Navigate to your profile folder**:
+   - **Windows**: `%APPDATA%/zen/`
+   - **macOS**: `~/Library/Application Support/zen/`
+   - **Linux**: `~/.zen/` or `~/.var/app/app.zen_browser.zen/zen/` (Flatpak)
+3. **Copy the entire profile folder** to a safe location
+4. **To restore**: Replace the profile folder with your backup
+
+<Callout type="info" title="Profile Backup Tip">
+Regular backups ensure you don't lose your settings, bookmarks, and customizations. Consider backing up before major updates or theme changes.
+</Callout>
