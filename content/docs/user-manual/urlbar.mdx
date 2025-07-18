@@ -58,12 +58,15 @@ Open `Settings` > `Search` > `Search Shortcuts` to show the list of available se
 
 Click the **Add** button to add a new search engine manually, using these text fields:
 
-- **Search engine name**
-- **Engine URL** (use %s in place of the search term)
-- **Search suggestion URL** (use %s in place of the search term, you can use the same link as the Engine URL)
-- **Custom keyword** that you can type in the URL bar to easily switch to the search mode for that specific search engine.
+- **Search engine name** is the display name for your search engine.
+- **URL with %s in place of search term** is the search URL template (use %s where the search query should go).
+- **Custom keyword (optional)** that you can type in the URL bar to easily switch to the search mode for that specific search engine.
 
-Here is an example of adding Qwant as search engine manually:
+Click **Advanced** to access additional optional fields:
+- **POST data with %s in place of search term** should be left empty for GET requests, or specify POST data if the search engine requires it.
+- **Suggestions URL with %s in place of search term (optional)** is the URL for search suggestions and autocomplete (you can use the same link as the main URL).
+
+Here is an example of adding Qwant as search engine manually, using the Advanced options:
 ![Add Custom Search Engine](/assets/user-manual/urlbar/add-manual.png)
 
 You can also set a **custom keyword** to the search engines you add, by double clicking the Keyword column on the row of a search engine. Type the keyword, and press **Enter** to save it. Use the search engine by clicking the **New Tab** button, type the custom keyword and press **Space** key to activate the search engine. Type your search query, and press **Enter** to show the search results in new tab.
