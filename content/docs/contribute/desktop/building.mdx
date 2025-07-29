@@ -1,7 +1,7 @@
 ---
-title: Browser
+title: Building Zen
 ---
-import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
 
 We've taken the time to make building Zen Browser as easy as possible, independent of your operating system or technical knowledge.
 
@@ -13,8 +13,6 @@ The following resources are essential for a successful build. Without them, you 
 - Git ([Download here](https://git-scm.com/downloads)) – Required for version control and managing source code.  
 - Python 3 ([Download here](https://www.python.org/downloads/)) – Needed for running build scripts and automation tools.   
 - Node.js 21+ ([Download here](https://nodejs.org/)) – Required for managing dependencies and running JavaScript-based tools.    
-- MozillaBuild ([Download here](https://wiki.mozilla.org/MozillaBuild)) – Required for `mach` and Gecko compilation.  
-- 7-Zip ([Download here](https://www.7-zip.org/download.html)) – Used to extract Firefox source archives.  
 - sccache ([Download here](https://github.com/mozilla/sccache/releases)) – A caching tool that speeds up rebuilds by storing compiled objects.    
 
 <Callout>
@@ -25,16 +23,45 @@ If you're using Windows, ensure that all the basic software requirements are add
 We cannot provide support if a build fails. Please understand this before proceeding with the following steps.
 </Callout>
 
-## Step 1: Clone the Project
+## Step 1: Getting Started & Clone the Project
 
-First, you need to clone the Zen Browser repository to your local machine. This will create a local copy of the project that you can work on.
+First, let's get your system ready for building Zen.
+
+<Tabs groupId="toolbar" items={['Windows', 'Linux', 'macOS']} persist>
+  <Tab value="Windows">
+      <p>Follow the steps below to set up your Windows environment for building Zen Browser:</p>
+      <ol>
+        <li>Install [MozillaBuild](https://wiki.mozilla.org/MozillaBuild) and add it to your `PATH`.</li>
+        <li>Install [7-Zip](https://www.7-zip.org/) and add it to your `PATH`.</li>
+        <li>Ensure you have Visual Studio with the "Desktop development with C++" workload installed.</li>
+      </ol>
+  </Tab>
+  <Tab value="Linux">
+      <p>Follow the steps below to set up your Linux environment for building Zen Browser:</p>
+      <ol>
+        <li>For Debian-based Linux (such as Ubuntu): `sudo apt update && sudo apt install curl python3 python3-pip git`</li>
+        <li>`For Fedora Linux: sudo dnf install python3 python3-pip git`</li>
+      </ol>
+  </Tab>
+  <Tab value="macOS">
+      <p>Follow the steps below to set up your macOS environment for building Zen Browser:</p>
+      <ol>
+        <li>Install Xcode from the App Store, after that run the following command in your terminal:</li>
+        ```
+sudo xcode-select --switch /Applications/Xcode.app
+sudo xcodebuild -license
+      ```
+      </ol>
+  </Tab>
+</Tabs>
+
+After having everything set up, you need to clone the Zen Browser repository to your local machine. This will create a local copy of the project that you can work on.
 
 ```bash
-git clone https://github.com/zen-browser/desktop.git --recurse-submodules --depth 10
+git clone https://github.com/zen-browser/desktop.git --depth 10
 cd desktop
 ```
 
-- **`--recurse-submodules`**: This flag ensures that all submodules are cloned along with the main project. Zen Browser relies on several submodules, so this step is essential.
 - **`--depth 10`**: This makes sure you dont download the entire git history, it would take a long time otherwise due to that we used to store compiled binaries on the repository.
 
 ## Step 2: Install Dependencies
