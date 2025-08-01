@@ -5,7 +5,7 @@ description: Learn how to manage Firefox profiles effectively, preserving key el
 
 import { Callout } from 'fumadocs-ui/components/callout';
 
-This Guide will give you a comprehensive understanding of Firefox profiles, helping you manage them effectively even in the most challenging situations. By following this guide, you'll learn how to preserve key elements of your browsing experience, including bookmarks, history, passwords, and more.
+This guide will give you a comprehensive understanding of Firefox profiles, helping you manage them effectively even in the most challenging situations. By following this guide, you'll learn how to preserve key elements of your browsing experience, including bookmarks, history, passwords, and more.
 
 ## Goal
 
@@ -23,7 +23,7 @@ This guide will help you:
 
 ### 1. Open Your Current Profile Folder
 
-<Callout type="danger" title="Turn Off Firefox">
+<Callout type="warn" title="Stop Firefox from running">
   This step is crucial to avoid corruption, as Firefox continuously reads and writes data while running.
 </Callout>
 
@@ -32,25 +32,25 @@ This guide will help you:
 
 ### 2. Copy Essential Files
 
-<Callout type="info" title="Optional Files">
-  - **storage folder**: If you want to keep add-on customizations (this may not work 100% of the time).
-  - **chrome folder**: If you want to retain your interface customizations.
+<Callout type="info" title="Copy optional files">
+  - **`storage` folder**: If you want to keep add-on customizations (this may not work 100% of the time).
+  - **`chrome` folder**: If you want to retain your interface customizations.
 </Callout>
 
 After turning off Firefox, copy the following files from your profile folder:
 
-- **places.sqlite**: Contains bookmarks and history.
-- **cookies.sqlite**: Stores login sessions.
-- **cert9.db + key4.db + logins.json**: Holds your saved passwords.
-- **extension-preferences.json + extensions.json + extension-settings.json + extensions folder**: These files keep track of your installed add-ons (but not their custom settings).
-- **search.json.mozlz4**: Stores your search engine preferences.
-- **sessionCheckpoints.json + sessionstore.jsonlz4**: Saves your currently open tabs.
-- **prefs.js**: Contains your `about:config` settings.
+- `places.sqlite`: Contains bookmarks and history.
+- `cookies.sqlite`: Stores login sessions.
+- `cert9.db`, `key4.db`, `logins.json`: Holds your saved passwords.
+- `extension-preferences.json`, `extensions.json`, `extension-settings.json`, `extensions` folder: These files keep track of your installed add-ons (but not their custom settings).
+- `search.json.mozlz4`: Stores your search engine preferences.
+- `sessionCheckpoints.json`, `sessionstore.jsonlz4`: Saves your currently open tabs.
+- `prefs.js`: Contains your `about:config` settings.
 
 ### 3. Create and Set Up a New Profile
 
-<Callout type="warn" title="Incompatibility Error">
-  If Firefox opens with an incompatibility error after pasting the files, go to the new profile folder and move the `compatibility.ini` file somewhere else.
+<Callout type="warn" title="Fixing incompatibility errors">
+  If Firefox opens with an incompatibility error after pasting the files, go to the folder with your new profile and move the `compatibility.ini` file somewhere else.
 </Callout>
 
 1. Go to `about:profiles` in Firefox.
