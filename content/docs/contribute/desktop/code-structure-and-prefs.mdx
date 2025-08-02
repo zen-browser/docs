@@ -6,14 +6,14 @@ description: Zen Browser Code Structure and Preference Management
 The Zen Browser is a fork of Firefox with custom features like vertical tabs, workspaces, and themes. The source code is organized in the `src/` directory, with patches and custom implementations for Zen-specific features.
 
 ## Main Directories
-- **src/zen/**: Contains Zen-specific features.
-  - `workspaces/`: Implements workspace functionality (e.g., ZenWorkspaces.mjs, ZenWorkspace.mjs).
+- `src/zen/`: Contains Zen-specific features.
+  - `workspaces/`: Implements workspace functionality (e.g., `ZenWorkspaces.mjs`, `ZenWorkspace.mjs`).
   - `compact-mode/`: Handles compact mode UI.
   - `glance/`: Quick tab preview feature.
-  - `common/`: Shared utilities like ZenUIManager.mjs and ZenStartup.mjs.
+  - `common/`: Shared utilities like `ZenUIManager.mjs` and `ZenStartup.mjs`.
   - `tabs/`: Tab management, including pinned tabs.
-- **src/browser/**: Browser components with patches (e.g., browser.xhtml patches).
-- **prefs/**: Preference files in YAML format for various features (e.g., zen.yaml for general prefs, glance.yaml for glance feature).
+- `src/browser/`: Browser components with patches (e.g., `browser.xhtml` patches).
+- `prefs/`: Preference files in YAML format for various features (e.g., `zen.yaml` for general prefs, `glance.yaml` for the Glance feature).
 
 ## How to Add New Preferences
 Preferences in Zen Browser are defined in YAML files under `prefs/`. These are loaded and applied to customize behavior.
@@ -28,12 +28,12 @@ Preferences in Zen Browser are defined in YAML files under `prefs/`. These are l
     ```
 
 2. **Define the Pref**:
-  - `name`: The preference key (e.g., 'zen.workspaces.enable-feature').
+  - `name`: The preference key (e.g., `zen.workspaces.enable-feature`).
   - `value`: Default value (bool, string, int).
   - *`condition`: Optional*
 
 3. **Integrate in Code**:
-  - Use `Services.prefs.getBoolPref('zen.workspaces.new-pref', defaultValue)` in JavaScript files (e.g., ZenWorkspaces.mjs).
+  - Use `Services.prefs.getBoolPref('zen.workspaces.new-pref', defaultValue)` in JavaScript files (e.g., `ZenWorkspaces.mjs`).
 
 4. **Build and Test**:
   - Rebuild the browser.
