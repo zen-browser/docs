@@ -9,7 +9,16 @@ Zen's Split View lets you view up to 4 tabs side by side, so you can compare inf
 ![Split View](/assets/user-manual/split-view/split-view.png)
 
 ### Creating split view
-You can create split view simply by open one tab, drag another tab from sidebar to left or right side of it, and drop once the split indicator placeholder is shown. You can also right click on a link and choose `"Split link in new tab"`.
+
+There are 5 ways of creating a split view:
+
+#### Drag the tab
+
+You can create split view simply by open one tab, drag another tab from sidebar to left or right side of it, and drop once the split indicator placeholder is shown. If this functionality gets in your way you can disable it through the `zen.splitView.enable-tab-drop` [hidden preference](/guides/about-config-flags#zensplitviewenable-tab-drop).
+
+#### Right-click menu
+
+You can also (1) right click on a link and (2) choose `"Split link in new tab"`.
 
 { /* TODO: insert video of these sequences:
 - dragging a tab to split it with another tab
@@ -18,6 +27,23 @@ You can create split view simply by open one tab, drag another tab from sidebar 
 */}
 ![Split ](/assets/user-manual/split-view/split-context-menu.png)
 
+#### Multi-selection and tab menu
+
+From the side bar, you can select 1 or more tabs with <KeyboardShortcut shortcut="Ctrl + Click"/> then right-click one of the selected tabs and select the option `"Split X Tabs"`. 
+
+![Split multi-select](/assets/user-manual/split-view/split-context-menu-sidebar.png)
+
+#### Multi-selection and shortcut
+
+Like the previous method you can also select the tabs you wish to split but rather than using the right-click menu, you can use the `"Toggle Split View <Direction>"` shortcuts which can be found in your `preferences`. The defaults are listed in [Split View shortcuts](#split-view-shortcuts)
+
+#### Creating a new tab as a Split View
+
+From an existing open tab you can use the <KeyboardShortcut shortcut="Shift + Ctrl + ="/> shortcut (or <KeyboardShortcut shortcut="Shift + Ctrl + 8"/> depending on your system) to create a new tab as a split view.
+
+<Callout>
+This shortcut only works to create a 2-paned split view, additional panes need to be added with the other methods.
+</Callout>
 
 ### Using split view
 When split view is enabled, the active tab will have an overlay on its top side, containing two buttons: **Drag Handle** `:::` button and **Unsplit Tab** `‒` button. 
@@ -28,13 +54,14 @@ When split view is enabled, the active tab will have an overlay on its top side,
 - Meanwhile, clicking **Unsplit Tab** `‒` button will remove the tab and expand it outside the previous split view.
 - Currently, you can **unsplit all tabs within a split view** by pressing <KeyboardShortcut shortcut="Alt + Ctrl + U" /> shortcut.
 
-### Toggle Split View shortcuts
+### Split View shortcuts
 
 Zen also provide keyboard shortcuts to help you rearrange the split tabs automatically into a horizontal, vertical, or grid layout.
 
 - **Toggle Split View Horizontal**: <KeyboardShortcut shortcut="Alt + Ctrl + H" />
 - **Toggle Split View Vertical**: <KeyboardShortcut shortcut="Alt + Ctrl + V" />
 - **Toggle Split View Grid**: <KeyboardShortcut shortcut="Alt + Ctrl + G" />
+- **New Empty Split View**: <KeyboardShortcut shortcut="Shift + Ctrl + 8"/> on Linux/MacOS / <KeyboardShortcut shortcut="Shift + Ctrl + ="/> on Windows 
 
 { /* TODO: insert gif/video of horizontal, vertical, and grid toggling split view here */}
 
@@ -42,4 +69,8 @@ You can also press one of the Toggle Split View shortcuts to split current tab w
 
 <Callout>
 All shortcuts can be modified via `Settings > Keyboard Shortcuts`.
+</Callout>
+
+<Callout>
+The shortcuts only work to initiate a split view, they can not be used to directly add more tabs to the existing view unless you select additional tabs including the split from the side bar.
 </Callout>
