@@ -1,0 +1,36 @@
+---
+title: Install Zen on Linux
+description: Available for X64 and ARM devices
+---
+
+## Install from Flathub
+
+The easiest way to get Zen on your Linux-based operating system is to install it from [Flathub](https://flathub.org/apps/details/app.zen_browser.zen). You can also use app stores that supports Flatpak, like GNOME Software, KDE Discover, Cosmic Store and more.
+
+<a href='https://flathub.org/apps/details/app.zen_browser.zen'><img width='196' alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en'/></a>
+
+Your profile for Flatpak version of Zen will be available in `~/.var/app/app.zen_browser.zen/zen/`. You can go to `about:profiles` to check your profile name, then open the directory manually using your file manager app with the prefix path above.
+
+## Install from Tarball Scripts
+
+Zen provides install scripts that will install the browser directly to your home directory. Run this command from your terminal:
+
+```
+curl -fsSL https://github.com/zen-browser/updates-server/raw/refs/heads/main/install.sh | sh
+```
+
+Zen will be installed in `~/.tarball-installations/zen`.
+
+You can also use the script below to install Twilight version of Zen, which built freshly every night and contained the latest changes. You can use Zen Twilight to try new features, [catch bugs and report them](https://github.com/zen-browser/desktop/issues) before it arrived on regular Beta builds!
+
+```
+curl -fsSL https://github.com/zen-browser/updates-server/raw/refs/heads/main/install-twilight.sh | sh
+```
+
+Zen Twilight will be installed in `~/.tarball-installations/zen-twilight`.
+
+Your profile for tarball version of Zen and Zen Twilight will be available in `~/.zen/`. Check `about:profiles` to see your profile name and access the directory directly.
+
+## Download Directly
+
+You can also download Zen tarball and AppImage files directly, as well as formats for other OS in [latest Zen Github Releases](https://github.com/zen-browser/desktop/releases/tag/latest) page.
