@@ -1,0 +1,42 @@
+---
+title: Memory Debugging
+description: This document explains how to properly diagnose and report memory issues in Zen Browser.
+---
+## ⚠️ Important Notes
+
+- **Do not use Task Manager** — its memory readings may be inaccurate.
+- Use one of the following instead:
+  - **Shift + Esc** or `about:processes` — shows memory usage for **tabs, extensions, and the GPU process**
+    - *(Other processes are usually not relevant.)*
+  - `about:memory` → **Measure and Save** — generates a detailed memory report
+- If you need help, upload the memory report to:
+  - GitHub Issues
+  - Zen Discord support channel
+
+---
+
+## ✅ Troubleshooting Steps
+
+1. Open `about:profiles`
+2. Click **Create a New Profile**
+3. Compare memory usage between:
+   - Your **main profile**
+   - The **new clean profile**
+4. If the new profile does **not** show memory issues:
+   - The problem may be caused by extensions, mods, themes, or user configuration
+   - Try disabling or removing them and retest
+5. If the new profile **still** shows high memory usage:
+   - The issue may be internal to Zen
+   - Collect a memory report and **open an issue** with details
+
+---
+
+## 📝 When Reporting an Issue, Include:
+
+- Operating system + version
+- Zen Browser version
+- Steps to reproduce (if possible)
+- Memory report from `about:memory`
+- Whether the issue occurs in a fresh profile
+
+---
