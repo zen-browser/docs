@@ -209,9 +209,11 @@ In this example:
 
 Once you have defined your preferences in the `preferences.json` file, you can use them in your mod’s CSS to modify the appearance or behavior based on the user’s selections.
 
+To detect preference changes in CSS, we are going to be using a universal `-moz-pref` media query.
+
 ### Checkbox Preferences
 
-Checkbox preferences can be detected in your CSS using the `-moz-bool-pref` media query, which evaluates the boolean value (`true` or `false`) of a checkbox preference.
+Checkbox preferences can be detected in your CSS using the `-moz-pref` media query, which evaluates the boolean value (`true` or `false`, amongst other things) of a checkbox preference.
 
 For example, if you have a preference to enable dark mode in your mod:
 
@@ -226,7 +228,7 @@ For example, if you have a preference to enable dark mode in your mod:
 You can use the following CSS to change the background color when the dark mode preference is enabled:
 
 ```css {1}
-@media (-moz-bool-pref: "mod.mymod.enable_dark_mode") {
+@media (-moz-pref("mod.mymod.enable_dark_mode")) {
   body {
     background-color: #000;
     color: #fff;
@@ -237,19 +239,12 @@ You can use the following CSS to change the background color when the dark mode 
 You can also have negative conditions
 
 ```css {1}
-@media not (-moz-bool-pref: "mod.mymod.enable_dark_mode");
+@media not (-moz-pref("mod.mymod.enable_dark_mode"));
 ```
 
 ### Dropdown Preferences
 
-<Callout type="warn" title="Attention">
-  `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your mod's CSS: <strong>dots (`.`) in the `property` name are replaced with hyphens (`-`)</strong>.
-
-  E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
-  This transformation ensures that the property can be used as an attribute selector or inside a media query.
-</Callout>
-
-For dropdown preferences, you can detect the selected value using the `:has(){:css}` CSS pseudo-class, which applies styles based on the selected attribute and value in the DOM.
+For dropdown preferences, you can detect the selected value using the `-moz-pref` media query, which compares the value of a preference and a certain value you provide it.
 
 For example, if you have a preference to select the background color from a dropdown menu:
 
@@ -274,23 +269,25 @@ For example, if you have a preference to select the background color from a drop
 You can use the following CSS to change the background color based on the selected value:
 
 ```css {2,8,14}
-/* Green background */
-body:has(#mod-mymod[mod-mymod-background_color="green"]) {
-  background-color: #008000;
-  color: #000;
-}
+body {
+  /* Green background */
+  @media (-moz-pref("mod.mymod.background_color", "green")) {
+    background-color: #008000;
+    color: #000;
+  }
 
-/* Blue background */
-body:has(#mod-mymod[mod-mymod-background_color="blue"]) {
-  background-color: #0000ff;
-  color: #fff;
+  /* Blue background */
+  @media (-moz-pref("mod.mymod.background_color", "blue")) {
+    background-color: #0000ff;
+    color: #fff;
+  }
 }
 ```
 
 In this example:
 
 - The background color and text color change based on the value selected in the `background_color` dropdown.
-- The selector `body:has(#mod-mymod[background_color="value"]){:css}` checks the `background_color` attribute and applies the relevant styles based on the selected option.
+- The selector `@media (-moz-pref("mod.mymod.background_color", "value")){:css}` checks the `background_color` attribute and applies the relevant styles based on the selected option.
 
 ---
 
@@ -327,7 +324,7 @@ You can combine the CSS like this:
 
 ```css
 /* Checkbox for dark mode */
-@media (-moz-bool-pref: "mod.mymod.enable_dark_mode") {
+@media (-moz-pref("mod.mymod.enable_dark_mode")) {
   body {
     background-color: #000;
     color: #fff;
@@ -335,14 +332,16 @@ You can combine the CSS like this:
 }
 
 /* Dropdown for background color selection */
-body:has(#mod-mymod[mod-mymod-background_color="green"]) {
-  background-color: #008000;
-  color: #000;
-}
+body {
+  @media (-moz-pref("mod.mymod.background_color", "green")) {
+    background-color: #008000;
+    color: #000;
+  }
 
-body:has(#mod-mymod[mod-mymod-background_color="blue"]) {
-  background-color: #0000ff;
-  color: #fff;
+  @media (-moz-pref("mod.mymod.background_color", "blue")) {
+    background-color: #0000ff;
+    color: #fff;
+  }
 }
 ```
 
