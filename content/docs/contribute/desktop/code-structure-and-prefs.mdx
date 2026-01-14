@@ -15,6 +15,21 @@ The Zen Browser is a fork of Firefox with custom features like vertical tabs, wo
 - **src/browser/**: Browser components with patches (e.g., browser.xhtml patches).
 - **prefs/**: Preference files in YAML format for various features (e.g., zen.yaml for general prefs, glance.yaml for glance feature).
 
+## How to Patch the Firefox Source Code
+You can create patches on the Firefox source code by modifying the files in the `engine/` directory which is created after you've run the `npm run init` command.
+
+### Steps to Make Changes on the Firefox Source Code
+1. **Find the file you want to modify**
+  - You can easily navigate the Firefox source code using Mozilla's [Searchfox](https://searchfox.org/) tool
+  - Modify the file in the `engine/` directory
+
+2. **Patch the file and import the changes**
+  - Run `npm run export <path>`
+  - Run `npm run import`
+
+3. **Build and Test**
+  - Rebuild the browser
+
 ## How to Add New Preferences
 Preferences in Zen Browser are defined in YAML files under `prefs/`. These are loaded and applied to customize behavior.
 
@@ -54,3 +69,7 @@ To add a pref for enabling/disabling the Glance feature:
 <Callout type="info" title="Tip">
   For more details, refer to existing preference definitions in the `prefs/` directory and their corresponding code implementations in `src/zen/`.
 </Callout>
+
+## Additional Resources
+
+- [Firefox Source Docs](https://firefox-source-docs.mozilla.org)
