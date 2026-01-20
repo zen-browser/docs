@@ -1,5 +1,5 @@
 ---
-title: Window Sync
+title: Window Sync & Recovery
 description: Your opened windows mirror with each other instantly
 ---
 import KeyboardShortcut from '@/components/KeyboardShortcut';
@@ -23,7 +23,22 @@ When you're done browsing on a blank window, you can click the **Move To...** bu
 
 !["Move To..." button within a blank window in Zen](/assets/user-manual/window-sync/move-to.png)
 
+## Recovering Lost Window Sessions
+
+Since Zen 1.18b, alongside the Window Sync feature, Zen provides new session backup system that saved tab state of all synced windows regularly, including when you're moving tabs or change status of a tab (essentials, pinned, unpinned, and/or splitted). This improves accuracy of session restoring by Zen. It will also makes it easier for you to do manual session restoration if you lose tabs from a session. Follow these steps to restore:
+
+- Make sure Zen is closed.
+- Open root directory of your current Zen profile (Open `about:support` in Zen, navigate to **Applications Basics** section, find **Profile Directory**, and click **Open Directory** button.)
+  - On the Flatpak version of Zen, the profile root directory will be located at `~/.var/app/app.zen_browser.zen/.zen`.
+- Open the `zen-sessions-backup` folder, you will see multiple backup files in .jsonlz4 format:
+
+![Two windows of file managers showing a Zen profile root directory and its `zen-session-backup` folder, containing regular backups of saved sessions](/assets/user-manual/window-sync/zen-sessions-backup.png)
+
+- Duplicate the latest zen-sessions-`date-hour`.jsonlz4 file, rename it to **zen-sessions.jsonlz4**.
+- Copy **zen-sessions.jsonlz4** to your profile root directory.
+- Open Zen again and tabs from the session backup will be restored.
+
 <Callout type="info" title="Can we sync Zen tabs and windows across devices?">
-    The current window sync only works on the same device, but multi-device sync support is planned. For now, you can use the **Send to Device** option to send tabs between devices logged in to the same Mozilla account.
+    The current window sync only works on the same device, but multi-device sync support is planned. For now, you can use the **Send to Device** option to send tabs between devices that logged in to the same Mozilla account.
 </Callout>
 
