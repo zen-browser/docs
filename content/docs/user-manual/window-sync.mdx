@@ -4,4 +4,26 @@ description: Your opened windows mirror with each other instantly
 ---
 import KeyboardShortcut from '@/components/KeyboardShortcut';
 
-Window Sync (TODO)
+Zen now **syncs windows on the same device**, so changes in one window are reflected across the others instantly. Creating new window will automatically start at your existing Space, showing all of your existing tabs. If you're opening two window and clicking on the same tab, the inactive window will show dimmed preview of the website.
+
+{
+<div align="center">
+  <video width="100%" loop autoPlay>
+    <source src="/assets/user-manual/window-sync/new_window.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+If you open multiple windows of Zen, when you close them using "Quit" option from main menu or <KeyboardShortcut shortcut="Ctrl + Q" /> shortcut, Zen will save the state of your windows. When you reopen Zen afterwards, the multiple windows will be restored. No more tab loss! 
+
+## New Blank Window option
+You can also create blank windows as alternative to synced new windows. **New Blank Window** option is available from the main menu, and can be accessed using <KeyboardShortcut shortcut="Ctrl + Alt + N" /> (<KeyboardShortcut shortcut="Alt + N" /> for Windows; keyboard shortcut can be configured from Settings). Blank windows will inherit cookies and container from the origin Space, and sites you visit in blank windows will also be written to your history. For example, when you're creating blank window from a Space with Banking container, the new blank window will have Banking container for its tabs as default.
+
+When you're done browsing on a blank window, you can click the **Move To...** button (above your tab list) to move and sync the tabs back to an existing Space.
+
+!["Move To..." button within a blank window in Zen](/assets/user-manual/window-sync/move-to.png)
+
+<Callout type="info" title="Can we sync Zen tabs and windows across devices?">
+    The current window sync only works on the same device, but multi-device sync support is planned. For now, you can use the **Send to Device** option to send tabs between devices logged in to the same Mozilla account.
+</Callout>
+
