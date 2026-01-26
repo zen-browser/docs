@@ -4,7 +4,7 @@ description: Your opened windows mirror with each other instantly
 ---
 import KeyboardShortcut from '@/components/KeyboardShortcut';
 
-Zen now **syncs windows on the same device**, so changes in one window are reflected across the others instantly. Creating a new window will automatically start at your current Space, showing all of your existing tabs. If you're opening two windows and clicking on the same tab, the inactive window will show a dimmed preview of the website.
+Zen now **syncs windows on the same device**, so changes in one window are reflected across the others instantly. Creating new window will automatically start at your existing Space, showing all of your existing tabs. If you're opening two window and clicking on the same tab, the inactive window will show dimmed preview of the website. 
 
 {
 <div align="center">
@@ -15,31 +15,68 @@ Zen now **syncs windows on the same device**, so changes in one window are refle
 </div>
 }
 
-Zen saves the state of all your windows when you quit, either through the "Quit" option in the main menu or by using the <KeyboardShortcut shortcut="Ctrl + Q" /> shortcut. Upon reopening Zen, all your windows will be restored without tab loss.
+Some things to note, to improve your experience with Zen window sync:
+- After opening new Zen window, you can **create new Space** to start fresh while keeping easy access to Essential tabs. The Space will persist upon restarts. 
+- Use multiple Spaces to separate tabs for specific browsing tasks. Freely create or delete them based on your needs.
 
-## New Blank Window option
-You can also create blank windows as an alternative to synced windows. A **New Blank Window** option is available from the main menu, and can be accessed using <KeyboardShortcut shortcut="Ctrl/Cmd + Shift + N" /> (keyboard shortcut can be configured from Settings). Blank windows will inherit cookies and container from the origin Space, and sites you visit in blank windows will also be written to your history. 
+<details>
 
-For example, when you open a blank window from a Space with a Banking container profile, the new blank window will open tabs in the Banking container by default.
-
-When you're done browsing on a blank window, use the "Move To..." button, found above your tab list, to move and synchronize them with an existing Space.
+<summary>You can also use **New blank window** option from the main menu or <KeyboardShortcut shortcut="Ctrl + Shift + N" />. The window will inherit container and cookies from your original Space, with a **Move to..** button to easily move the tabs back to one of your existing Spaces. Tabs in blank window are temporary and won't be restored upon restarts.</summary>
 
 !["Move To..." button within a blank window in Zen](/assets/user-manual/window-sync/move-to.png)
 
+</details>
+
+- If you use multiple windows regularly, use **Quit** option from main menu or <KeyboardShortcut shortcut="Ctrl + Q" /> shortcut to quit the browser. Zen will save the state of all your open windows and restore them properly upon reopening.   
+
+
+
 ## Recovering Lost Window Sessions
 
-Zen 1.18b introduces a new session backup system alongside the Window Sync feature. This system regularly saves the tab state of all synced windows, including changes to their status (essentials, pinning, split view). This significantly improves the accuracy of session restoration by Zen and facilitates manual restoration if tabs are lost. Follow these steps to restore:
+<details>
 
-<Callout type="info" title="Look up Root Directory of your Zen profile">
-	- In the Flatpak version, the profile root directory is located at `~/.var/app/app.zen_browser.zen/.zen`.
-	- Otherwise, for other platforms/versions, you can look it up by opening `about:support` in Zen, navigate to **Applications Basics** section, find **Profile Directory**, and click **Open Directory** button.
+<summary>Look up directory of your current Zen profile: *(Click to toggle details)*</summary>
+
+<Callout>
+	- Open `about:support` in Zen, navigate to **Applications Basics** section, find **Profile Directory**, and click **Open Directory** button.
+	- For Flatpak version of Zen, the profile root directory will be located at `~/.var/app/app.zen_browser.zen/.zen` and titled `<profile-id>.Default (release)`.
 </Callout>
 
-- Navigate to the root directory of your Zen profile.
+</details>
+
+### Updating from Zen v1.17.15 or older
+
+- Navigate to root directory of your Zen profile.
+- **Make sure Zen is fully closed**.
+
+<details>
+
+<summary>Open the `sessionstore-backups` folder. You will see multiple backup files in .jsonlz4 format. *(Click to open image)*</summary>
+
+![File manager showing a Zen profile root directory with `sessionstore-backups` folder expanded, containing backups of saved sessions](/assets/user-manual/window-sync/sessionstore-backups.png)
+
+</details>
+
+- **Duplicate the latest file**. This could be recovery.jsonlz4 or one of the upgrade.jsonlz4-`date-metadata`.
+- Rename it to **sessionstore.jsonlz4**.
+- Copy the sessionstore.jsonlz4 file to the root directory (one folder above).
+- Open Zen and the tabs should be restored.
+- If failed, close Zen and retry the steps with another backup files from sessionstore-backups folder. 
+
+### Zen v1.18+ session backup system
+
+Alongside Window Sync, Zen provides new session backup system that regularly saved tab state of all synced windows, including changes to their status (essentials, pinning, split view). This significantly improves the accuracy of session restoration by Zen and facilitates manual restoration if tabs are lost. Follow these steps to restore:
+
+- Navigate to root directory of your Zen profile.
 - **Make sure Zen is fully closed.**
-- Open the `zen-sessions-backup` folder. You will see multiple backup files in .jsonlz4 format:
+
+<details>
+
+<summary>Open the `zen-sessions-backup` folder. You will see multiple backup files in .jsonlz4 format:</summary>
 
 ![Two windows of file managers showing a Zen profile root directory and its `zen-session-backup` folder, containing regular backups of saved sessions](/assets/user-manual/window-sync/zen-sessions-backup.png)
+
+</details>
 
 - Duplicate the latest zen-sessions-`date-hour`.jsonlz4 file, rename it to **zen-sessions.jsonlz4**.
 - Copy **zen-sessions.jsonlz4** to your profile root directory.
