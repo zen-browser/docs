@@ -131,6 +131,16 @@ This command launches the browser, allowing you to see your changes in action.
 
 ### Common Build Errors & Fixes
 
+#### Q: "The property 'options.recursive' is no longer supported. Received true" error?  
+> Run:
+> ```sh
+> brew install node@22 # Install Node 22
+> brew unlink node # Unlink current Node version
+> brew link --overwrite node@22 # Link Node 22
+> ```
+> Run `rm -rf /path/to/workspace` to clear your workspace, then restart from [Step 1](https://docs.zen-browser.app/contribute/desktop/building#step-1-getting-started--clone-the-project)
+
+
 #### Q: "mach not found" error?  
 > Install [MozillaBuild](https://wiki.mozilla.org/MozillaBuild), add it to your `PATH`, then restart your terminal.
 
