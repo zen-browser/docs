@@ -6,42 +6,53 @@ interface KeyboardShortcutProps {
   shortcut: string;
   macosShortcut?: string;
   className?: string;
+  rewriteCtrlToCmd?: boolean;
 }
+
+// OS detection should run only on the client-side
+const isMacUser = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
+
+const toCharacter = (shortcut: string): string =>
+  shortcut
+    .replace(/Ctrl\s*\+\s*/gi, "⌃ + ")
+    .replace(/Alt\s*\+\s*/gi, "⌥ + ")
+    // In case Cmd was used in the base shortcut
+    .replace(/Cmd\s*\+\s*/gi, "⌘ + ")
+    // In case Option was used
+    .replace(/Option\s*\+\s*/gi, "⌥ + ")
+    // Replace individual keys if not part of a combo already handled
+    .replace(/(?<!⌘ )Cmd/gi, "⌘")
+    .replace(/(?<!⌃ )Ctrl/gi, "⌃")
+    .replace(/(?<!⌥ )Alt/gi, "⌥");
 
 const KeyboardShortcut: React.FC<KeyboardShortcutProps> = ({
   shortcut,
   macosShortcut,
   className,
+  rewriteCtrlToCmd = true,
 }) => {
   const [displayShortcut, setDisplayShortcut] = useState(shortcut);
 
   useEffect(() => {
-    // OS detection should run only on the client-side
-    const isMacUser = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
-
     if (isMacUser) {
       if (macosShortcut) {
-        setDisplayShortcut(macosShortcut);
+        setDisplayShortcut(toCharacter(macosShortcut));
       } else {
         // Convert common Windows/Linux keys to macOS equivalents
-        let convertedShortcut = shortcut;
-        convertedShortcut = convertedShortcut.replace(/Ctrl\s*\+\s*/gi, "⌘ + ");
-        convertedShortcut = convertedShortcut.replace(/Alt\s*\+\s*/gi, "⌥ + ");
-        convertedShortcut = convertedShortcut.replace(/Cmd\s*\+\s*/gi, "⌘ + "); // In case Cmd was used in the base shortcut
-        convertedShortcut = convertedShortcut.replace(
-          /Option\s*\+\s*/gi,
-          "⌥ + "
-        ); // In case Option was used
-        // Replace individual keys if not part of a combo already handled
-        convertedShortcut = convertedShortcut.replace(/(?<!⌘ )Ctrl/gi, "⌘");
-        convertedShortcut = convertedShortcut.replace(/(?<!⌥ )Alt/gi, "⌥");
-        setDisplayShortcut(convertedShortcut);
+        setDisplayShortcut(
+          toCharacter(
+            shortcut.replace(
+              /Ctrl\s*\+\s*/gi,
+              `${rewriteCtrlToCmd ? "Cmd" : "Ctrl"} + `,
+            ),
+          ),
+        );
       }
     } else {
       // For non-Mac users, display the original shortcut or Windows/Linux specific if ever needed
       setDisplayShortcut(shortcut);
     }
-  }, [shortcut, macosShortcut]);
+  }, [shortcut, macosShortcut, rewriteCtrlToCmd]);
 
   const keys = displayShortcut.split(/\s*\+\s*/);
 
@@ -53,8 +64,8 @@ const KeyboardShortcut: React.FC<KeyboardShortcutProps> = ({
             {key.toLowerCase() === "shift"
               ? "⇧"
               : key.toLowerCase() === "plus"
-              ? "+"
-              : key}
+                ? "+"
+                : key}
           </kbd>
           {index < keys.length - 1 && <span className="mx-1">+</span>}
         </React.Fragment>
