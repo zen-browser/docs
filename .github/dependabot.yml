@@ -1,0 +1,77 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      docs-framework:
+        patterns:
+          - "fumadocs-*"
+          - "@theguild/remark-mermaid"
+        update-types:
+          - "minor"
+          - "patch"
+
+      next-react:
+        patterns:
+          - "next"
+          - "react"
+          - "react-dom"
+        update-types:
+          - "minor"
+          - "patch"
+
+      app-runtime:
+        dependency-type: "production"
+        exclude-patterns:
+          - "fumadocs-*"
+          - "@theguild/remark-mermaid"
+          - "next"
+          - "react"
+          - "react-dom"
+        update-types:
+          - "minor"
+          - "patch"
+
+      types:
+        patterns:
+          - "@types/*"
+        update-types:
+          - "minor"
+          - "patch"
+
+      linting:
+        patterns:
+          - "@eslint/*"
+          - "eslint"
+          - "eslint-config-next"
+        update-types:
+          - "minor"
+          - "patch"
+
+      styling-build:
+        patterns:
+          - "@tailwindcss/*"
+          - "tailwindcss"
+          - "postcss"
+          - "lightningcss"
+        update-types:
+          - "minor"
+          - "patch"
+
+      typescript:
+        patterns:
+          - "typescript"
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
