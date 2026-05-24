@@ -49,9 +49,9 @@ const KeyboardShortcut: React.FC<KeyboardShortcutProps> = ({
     <span className={`inline-flex items-center ${className || ""}`}>
       {keys.map((key, index) => (
         <React.Fragment key={index}>
-          <kbd className="px-1 py-0.5 text-xs font-semibold text-fd-foreground bg-fd-card border border-fd-border rounded-sm">
+          <kbd className="px-1 py-0.5 text-xs font-semibold font-mono text-fd-foreground bg-fd-card border border-fd-border rounded-sm">
             {key.toLowerCase() === "shift"
-              ? "⇧"
+              ? "⇧ Shift"
               : key.toLowerCase() === "plus"
               ? "+"
               : key}
