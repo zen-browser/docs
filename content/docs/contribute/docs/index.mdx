@@ -1,60 +1,62 @@
 ---
 title: Docs
-description: Getting started with contributing to the documentation for Zen Browser.
+description: Get started with contributing to the documentation for Zen Browser.
 ---
 
-This guide will help you get started with contributing to the documentation for Zen Browser. The documentation is crucial for helping users and developers understand and use the project effectively. We use Fumadocs for generating the static documentation site.
+Thank you for contributing to Zen Browser's documentation! Your contributions help users and developers understand and effectively use the project.
 
 ## Prerequisites
 
 Before you begin, ensure you have the following tools installed:
 
-- [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
-- [**Node.js**](https://nodejs.org/): Required for building the NextJS site.
-- [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
-- [**IDE of your choice**](/contribute/docs/editing-with-vscode): You can use any text editor or IDE of your choice.
+- [Git](https://git-scm.com/): Version control system to clone the repository and manage your code.
+- [Node.js](https://nodejs.org/): Required for building the NextJS site.
+- [npm](https://www.npmjs.com/): Node package manager, which comes with Node.js.
+- A text editor or IDE of your choice.
 
 ## 1. Fork the Repository
 
-1. Navigate to the [Zen Browser Documentation Repository](https://github.com/zen-browser/docs).
-2. Click on the "Fork" button at the top right of the repository page to create a personal copy of the repository under your GitHub account.
+Create a personal copy of the repository, called a [fork](https://docs.github.com/en/pull-requests/get-started/about-forks), so you can make changes without affecting the original project.
+
+1. Go to the [Zen Browser Documentation Repository](https://github.com/zen-browser/docs).
+2. In the top-right corner of the repository page, click the **Fork** button.
 
 ## 2. Clone the Repository
 
-Once you have forked the repository, clone it to your local machine using the following command:
+Once you have forked the repository, clone it to your local machine, replacing `<your-username>` with your GitHub username.
 
 ```bash
 git clone https://github.com/<your-username>/docs.git
-cd docs
 ```
-
-Replace `<your-username>` with your GitHub username.
 
 ## 3. Install Dependencies
 
 Navigate to the project directory and install the required dependencies:
 
 ```bash
+cd docs
 npm install
 ```
 
 This command installs all the necessary packages listed in the `package.json` file.
 
-## 4. Open the Project in IDE
+## 4. Open the Project
 
-Open the cloned repository folder in your IDE to begin editing. If you're using Visual Studio Code, check out our [VS Code setup guide](/contribute/docs/editing-with-vscode) for detailed instructions.
-
-1. Open IDE.
-2. Select "Open Folder" or "File > Open Folder".
-3. Navigate to the cloned repository folder.
+Open the cloned repository folder in the text editor or IDE of your choice to begin editing. If you're using Visual Studio Code, check out our [VS Code setup guide](/contribute/docs/editing-with-vscode).
 
 ## 5. Make Your Changes
 
-You can now start editing the documentation. The project structure is as follows:
+You can now start editing the documentation.
 
-- **`content/docs/`** - contains the Markdown files for the documentation.
-- **`public/assets/`** - contains images and other static assets used in the documentation.
-- _**`src/`** - contains the source code for the documentation site. No changes are required here._
+Documentation is written in [Markdown Extended](https://mdxjs.com/) syntax, which is like Markdown but allows you to include JSX components in your documentation, such as [Fumadocs UI components](https://fumadocs.vercel.app/docs/ui) like `<Callout />`, `<Tabs />`, `<Steps />`, and more.
+
+### Project Structure
+
+The project structure is as follows:
+
+- `content/docs/` - contains the source MDX files for the documentation.
+- `public/assets/` - contains images and other static assets used in the documentation.
+- `src/` - contains the source code for the documentation site. No changes are required here.
 
 ### Writing Guidelines
 
@@ -75,7 +77,7 @@ pnpm dev
 yarn dev
 ```
 
-This command starts a local server running on `http://localhost:3000` that you can access from your browser. The site will automatically reload whenever you make changes to the Markdown files.
+This command starts a local server running on `http://localhost:3000` that you can access from your browser. The site automatically reloads whenever you make changes.
 
 ## 7. Check the Build
 
@@ -85,7 +87,7 @@ Before committing your changes, ensure the documentation site builds successfull
 npm run build
 ```
 
-This command will build the static site. If there are any errors, fix them before proceeding.
+If there are any errors, fix them before proceeding.
 
 ## 8. Commit and Push Your Changes
 
@@ -104,13 +106,9 @@ git push origin main
 
 ## 9. Create a Pull Request
 
-After pushing your changes, go to the original Zen Browser Documentation Repository and submit a pull request:
+After pushing your changes to your forked repository, create a pull request to submit your changes to Zen Browser's documentation.
 
-1. Navigate to the repository you forked from.
-2. Click on the "Pull Requests" tab.
-3. Click on "New Pull Request" and select your branch.
-4. Provide a clear and concise description of your changes.
-5. Submit the pull request.
+See [Creating a pull request from a fork](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request-from-a-fork).
 
 Your pull request will be reviewed by the maintainers, and you may be asked to make some adjustments. Once approved, your changes will be merged into the main branch.
 
@@ -121,7 +119,4 @@ Your pull request will be reviewed by the maintainers, and you may be asked to m
 - [Contribution Guidelines](/contribute)
 - [Code of Conduct](/contribute/code-of-conduct)
 - [Editing with VS Code](/contribute/docs/editing-with-vscode)
-
----
-
-Thank you for contributing to Zen Browser's documentation! Your contributions help users and developers understand and effectively use the project.
+- [GitHub Docs](https://docs.github.com/en)
